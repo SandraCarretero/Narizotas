@@ -73,7 +73,6 @@ export const PRODUCT_DATA = [
 
 	// HOGAR CENTRO-MESA
 
-	
 	// IMANES
 	{
 		section: 'imanes',
