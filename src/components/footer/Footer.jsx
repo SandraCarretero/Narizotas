@@ -8,7 +8,7 @@ const Footer = () => {
 				<span>
 					<u>Contacto</u>
 				</span>
-				<span>Email: artesanialascositasdelamari@gmail.com</span>
+				<span>Email: narizotas.artesania@gmail.com</span>
 				<span>Teléfono:</span>
 			</StyledContact>
 			<div>
