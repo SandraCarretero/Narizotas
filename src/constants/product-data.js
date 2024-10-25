@@ -1,5 +1,30 @@
 export const PRODUCT_DATA = [
-	// GNOMOS
+	
+	// TIESTOS NARICILLAS
+
+	// TIESTOS NARIGUDOS
+
+	{
+		section: 'tiestos',
+		subsection: 'narigudos',
+		name: 'Producto 2',
+		price: '12.49€',
+		description: 'Un tiesto redondo perfecto para cualquier espacio.',
+		img: ['/images/grid-2.png', '/images/grid-4.png', '/images/grid-5.png'],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
+	// TIESTOS NARIZOTAS
+	{
+		section: 'tiestos',
+		subsection: 'narizotas',
+		name: 'Producto 3',
+		price: '22.00€',
+		description: 'Maceta colgante con un diseño moderno.',
+		img: ['/images/grid-2.png', '/images/grid-4.png', '/images/grid-5.png'],
+		inputs: ['Detalles']
+	},
+
+	// GNOMOS GNOMOS
 
 	{
 		section: 'gnomos',
@@ -31,26 +56,7 @@ export const PRODUCT_DATA = [
 		inputs: ['Detalles']
 	},
 
-	// TIESTOS
-	{
-		section: 'tiestos',
-		subsection: 'narigudos',
-		name: 'Producto 2',
-		price: '12.49€',
-		description: 'Un tiesto redondo perfecto para cualquier espacio.',
-		img: ['/images/grid-2.png', '/images/grid-4.png', '/images/grid-5.png'],
-		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
-	},
-	{
-		section: 'tiestos',
-		subsection: 'narizotas',
-		name: 'Producto 3',
-		price: '22.00€',
-		description: 'Maceta colgante con un diseño moderno.',
-		img: ['/images/grid-2.png', '/images/grid-4.png', '/images/grid-5.png'],
-		inputs: ['Detalles']
-	},
-
+	// GNOMOS LAMPARAS
 	{
 		section: 'gnomos',
 		subsection: 'lámparas',
@@ -61,15 +67,14 @@ export const PRODUCT_DATA = [
 		inputs: ['Detalles']
 	},
 
-	{
-		section: 'gnomos',
-		subsection: 'gnomos',
-		name: 'Producto 5',
-		price: '22.00€',
-		description: 'Maceta colgante con un diseño moderno.',
-		img: ['/images/grid-2.png', '/images/grid-4.png', '/images/grid-5.png'],
-		inputs: ['Detalles']
-	},
+	// HOGAR LAMPARAS
+
+	// HOGAR DECORACION
+
+	// HOGAR CENTRO-MESA
+
+	
+	// IMANES
 	{
 		section: 'imanes',
 		subsection: '',
@@ -79,4 +84,6 @@ export const PRODUCT_DATA = [
 		img: ['/images/grid-2.png', '/images/grid-4.png', '/images/grid-5.png'],
 		inputs: ['Detalles']
 	}
+
+	// PERSONALIZACIONES
 ];
