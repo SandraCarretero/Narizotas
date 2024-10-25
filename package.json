@@ -3,7 +3,8 @@
 	"version": "0.0.0",
 	"scripts": {
 		"dev": "vite",
-		"build": "npx vite build",
+		"preinstall": "npx vite build",
+  		"build": "vite build",
 		"preview": "vite preview",
 		"format": "prettier --write .",
 		"lint": "eslint . --ext .js,.jsx --fix"
