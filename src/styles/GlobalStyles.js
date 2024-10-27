@@ -34,6 +34,6 @@ export const GlobalStyles = createGlobalStyle`
   }  
 
   .active {
-  border-bottom: 2px solid black; 
-}
+    border-bottom: 2px solid black; 
+  }
 `;

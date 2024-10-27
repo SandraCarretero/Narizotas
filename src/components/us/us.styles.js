@@ -6,6 +6,11 @@ const StyledBandColor = styled.div`
 	padding-block: 2.1875rem;
 	display: flex;
 	justify-content: space-evenly;
+
+	@media (width < 768px) {
+		flex-direction: column;
+		gap: 2.5rem;
+	}
 `;
 
 const StyledContainerIcon = styled.div`

@@ -9,6 +9,11 @@ const StyledSectionTitle = styled.h1`
 	font-size: 3.75rem;
 	font-weight: 600;
 	margin-top: 1.25rem;
+
+	@media (width < 768px) {
+		background-size: 300px;
+		font-size: 30px;
+	}
 `;
 
 const StyledMainContainer = styled.div`
@@ -22,6 +27,10 @@ const StyledProductFlex = styled.div`
 	justify-content: center;
 	gap: 3.125rem;
 	margin-top: 1.25rem;
+
+	@media (width < 768px) {
+		gap: 1.875rem;
+	}
 `;
 
 export { StyledSectionTitle, StyledMainContainer, StyledProductFlex };

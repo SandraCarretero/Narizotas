@@ -4,6 +4,10 @@ const StyledTitle = styled.h1`
 	text-align: center;
 	font-size: 2.8125rem;
 	padding-block: 1.25rem;
+
+	@media (width < 768px) {
+		font-size: 1.875rem;
+	}
 `;
 
 const StyledContainerBox = styled.div`
@@ -14,6 +18,17 @@ const StyledContainerBox = styled.div`
 	height: 43.75rem;
 	width: 75%;
 	margin: 0 auto;
+
+	@media (width > 1300px) {
+		height: 60rem;
+	}
+	@media (width < 768px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		height: max-content;
+	}
 `;
 
 const StyledBox = styled.div`
@@ -51,6 +66,25 @@ const StyledBox = styled.div`
 		}
 		:after {
 			opacity: 1;
+		}
+	}
+
+	@media (width < 768px) {
+		width: 85%;
+		height: 12.5rem;
+		margin-bottom: 1rem;
+
+		:before,
+		:after {
+			opacity: 1;
+		}
+
+		:after {
+			background-image: linear-gradient(
+				-180deg,
+				rgba(86, 178, 128, 0) 0%,
+				rgba(86, 178, 128, 0.8) 100%
+			) !important;
 		}
 	}
 `;

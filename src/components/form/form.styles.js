@@ -7,15 +7,24 @@ const StyledFormContainer = styled.div`
 	width: 80%;
 	margin: 0 auto;
 	padding-block: 5rem;
+
+	@media (width < 768px) {
+		flex-direction: column;
+		gap: 2.5rem;
+	}
 `;
 
 const StyledText = styled.div`
 	width: 40%;
+
+	@media (width < 768px) {
+		width: 100%;
+	}
 `;
 
 const StyledTitle = styled.span`
-    font-size: 1.5rem;
-`
+	font-size: 1.5rem;
+`;
 
 const StyledForm = styled.form`
 	width: 50%;
@@ -27,6 +36,10 @@ const StyledForm = styled.form`
 	align-items: flex-start;
 	justify-content: space-between;
 	row-gap: 1.25rem;
+
+	@media (width < 768px) {
+		width: 100%;
+	}
 `;
 
 const StyledInput = styled.input`
@@ -37,6 +50,10 @@ const StyledInput = styled.input`
 	font-size: 1rem;
 	color: #000;
 	box-sizing: border-box;
+
+	@media (width < 768px) {
+		width: 100%;
+	}
 `;
 
 const StyledTextarea = styled.textarea`
@@ -68,12 +85,16 @@ const StyledButton = styled.button`
 	&:hover {
 		background-color: #e07a6a;
 	}
+
+	@media (width < 768px) {
+		width: 100%;
+	}
 `;
 
 export {
 	StyledFormContainer,
 	StyledText,
-    StyledTitle,
+	StyledTitle,
 	StyledForm,
 	StyledInput,
 	StyledTextarea,

@@ -13,16 +13,32 @@ const StyledContainer = styled.div`
 
 const StyledBox = styled.div`
 	height: 18.75rem;
-	width: 55%;
+	width: 48%;
 	border-radius: 1.25rem;
 	background-color: #ffffffd6;
-	padding: 1.875rem 3.125rem;
+	padding: 1.25rem 3.125rem;
 	text-align: center;
+
+	@media (width > 1300px) {
+		height: 25rem;
+		font-size: 1.375rem;
+		padding-block: 1.5625rem;
+	}
+
+	@media (width < 768px) {
+		width: 90%;
+		height: 28.25rem;
+		padding: 1.25rem;
+	}
 `;
 
 const StyledText = styled.span`
 	font-family: 'Playwrite GB S', cursive;
 	font-size: 1.125rem;
+
+	@media (width > 1300px) {
+		font-size: 1.5rem;
+	}
 `;
 
 export { StyledContainer, StyledBox, StyledText };

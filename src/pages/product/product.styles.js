@@ -5,10 +5,19 @@ const StyledContainerProduct = styled.div`
 	justify-content: center;
 	gap: 3.125rem;
 	padding-block: 2.5rem 5rem;
+
+	@media (width < 768px) {
+		flex-direction: column;
+		align-items: center;
+	}
 `;
 
 const StyledImageContainer = styled.div`
 	width: 30%;
+
+	@media (width < 768px) {
+		width: 90%;
+	}
 `;
 
 const StyledImgBig = styled.img`
@@ -58,6 +67,11 @@ const StyledForm = styled.form`
 	gap: 20px;
 	width: 100%;
 	max-width: 400px;
+
+	@media (width < 768px) {
+		width: 90%;
+		margin: 0 auto;
+	}
 `;
 
 const StyledFormContainer = styled.div`
@@ -70,6 +84,10 @@ const StyledFormContainer = styled.div`
 const StyledInputContainer = styled.div`
 	width: 48%;
 	&:last-child {
+		width: 100%;
+	}
+
+	@media (width < 768px) {
 		width: 100%;
 	}
 `;
@@ -130,10 +148,15 @@ const StyledModal = styled.div`
 	transform: translate(-50%, -50%);
 	background-color: white;
 	padding: 2rem;
-	border-radius: 10px;
+	border-radius: 0.625rem;
 	z-index: 1000;
-	max-width: 500px;
+	max-width: 31.25rem;
 	width: 100%;
+	border: 0.0625rem solid grey;
+
+	@media (width < 768px) {
+		max-width: 23.75rem;
+	}
 `;
 
 const StyledModalContent = styled.div`

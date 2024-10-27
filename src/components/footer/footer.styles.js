@@ -8,6 +8,12 @@ const StyledFooter = styled.footer`
 	justify-content: space-between;
 	align-items: center;
 	padding-inline: 2.5rem;
+
+	@media (width < 768px) {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 2.5rem;
+	}
 `;
 
 const StyledContact = styled.div`

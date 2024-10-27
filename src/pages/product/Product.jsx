@@ -21,8 +21,7 @@ import {
 	StyledImgBig
 } from './product.styles';
 import { useState } from 'react';
-import emailjs from 'emailjs-com'; // Para el envío de correos
-
+import emailjs from 'emailjs-com';
 const Product = () => {
 	const { section, productName } = useParams();
 
@@ -79,7 +78,7 @@ const Product = () => {
 
 	const sendEmail = () => {
 		if (!userEmail) {
-			alert('Por favor, introduce tu correo electrónico.'); // Validación
+			alert('Por favor, introduce tu correo electrónico.');
 			return;
 		}
 		const templateParams = {
@@ -94,10 +93,10 @@ const Product = () => {
 
 		emailjs
 			.send(
-				'service_0aw49ww',
-				'template_8s9dky5',
+				'service_sym6y4h',
+				'template_idvzf7j',
 				templateParams,
-				'Y5TnKABQ2xYlrzSOy'
+				'urkRLRy5TqhfT62de'
 			)
 			.then(response => {
 				alert('Correo enviado correctamente!');
@@ -200,7 +199,7 @@ const Product = () => {
 				<StyledModal>
 					<StyledModalContent>
 						<StyledCloseButton onClick={() => setIsModalOpen(false)}>
-							X
+							<img src='/images/cross.svg' alt='Cerrar menú' width='20' />
 						</StyledCloseButton>
 						<h3>Confirmación de Pedido</h3>
 						<p>

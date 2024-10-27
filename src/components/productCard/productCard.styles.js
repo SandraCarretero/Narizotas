@@ -9,6 +9,11 @@ const StyledCard = styled.div`
 	align-items: center;
 	justify-content: space-around;
 	cursor: pointer;
+
+	@media (width < 768px) {
+		width: 80%;
+		justify-content: center;
+	}
 `;
 
 const StyledImage = styled.img`
