@@ -9,6 +9,10 @@ const StyledContainer = styled.div`
 	background-image: url(/images/header.png);
 	background-size: cover;
 	background-repeat: no-repeat;
+
+	@media (width < 768px) {
+		height: calc(100vh - 9.375rem);
+	}
 `;
 
 const StyledBox = styled.div`
