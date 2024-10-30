@@ -12,6 +12,7 @@ const StyledContainer = styled.div`
 
 	@media (width < 768px) {
 		height: calc(100vh - 9.375rem);
+		align-items: flex-start;
 	}
 `;
 
@@ -33,6 +34,7 @@ const StyledBox = styled.div`
 		width: 90%;
 		height: 28.25rem;
 		padding: 1.25rem;
+		margin-top: 4.0625rem;
 	}
 `;
 
