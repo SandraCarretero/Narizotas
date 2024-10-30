@@ -18,7 +18,8 @@ import {
 	StyledName,
 	StyledPrice,
 	StyledImageContainer,
-	StyledImgBig
+	StyledImgBig,
+	StyledException
 } from './product.styles';
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
@@ -131,7 +132,11 @@ const Product = () => {
 					<StyledName>{product.name}</StyledName>
 					<StyledPrice>{product.price}</StyledPrice>
 				</StyledInfo>
-				<p>{product.description}</p>
+				<p
+					dangerouslySetInnerHTML={{
+						__html: product.description.replace(/\n/g, '<br />')
+					}}
+				/>
 				<StyledFormContainer>
 					{product.inputs.map(input => (
 						<StyledInputContainer key={input}>
@@ -156,8 +161,9 @@ const Product = () => {
 									name='color'
 									value={formValues.color}
 									onChange={handleInputChange}
+									disabled={formValues.patas === 'No'}
 								>
-									<option value=''>Color</option>
+									<option value=''>Color Patas</option>
 									{colorOptions.map(color => (
 										<option key={color} value={color}>
 											{color}
@@ -205,15 +211,20 @@ const Product = () => {
 						<p>
 							<strong>Patas:</strong> {formValues.patas}
 						</p>
-						<p>
-							<strong>Color:</strong> {formValues.color}
-						</p>
+						{formValues.patas === 'Sí' && (
+							<p>
+								<strong>Color patas:</strong> {formValues.color}
+							</p>
+						)}
 						<p>
 							<strong>Pelo:</strong> {formValues.pelo}
 						</p>
-						<p>
-							<strong>Detalles:</strong> {formValues.detalles}
-						</p>
+						{formValues.detalles && formValues.detalles.trim() !== '' && (
+							<p>
+								<strong>Detalles:</strong> {formValues.detalles}
+							</p>
+						)}
+						<StyledException>{product.exception}</StyledException>
 
 						<label>Introduce tu correo electrónico:</label>
 						<StyledInputMail

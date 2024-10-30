@@ -64,9 +64,9 @@ const StyledImg = styled.img`
 const StyledForm = styled.form`
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 1.25rem;
 	width: 100%;
-	max-width: 400px;
+	max-width: 25rem;
 
 	@media (width < 768px) {
 		width: 90%;
@@ -93,10 +93,10 @@ const StyledInputContainer = styled.div`
 `;
 
 const StyledInput = styled.select`
-	padding: 10px;
-	border: 2px solid #f4a08d;
-	border-radius: 8px;
-	font-size: 16px;
+	padding: 0.625rem;
+	border: 0.125rem solid #f4a08d;
+	border-radius: 0.5rem;
+	font-size: 1rem;
 	color: #000;
 	width: 100%;
 	box-sizing: border-box;
@@ -108,15 +108,15 @@ const StyledInput = styled.select`
 `;
 
 const StyledTextarea = styled.textarea`
-	padding: 10px;
-	border: 2px solid #f4a08d;
-	border-radius: 8px;
-	font-size: 16px;
+	padding: 0.625rem;
+	border: 0.125rem solid #f4a08d;
+	border-radius: 0.5rem;
+	font-size: 1rem;
 	color: #000;
 	width: 100%;
 	box-sizing: border-box;
 	resize: none;
-	height: 100px;
+	height: 6.25rem;
 
 	&:focus {
 		outline: none;
@@ -125,12 +125,12 @@ const StyledTextarea = styled.textarea`
 `;
 
 const StyledButton = styled.button`
-	padding: 15px;
+	padding: 0.9375rem;
 	background-color: #f29382;
 	color: white;
 	border: none;
-	border-radius: 8px;
-	font-size: 16px;
+	border-radius: 0.5rem;
+	font-size: 1rem;
 	cursor: pointer;
 	text-transform: uppercase;
 	width: 100%;
@@ -147,7 +147,7 @@ const StyledModal = styled.div`
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background-color: white;
-	padding: 2rem;
+	padding: 1.125rem 2rem;
 	border-radius: 0.625rem;
 	z-index: 1000;
 	max-width: 31.25rem;
@@ -162,12 +162,12 @@ const StyledModal = styled.div`
 const StyledModalContent = styled.div`
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 0.3125rem;
 `;
 
 const StyledInputMail = styled.input`
-	padding: 10px;
-	border: 2px solid #f4a08d;
+	padding: 0.625rem;
+	border: 0.125rem solid #f4a08d;
 	border-radius: 8px;
 	font-size: 16px;
 	color: #000;
@@ -180,10 +180,14 @@ const StyledInputMail = styled.input`
 	}
 `;
 
+const StyledException = styled.p`
+	font-size: 0.75rem;
+`;
+
 const StyledCloseButton = styled.button`
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: 0.625rem;
+	right: 0.625rem;
 	background: transparent;
 	border: none;
 	font-size: 1.5rem;
@@ -209,5 +213,6 @@ export {
 	StyledModal,
 	StyledInputMail,
 	StyledModalContent,
+	StyledException,
 	StyledCloseButton
 };

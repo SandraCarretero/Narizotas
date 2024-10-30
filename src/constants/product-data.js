@@ -6,7 +6,8 @@ export const PRODUCT_DATA = [
 		name: 'Alan',
 		price: '16€',
 		description:
-			'Descripción: saltodelinea Macetero hecho artesanalmente con materiales naturales y pelo sintético. salto de linea. Dimensiones: Diámetro maceta 8cm .salto de linea. Altura 10cm',
+			'Macetero hecho artesanalmente con materiales naturales y pelo sintético.\nDimensiones: Diámetro maceta 8cm.\nAltura 10cm',
+		exception:'*Planta no incluida',
 		img: ['/images/naricilla_alan.jpg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -17,7 +18,7 @@ export const PRODUCT_DATA = [
 		name: 'Arcoiris',
 		price: '16€',
 		description:
-			'Descripción: saltodelinea Macetero hecho artesanalmente con materiales naturales y pelo sintético. salto de linea. Dimensiones: Diámetro maceta 8cm .salto de linea. Altura 10cm',
+			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
 		img: [
 			'/images/naricilla_arcoiris_1.jpeg',
 			'/images/naricilla_arcoiris_2.jpeg'
@@ -31,7 +32,7 @@ export const PRODUCT_DATA = [
 		name: 'Babu',
 		price: '16€',
 		description:
-			'Descripción: saltodelinea Macetero hecho artesanalmente con materiales naturales y pelo sintético. salto de linea. Dimensiones: Diámetro maceta 8cm .salto de linea. Altura 10cm',
+			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
 		img: ['/images/naricilla_babu.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -42,7 +43,7 @@ export const PRODUCT_DATA = [
 		name: 'Gruñón',
 		price: '16€',
 		description:
-			'Descripción: saltodelinea Macetero hecho artesanalmente con materiales naturales y pelo sintético. salto de linea. Dimensiones: Diámetro maceta 8cm .salto de linea. Altura 10cm',
+			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
 		img: ['/images/naricilla_gruñon.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -53,7 +54,7 @@ export const PRODUCT_DATA = [
 		name: 'Hula',
 		price: '16€',
 		description:
-			'Descripción: saltodelinea Macetero hecho artesanalmente con materiales naturales y pelo sintético. salto de linea. Dimensiones: Diámetro maceta 8cm .salto de linea. Altura 10cm',
+			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
 		img: ['/images/naricilla_hula.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -64,7 +65,7 @@ export const PRODUCT_DATA = [
 		name: 'Pescador',
 		price: '16€',
 		description:
-			'Descripción: saltodelinea Macetero hecho artesanalmente con materiales naturales y pelo sintético. salto de linea. Dimensiones: Diámetro maceta 8cm .salto de linea. Altura 10cm',
+			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
 		img: ['/images/naricilla_pescador.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -75,7 +76,7 @@ export const PRODUCT_DATA = [
 		name: 'Bandolero',
 		price: '16€',
 		description:
-			'Descripción: saltodelinea Macetero hecho artesanalmente con materiales naturales, pelo sintético y deversos detalles. salto de linea. Dimensiones: Diámetro maceta 8cm .salto de linea. Altura 10cm',
+			'Macetero hecho artesanalmente con materiales naturales, pelo sintético y deversos detalles. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
 		img: ['/images/naricilla_bandolero.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -86,7 +87,7 @@ export const PRODUCT_DATA = [
 		name: 'Pirata',
 		price: '16€',
 		description:
-			'Descripción: saltodelinea Macetero hecho artesanalmente con materiales naturales, pelo sintético y diversos detalles. salto de linea. Dimensiones: Diámetro maceta 8cm .salto de linea. Altura 10cm',
+			'Macetero hecho artesanalmente con materiales naturales, pelo sintético y diversos detalles. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
 		img: ['/images/naricilla_pirata.jpg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -97,7 +98,7 @@ export const PRODUCT_DATA = [
 		name: 'Barbie',
 		price: '16€',
 		description:
-			'Descripción: saltodelinea Macetero hecho artesanalmente con materiales naturales y pelo sintético. salto de linea. Dimensiones: Diámetro maceta 8cm .salto de linea. Altura 10cm',
+			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
 		img: ['/images/naricilla_barbie.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -108,7 +109,7 @@ export const PRODUCT_DATA = [
 		name: 'Roble',
 		price: '16€',
 		description:
-			'Descripción: saltodelinea Macetero hecho artesanalmente con materiales naturales y pelo sintético. salto de linea. Dimensiones: Diámetro maceta 8cm .salto de linea. Altura 10cm',
+			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
 		img: ['/images/naricilla_roble.jpg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -119,7 +120,7 @@ export const PRODUCT_DATA = [
 		name: 'Sabio',
 		price: '16€',
 		description:
-			'Descripción: saltodelinea Macetero hecho artesanalmente con materiales naturales y pelo sintético. salto de linea. Dimensiones: Diámetro maceta 8cm .salto de linea. Altura 10cm',
+			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
 		img: ['/images/naricilla_sabio.jpg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -130,7 +131,7 @@ export const PRODUCT_DATA = [
 		name: 'Borrachín',
 		price: '16€',
 		description:
-			'Descripción: saltodelinea Macetero hecho artesanalmente con materiales naturales, pelo sintético y diversos detalles. salto de linea. Dimensiones: Diámetro maceta 8cm .salto de linea. Altura 10cm',
+			'Macetero hecho artesanalmente con materiales naturales, pelo sintético y diversos detalles. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
 		img: [
 			'/images/naricilla_borrachin_1.jpeg',
 			'/images/naricilla_borrachin_2.jpeg'
@@ -144,7 +145,7 @@ export const PRODUCT_DATA = [
 		name: 'Vivan los novios',
 		price: '40€',
 		description:
-			'Descripción: saltodelinea Maceteros hecho artesanalmente con materiales naturales y pelo sintético. salto de linea. Dimensiones: Diámetro maceta 8cm .salto de linea. Altura maceta 10cm',
+			'Maceteros hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura maceta 10cm',
 		img: ['/images/naricilla_vivanlosnovios.jpeg'],
 		inputs: ['Color', 'Pelo', 'Detalles']
 	},
@@ -155,7 +156,7 @@ export const PRODUCT_DATA = [
 		name: 'Naricilla del bosque',
 		price: '16€',
 		description:
-			'Descripción: saltodelinea Macetero hecho artesanalmente con materiales naturales y pelo sintético. salto de linea. Dimensiones: Diámetro maceta 8cm .salto de linea. Altura 10cm',
+			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
 		img: ['/images/naricilla_delbosque.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -166,7 +167,7 @@ export const PRODUCT_DATA = [
 		name: 'Escocés',
 		price: '16€',
 		description:
-			'Descripción: saltodelinea Macetero hecho artesanalmente con materiales naturales y pelo sintético. salto de linea. Dimensiones: Diámetro maceta 8cm .salto de linea. Altura 10cm',
+			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
 		img: [
 			'/images/naricilla_escoces_1.jpeg',
 			'/images/naricilla_escoces_2.jpeg'
@@ -180,7 +181,7 @@ export const PRODUCT_DATA = [
 		name: 'Naricilla del pantano',
 		price: '16€',
 		description:
-			'Descripción: saltodelinea Macetero hecho artesanalmente con materiales naturales y pelo sintético. salto de linea. Dimensiones: Diámetro maceta 8cm .salto de linea. Altura 10cm',
+			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
 		img: ['/images/naricilla_delpantano.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
