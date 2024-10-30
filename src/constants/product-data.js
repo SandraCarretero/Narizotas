@@ -7,7 +7,7 @@ export const PRODUCT_DATA = [
 		price: '16€',
 		description:
 			'Macetero hecho artesanalmente con materiales naturales y pelo sintético.\nDimensiones: Diámetro maceta 8cm.\nAltura 10cm',
-		exception:'*Planta no incluida',
+		exception: '*Planta no incluida',
 		img: ['/images/naricilla_alan.jpg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
