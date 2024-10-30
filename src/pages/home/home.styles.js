@@ -25,7 +25,7 @@ const StyledBox = styled.div`
 	text-align: center;
 
 	@media (width > 1300px) {
-		height: 25rem;
+		height: max-content;
 		font-size: 1.375rem;
 		padding-block: 1.5625rem;
 	}

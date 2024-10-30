@@ -82,9 +82,12 @@ const StyledBox = styled.div`
 		:after {
 			background-image: linear-gradient(
 				-180deg,
-				rgba(86, 178, 128, 0) 0%,
+				rgba(86, 178, 128, 0) 50%,
 				rgba(86, 178, 128, 0.8) 100%
 			) !important;
+		}
+		:before {
+			bottom: 0.3125rem;
 		}
 	}
 `;
