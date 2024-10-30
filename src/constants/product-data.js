@@ -181,7 +181,7 @@ export const PRODUCT_DATA = [
 		name: 'Naricilla del pantano',
 		price: '16€',
 		description:
-			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
+			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm.\nAltura 10cm',
 		img: ['/images/naricilla_delpantano.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},

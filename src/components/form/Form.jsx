@@ -53,7 +53,7 @@ const Form = () => {
 					¿No has encontrado lo que buscabas?
 					<br />
 					Cuéntanos tu idea, tus dudas o tus intereses. ¡Nos pondremos en
-					contacto contigo lo antes posible
+					contacto contigo lo antes posible!
 				</p>
 			</StyledText>
 			<StyledForm onSubmit={sendEmail}>
