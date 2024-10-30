@@ -1,6 +1,5 @@
 export const PRODUCT_DATA = [
 	// TIESTOS NARICILLAS
-
 	{
 		section: 'tiestos',
 		subsection: 'naricillas',
@@ -187,7 +186,6 @@ export const PRODUCT_DATA = [
 	},
 
 	// TIESTOS NARIGUDOS
-
 	{
 		section: 'tiestos',
 		subsection: 'narigudos',
@@ -197,6 +195,7 @@ export const PRODUCT_DATA = [
 		img: ['/images/grid-2.png', '/images/grid-4.png', '/images/grid-5.png'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
+
 	// TIESTOS NARIZOTAS
 	{
 		section: 'tiestos',
@@ -209,7 +208,6 @@ export const PRODUCT_DATA = [
 	},
 
 	// GNOMOS GNOMOS
-
 	{
 		section: 'gnomos',
 		subsection: 'gnomos',
