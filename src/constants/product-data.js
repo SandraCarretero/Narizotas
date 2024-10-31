@@ -213,7 +213,7 @@ export const PRODUCT_DATA = [
 		subsection: 'narizotas',
 		name: 'Galan',
 		price: '32.00€',
-		description: 'Maceta colgante con un diseño moderno.',
+		description: 'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles. \n\n<strong>Dimensiones:<strong> \nDiámetro maceta: 17cm \nAltura maceta: 15cm \nLongitud patas (opcional): 30cm \n\n<strong>¿Quieres hacer algún cambio en el diseño?<strong>',
 		img: ['/images/narizota_galan_1.jpeg', '/images/narizota_galan_2.jpeg', '/images/narizota_galan_3.jpeg'],
 		inputs: ['Patas(+5€)', 'Color', 'Pelo', 'Detalles(+5€)']
 	},
