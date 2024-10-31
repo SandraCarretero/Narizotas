@@ -323,15 +323,44 @@ export const PRODUCT_DATA = [
 		inputs: ['Detalles']
 	},
 	
-	    {
+	{
 		section: 'gnomos',
 		subsection: 'gnomos',
 		name: 'Mago',
 		price: '36,00€',
-		description: 'Con su sombrero de arcilla del pantano y su varita blanca, nuestro Mago es capaz de conjurar los hechizos más enrevesados y rocambolescos.\n\n <strong>Dimensiones:<strong> \nAltura: 40cm',
+		description: 'Con su sombrero de arcilla del pantano y su varita blanca, nuestro Mago es capaz de conjurar los hechizos más enrevesados y rocambolescos.\n\n <strong>Dimensiones:<strong> \nAltura: 30cm',
 		img: [
 			'/images/gnomo_mago_1.jpeg',
 			'/images/gnomo_mago_2.jpeg'
+		],
+		inputs: ['Detalles']
+	},
+	
+	{
+		section: 'gnomos',
+		subsection: 'gnomos',
+		name: 'Rosita',
+		price: '36,00€',
+		description: 'Rosita es una narizotas coqueta y risueña, con ganas de jugar, siempre en compañía de su perrito.\n\n <strong>Dimensiones:<strong> \nAltura: 55cm',
+		img: [
+			'/images/gnomo_rosita_1.jpeg',
+			'/images/gnomo_rosita_2.jpeg',
+			'/images/gnomo_rosita_3.jpeg',
+			'/images/gnomo_rosita_4.jpeg'
+		],
+		inputs: ['Detalles']
+	},
+	
+	    {
+		section: 'gnomos',
+		subsection: 'gnomos',
+		name: 'Viki',
+		price: '36,00€',
+		description: 'Directo del Valhalla y bendecido por Odín, Viki llega preparado para todo lo que se presente en su camino. \n\n <strong>Dimensiones:<strong> \nAltura: 36cm',
+		img: [
+			'/images/gnomo_vikingo_1.jpeg',
+			'/images/gnomo_vikingo_2.jpeg',
+			'/images/gnomo_vikingo_3.jpeg'
 		],
 		inputs: ['Detalles']
 	},
@@ -339,10 +368,15 @@ export const PRODUCT_DATA = [
 	{
 		section: 'gnomos',
 		subsection: 'lámparas',
-		name: 'Producto 4',
-		price: '22.00€',
-		description: 'Maceta colgante con un diseño moderno.',
-		img: ['/images/grid-2.png', '/images/grid-4.png', '/images/grid-5.png'],
+		name: 'Espantapájaros',
+		price: '60.00€',
+		description: 'Lámpara elaborada artesanalmente con materiales naturales. \n Luz LED con carga usb incluida \n\n <strong>Dimensiones:<strong> \nAltura: 36cm',
+		img: [
+		    '/images/gnomo_espantapajaros_1.jpeg', 
+		    '/images/gnomo_espantapajaros_2.jpeg',
+			'/images/gnomo_espantapajaros_3.jpeg',
+			'/images/gnomo_espantapajaros_4.jpeg
+		],
 		inputs: ['Detalles']
 	},
 
