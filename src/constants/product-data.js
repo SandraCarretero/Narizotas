@@ -224,7 +224,7 @@ export const PRODUCT_DATA = [
 		subsection: 'gnomos',
 		name: 'Mr Narizotas',
 		price: '36,00€',
-		description: 'Altura: 45cm',
+		description: 'Mr. Narizotas se pasa horas y horas en su taller poniendo un toque de magia en cada uno de nuestros productos. \n\n <strong>Dimensiones:<strong> \nAltura: 45cm',
 		img: [
 			'/images/mrnarizotas-1.jpeg',
 			'/images/mrnarizotas-2.jpeg',
@@ -238,7 +238,7 @@ export const PRODUCT_DATA = [
 		subsection: 'gnomos',
 		name: 'Estrella de Rock',
 		price: '36,00€',
-		description: 'Altura: 40cm',
+		description: 'Comenzó como telonero y actualmente recorre el mundo como uno de los cantantes de rock más famosos del momento. ¿Aún no le conoces?\n\n <strong>Dimensiones:<strong> \nAltura: 40cm',
 		img: [
 			'/images/estrellarock-1.jpeg',
 			'/images/estrellarock-2.jpeg',
@@ -248,7 +248,93 @@ export const PRODUCT_DATA = [
 		],
 		inputs: ['Detalles']
 	},
+	
+	{
+		section: 'gnomos',
+		subsection: 'gnomos',
+		name: 'Piruja',
+		price: '36,00€',
+		description: 'Piruja vive entre sapos y culebras maldiciendo a todo aquel que se cruce en su camino. \n\n <strong>Dimensiones:<strong> \nAltura: 50cm',
+		img: [
+			'/images/gnomo_bruja_1.jpeg',
+			'/images/gnomo_bruja_2.jpeg',
+			'/images/gnomo_bruja_3.jpeg',
+			'/images/gnomo_bruja_4.jpeg'
+		],
+		inputs: ['Detalles']
+	},
+	
+	{
+		section: 'gnomos',
+		subsection: 'gnomos',
+		name: 'Dalmata',
+		price: '36,00€',
+		description: 'El más fiel amigo y compañero, para todos aquellos papás y mamás perrunos. \n\n <strong>Dimensiones:<strong> \nAltura: 30cm',
+		img: [
+			'/images/gnomo_dalmata_1.jpeg',
+			'/images/gnomo_dalamata_2.jpeg',
+			'/images/gnomo_dalmata_3.jpeg',
+			'/images/gnomo_dalmata_4.jpeg'
+		],
+		inputs: ['Detalles']
+	},
+	
+	{
+		section: 'gnomos',
+		subsection: 'gnomos',
+		name: 'Dulce hogar',
+		price: '36,00€',
+		description: 'Como en casa en ningún sitio.\n\n <strong>Dimensiones:<strong> \nAltura: 30cm \nPatas: 20cm',
+		img: [
+			'/images/gnomo_dulcehogar_1.jpeg',
+			'/images/gnomo_dulcehogar_2.jpeg',
+			'/images/gnomo_dulcehogar_3.jpeg'
+		],
+		inputs: ['Detalles']
+	},
 
+    {
+		section: 'gnomos',
+		subsection: 'gnomos',
+		name: 'Irlandés',
+		price: '36,00€',
+		description: 'Nuestro narizotas Irlandés viene de las tierras altas de Escocia, y trae con él la alegría y la fortuna de los Leprechaun.\n\n <strong>Dimensiones:<strong> \nAltura: 30cm',
+		img: [
+			'/images/gnomo_irlandes_1.jpeg',
+			'/images/gnomo_irlandes_2.jpeg',
+			'/images/gnomo_irlandes_3.jpeg',
+			'/images/gnomo_irlandes_4.jpeg'
+		],
+		inputs: ['Detalles']
+	},
+	
+	{
+		section: 'gnomos',
+		subsection: 'gnomos',
+		name: 'Maestro del tiempo',
+		price: '36,00€',
+		description: 'En todas partes y en ninguna, el Maestro del Tiempo controla el pasado, presente y futuro.\n\n <strong>Dimensiones:<strong> \nAltura: 50cm',
+		img: [
+			'/images/gnomo_maestrodeltiempo_1.jpeg',
+			'/images/gnomo_maestrodeltiempo_2.jpeg',
+			'/images/gnomo_maestrodeltiempo_3.jpeg',
+			'/images/gnomo_maestrodeltiempo_4.jpeg'
+		],
+		inputs: ['Detalles']
+	},
+	
+	    {
+		section: 'gnomos',
+		subsection: 'gnomos',
+		name: 'Mago',
+		price: '36,00€',
+		description: 'Con su sombrero de arcilla del pantano y su varita blanca, nuestro Mago es capaz de conjurar los hechizos más enrevesados y rocambolescos.\n\n <strong>Dimensiones:<strong> \nAltura: 40cm',
+		img: [
+			'/images/gnomo_mago_1.jpeg',
+			'/images/gnomo_mago_2.jpeg'
+		],
+		inputs: ['Detalles']
+	},
 	// GNOMOS LAMPARAS
 	{
 		section: 'gnomos',
