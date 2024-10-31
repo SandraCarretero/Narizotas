@@ -132,7 +132,7 @@ export const PRODUCT_DATA = [
 		price: '16€',
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n\nDimensiones: \nDiámetro maceta 8cm \nAltura 10cm',
-		img: ['/images/naricilla_araña.jepg'],
+		img: ['/images/naricilla_araña.jpeg'],
 		inputs: ['Pelo', 'Detalles']
 	},
 	{
