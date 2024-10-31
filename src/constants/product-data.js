@@ -4,9 +4,9 @@ export const PRODUCT_DATA = [
 		section: 'tiestos',
 		subsection: 'naricillas',
 		name: 'Alan',
-		price: '16€',
+		price: '16.00€',
 		description:
-			'Macetero hecho artesanalmente con materiales naturales y pelo sintético.\nDimensiones: Diámetro maceta 8cm.\nAltura 10cm',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n\n<strong>Dimensiones:<strong> \nDiámetro maceta: 8cm \nAltura: 10cm \n\n<strong>¿Quieres hacer algún cambio en el diseño?<strong>',
 		exception: '*Planta no incluida',
 		img: ['/images/naricilla_alan.jpg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
@@ -16,9 +16,9 @@ export const PRODUCT_DATA = [
 		section: 'tiestos',
 		subsection: 'naricillas',
 		name: 'Arcoiris',
-		price: '16€',
+		price: '16.00€',
 		description:
-			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n\n<strong>Dimensiones:<strong> \nDiámetro maceta: 8cm \nAltura: 10cm \n\n<strong>¿Quieres hacer algún cambio en el diseño?<strong>',
 		img: [
 			'/images/naricilla_arcoiris_1.jpeg',
 			'/images/naricilla_arcoiris_2.jpeg'
@@ -30,9 +30,9 @@ export const PRODUCT_DATA = [
 		section: 'tiestos',
 		subsection: 'naricillas',
 		name: 'Babu',
-		price: '16€',
+		price: '16.00€',
 		description:
-			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n\n<strong>Dimensiones:<strong> \nDiámetro maceta: 8cm \nAltura: 10cm \n\n<strong>¿Quieres hacer algún cambio en el diseño?<strong>',
 		img: ['/images/naricilla_babu.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -41,7 +41,7 @@ export const PRODUCT_DATA = [
 		section: 'tiestos',
 		subsection: 'naricillas',
 		name: 'Gruñón',
-		price: '16€',
+		price: '16.00€',
 		description:
 			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
 		img: ['/images/naricilla_gruñon.jpeg'],
@@ -52,9 +52,9 @@ export const PRODUCT_DATA = [
 		section: 'tiestos',
 		subsection: 'naricillas',
 		name: 'Hula',
-		price: '16€',
+		price: '16.00€',
 		description:
-			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n\n<strong>Dimensiones:<strong> \nDiámetro maceta: 8cm \nAltura: 10cm \n\n<strong>¿Quieres hacer algún cambio en el diseño?<strong>',
 		img: ['/images/naricilla_hula.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -63,9 +63,9 @@ export const PRODUCT_DATA = [
 		section: 'tiestos',
 		subsection: 'naricillas',
 		name: 'Pescador',
-		price: '16€',
+		price: '16.00€',
 		description:
-			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n\n<strong>Dimensiones:<strong> \nDiámetro maceta: 8cm \nAltura: 10cm \n\n<strong>¿Quieres hacer algún cambio en el diseño?<strong>',
 		img: ['/images/naricilla_pescador.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -74,9 +74,9 @@ export const PRODUCT_DATA = [
 		section: 'tiestos',
 		subsection: 'naricillas',
 		name: 'Bandolero',
-		price: '16€',
+		price: '16.00€',
 		description:
-			'Macetero hecho artesanalmente con materiales naturales, pelo sintético y deversos detalles. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
+			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles. \n\n<strong>Dimensiones:<strong> \nDiámetro maceta: 8cm \nAltura: 10cm \n\n<strong>¿Quieres hacer algún cambio en el diseño?<strong>',
 		img: ['/images/naricilla_bandolero.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -85,9 +85,9 @@ export const PRODUCT_DATA = [
 		section: 'tiestos',
 		subsection: 'naricillas',
 		name: 'Pirata',
-		price: '16€',
+		price: '16.00€',
 		description:
-			'Macetero hecho artesanalmente con materiales naturales, pelo sintético y diversos detalles. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n\n<strong>Dimensiones:<strong> \nDiámetro maceta: 8cm \nAltura: 10cm \n\n<strong>¿Quieres hacer algún cambio en el diseño?<strong>',
 		img: ['/images/naricilla_pirata.jpg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -96,9 +96,9 @@ export const PRODUCT_DATA = [
 		section: 'tiestos',
 		subsection: 'naricillas',
 		name: 'Barbie',
-		price: '16€',
+		price: '16.00€',
 		description:
-			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n\n<strong>Dimensiones:<strong> \nDiámetro maceta: 8cm \nAltura: 10cm \n\n<strong>¿Quieres hacer algún cambio en el diseño?<strong>',
 		img: ['/images/naricilla_barbie.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -107,9 +107,9 @@ export const PRODUCT_DATA = [
 		section: 'tiestos',
 		subsection: 'naricillas',
 		name: 'Roble',
-		price: '16€',
+		price: '16.00€',
 		description:
-			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n\n<strong>Dimensiones:<strong> \nDiámetro maceta: 8cm \nAltura: 10cm \n\n<strong>¿Quieres hacer algún cambio en el diseño?<strong>',
 		img: ['/images/naricilla_roble.jpg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -118,9 +118,9 @@ export const PRODUCT_DATA = [
 		section: 'tiestos',
 		subsection: 'naricillas',
 		name: 'Sabio',
-		price: '16€',
+		price: '16.00€',
 		description:
-			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n\n<strong>Dimensiones:<strong> \nDiámetro maceta: 8cm \nAltura: 10cm \n\n<strong>¿Quieres hacer algún cambio en el diseño?<strong>',
 		img: ['/images/naricilla_sabio.jpg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -129,9 +129,9 @@ export const PRODUCT_DATA = [
 		section: 'tiestos',
 		subsection: 'naricillas',
 		name: 'Araña',
-		price: '16€',
+		price: '16.00€',
 		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n\nDimensiones: \nDiámetro maceta: 8cm \nAltura: 10cm \n\n<strong>¿Quieres hacer algún cambio en el diseño?<strong>',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n\n<strong>Dimensiones:<strong> \nDiámetro maceta: 8cm \nAltura: 10cm \n\n<strong>¿Quieres hacer algún cambio en el diseño?<strong>',
 		img: ['/images/naricilla_araña.jpeg'],
 		inputs: ['Pelo', 'Detalles']
 	},
@@ -140,9 +140,9 @@ export const PRODUCT_DATA = [
 		section: 'tiestos',
 		subsection: 'naricillas',
 		name: 'Borrachín',
-		price: '16€',
+		price: '16.00€',
 		description:
-			'Macetero hecho artesanalmente con materiales naturales, pelo sintético y diversos detalles. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
+			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles. \n\n<strong>Dimensiones:<strong> \nDiámetro maceta: 8cm \nAltura: 10cm \n\n<strong>¿Quieres hacer algún cambio en el diseño?<strong>',
 		img: [
 			'/images/naricilla_borrachin_1.jpeg',
 			'/images/naricilla_borrachin_2.jpeg'
@@ -153,19 +153,8 @@ export const PRODUCT_DATA = [
 	{
 		section: 'tiestos',
 		subsection: 'naricillas',
-		name: 'Vivan los novios',
-		price: '40€',
-		description:
-			'Maceteros hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura maceta 10cm',
-		img: ['/images/naricilla_vivanlosnovios.jpeg'],
-		inputs: ['Color', 'Pelo', 'Detalles']
-	},
-
-	{
-		section: 'tiestos',
-		subsection: 'naricillas',
 		name: 'Naricilla del bosque',
-		price: '16€',
+		price: '16.00€',
 		description:
 			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
 		img: ['/images/naricilla_delbosque.jpeg'],
@@ -176,7 +165,7 @@ export const PRODUCT_DATA = [
 		section: 'tiestos',
 		subsection: 'naricillas',
 		name: 'Escocés',
-		price: '16€',
+		price: '16.00€',
 		description:
 			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm .\nAltura 10cm',
 		img: [
@@ -190,13 +179,23 @@ export const PRODUCT_DATA = [
 		section: 'tiestos',
 		subsection: 'naricillas',
 		name: 'Naricilla del pantano',
-		price: '16€',
+		price: '16.00€',
 		description:
 			'Macetero hecho artesanalmente con materiales naturales y pelo sintético. \nDimensiones: Diámetro maceta 8cm.\nAltura 10cm',
 		img: ['/images/naricilla_delpantano.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
 
+    {
+		section: 'tiestos',
+		subsection: 'naricillas',
+		name: 'Vivan los novios',
+		price: '50.00€',
+		description:
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n\n<strong>Dimensiones:<strong> \nDiámetro maceta: 8cm \nAltura maceta: 10cm \n\n<strong>¿Quieres hacer algún cambio en el diseño?<strong>',
+		img: ['/images/naricilla_vivanlosnovios.jpeg'],
+		inputs: ['Color', 'Pelo', 'Detalles']
+	},
 	// TIESTOS NARIGUDOS
 	{
 		section: 'tiestos',
@@ -212,11 +211,11 @@ export const PRODUCT_DATA = [
 	{
 		section: 'tiestos',
 		subsection: 'narizotas',
-		name: 'Producto 3',
-		price: '22.00€',
+		name: 'Galan',
+		price: '32.00€',
 		description: 'Maceta colgante con un diseño moderno.',
-		img: ['/images/grid-2.png', '/images/grid-4.png', '/images/grid-5.png'],
-		inputs: ['Detalles']
+		img: ['/images/narizota_galan_1.jpeg', '/images/narizota_galan_2.jpeg', '/images/narizota_galan_3.jpeg'],
+		inputs: ['Patas(+5€)', 'Color', 'Pelo', 'Detalles(+5€)']
 	},
 
 	// GNOMOS GNOMOS
@@ -278,5 +277,16 @@ export const PRODUCT_DATA = [
 		inputs: ['Detalles']
 	}
 
+    // EVENTOS
+	{
+		section: 'eventos',
+		subsection: '',
+		name: 'Vivan los novios',
+		price: '50€',
+		description:
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n\n<strong>Dimensiones:<strong> \nDiámetro maceta: 8cm \nAltura maceta: 10cm \n\n<strong>¿Quieres hacer algún cambio en el diseño?<strong>',
+		img: ['/images/naricilla_vivanlosnovios.jpeg'],
+		inputs: ['Color', 'Pelo', 'Detalles']
+	},
 	// PERSONALIZACIONES
 ];
