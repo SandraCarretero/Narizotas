@@ -21,11 +21,11 @@ import {
 	StyledImgBig,
 	StyledException
 } from './product.styles';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
+
 const Product = () => {
 	const { section, productName } = useParams();
-
 	const product = PRODUCT_DATA.find(
 		p => p.section === section && p.name === productName
 	);
@@ -36,11 +36,27 @@ const Product = () => {
 		pelo: '',
 		detalles: ''
 	});
-
+	const [formErrors, setFormErrors] = useState({
+		patas: false,
+		color: false,
+		pelo: false
+	});
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const [userEmail, setUserEmail] = useState('');
+	const [emailError, setEmailError] = useState(false);
+	const [totalPrice, setTotalPrice] = useState(product?.price || 0);
 
-	const patasOptions = ['Sí', 'No'];
+	useEffect(() => {
+		let newTotalPrice = product.price;
+		if (formValues.patas === 'si') newTotalPrice += 3;
+		if (formValues.detalles.trim()) newTotalPrice += 5;
+		setTotalPrice(newTotalPrice);
+	}, [formValues, product.price]);
+
+	const patasOptions = [
+		{ value: 'si', label: 'Sí (+3€)' },
+		{ value: 'no', label: 'No' }
+	];
 	const colorOptions = [
 		'Amarillo',
 		'Blanco',
@@ -74,14 +90,30 @@ const Product = () => {
 
 	const handleSubmit = e => {
 		e.preventDefault();
+
+		const errors = {
+			patas: product.inputs.includes('Patas') && formValues.patas === '',
+			color:
+				product.inputs.includes('Color') &&
+				formValues.patas === 'si' &&
+				formValues.color === '',
+			pelo: product.inputs.includes('Pelo') && formValues.pelo === ''
+		};
+
+		setFormErrors(errors);
+
+		const hasErrors = Object.values(errors).some(error => error);
+		if (hasErrors) return;
+
 		setIsModalOpen(true);
 	};
 
 	const sendEmail = () => {
-		if (!userEmail) {
-			alert('Por favor, introduce tu correo electrónico.');
+		if (!userEmail || !isEmailValid(userEmail)) {
+			setEmailError(true);
 			return;
 		}
+
 		const templateParams = {
 			from_name: userEmail,
 			to_name: 'artesanialascositasdelamari@gmail.com',
@@ -111,6 +143,18 @@ const Product = () => {
 			});
 	};
 
+	const handleEmailChange = e => {
+		setUserEmail(e.target.value);
+		if (emailError && isEmailValid(e.target.value)) {
+			setEmailError(false);
+		}
+	};
+
+	const isEmailValid = email => {
+		const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+		return emailRegex.test(email);
+	};
+
 	return (
 		<StyledContainerProduct>
 			<StyledImageContainer>
@@ -130,7 +174,7 @@ const Product = () => {
 			<StyledForm onSubmit={handleSubmit}>
 				<StyledInfo>
 					<StyledName>{product.name}</StyledName>
-					<StyledPrice>{product.price}</StyledPrice>
+					<StyledPrice>{product.price}€</StyledPrice>
 				</StyledInfo>
 				<p
 					dangerouslySetInnerHTML={{
@@ -138,65 +182,75 @@ const Product = () => {
 					}}
 				/>
 				<StyledFormContainer>
-					{product.inputs.map(input => (
-						<StyledInputContainer key={input}>
-							<label>{input}</label>
-							{input === 'Patas' && (
-								<StyledInput
-									name='patas'
-									value={formValues.patas}
-									onChange={handleInputChange}
-								>
-									<option value=''>Patas</option>
-									{patasOptions.map(patas => (
-										<option key={patas} value={patas}>
-											{patas}
-										</option>
-									))}
-								</StyledInput>
-							)}
-
-							{input === 'Color' && (
-								<StyledInput
-									name='color'
-									value={formValues.color}
-									onChange={handleInputChange}
-									disabled={formValues.patas === 'No'}
-								>
-									<option value=''>Color Patas</option>
-									{colorOptions.map(color => (
-										<option key={color} value={color}>
-											{color}
-										</option>
-									))}
-								</StyledInput>
-							)}
-
-							{input === 'Pelo' && (
-								<StyledInput
-									name='pelo'
-									value={formValues.pelo}
-									onChange={handleInputChange}
-								>
-									<option value=''>Color pelo</option>
-									{peloOptions.map(pelo => (
-										<option key={pelo} value={pelo}>
-											{pelo}
-										</option>
-									))}
-								</StyledInput>
-							)}
-
-							{input === 'Detalles' && (
-								<StyledTextarea
-									name='detalles'
-									value={formValues.detalles}
-									onChange={handleInputChange}
-									placeholder='¿Quieres algún detalle?'
-								/>
-							)}
+					{product.inputs.includes('Patas') && (
+						<StyledInputContainer key='patas'>
+							<label>Patas {formValues.patas === 'si' && '+3€'}</label>
+							<StyledInput
+								name='patas'
+								value={formValues.patas}
+								onChange={handleInputChange}
+								error={formErrors.patas}
+							>
+								<option value=''>Selecciona</option>
+								{patasOptions.map(option => (
+									<option key={option.value} value={option.value}>
+										{option.label}
+									</option>
+								))}
+							</StyledInput>
 						</StyledInputContainer>
-					))}
+					)}
+
+					{product.inputs.includes('Color') && (
+						<StyledInputContainer key='color'>
+							<label>Color Patas</label>
+							<StyledInput
+								name='color'
+								value={formValues.color}
+								onChange={handleInputChange}
+								disabled={formValues.patas === 'no'}
+								error={formErrors.color}
+							>
+								<option value=''>Color Patas</option>
+								{colorOptions.map(color => (
+									<option key={color} value={color}>
+										{color}
+									</option>
+								))}
+							</StyledInput>
+						</StyledInputContainer>
+					)}
+
+					{product.inputs.includes('Pelo') && (
+						<StyledInputContainer key='pelo'>
+							<label>Color Pelo</label>
+							<StyledInput
+								name='pelo'
+								value={formValues.pelo}
+								onChange={handleInputChange}
+								error={formErrors.pelo}
+							>
+								<option value=''>Color pelo</option>
+								{peloOptions.map(pelo => (
+									<option key={pelo} value={pelo}>
+										{pelo}
+									</option>
+								))}
+							</StyledInput>
+						</StyledInputContainer>
+					)}
+
+					{product.inputs.includes('Detalles') && (
+						<StyledInputContainer key='detalles'>
+							<label>Detalles {formValues.detalles && '+5€'}</label>
+							<StyledTextarea
+								name='detalles'
+								value={formValues.detalles}
+								onChange={handleInputChange}
+								placeholder='¿Quieres algún detalle? (+5€)'
+							/>
+						</StyledInputContainer>
+					)}
 				</StyledFormContainer>
 				<StyledButton type='submit'>Enviar pedido</StyledButton>
 			</StyledForm>
@@ -208,33 +262,46 @@ const Product = () => {
 							<img src='/images/cross.svg' alt='Cerrar menú' width='20' />
 						</StyledCloseButton>
 						<h3>Confirmación de Pedido</h3>
-						<p>
-							<strong>Patas:</strong> {formValues.patas}
-						</p>
-						{formValues.patas === 'Sí' && (
+						{product.inputs.includes('Patas') && (
+							<p>
+								<strong>Patas:</strong> {formValues.patas}
+							</p>
+						)}
+
+						{formValues.patas === 'si' && product.inputs.includes('Color') && (
 							<p>
 								<strong>Color patas:</strong> {formValues.color}
 							</p>
 						)}
-						<p>
-							<strong>Pelo:</strong> {formValues.pelo}
-						</p>
-						{formValues.detalles && formValues.detalles.trim() !== '' && (
+
+						{product.inputs.includes('Pelo') && (
 							<p>
-								<strong>Detalles:</strong> {formValues.detalles}
+								<strong>Pelo:</strong> {formValues.pelo}
 							</p>
 						)}
+
+						{product.inputs.includes('Detalles') &&
+							formValues.detalles.trim() !== '' && (
+								<p>
+									<strong>Detalles:</strong> {formValues.detalles}
+								</p>
+							)}
+
+						<p>
+							<strong>Precio:</strong> {totalPrice}€
+						</p>
 						<StyledException>{product.exception}</StyledException>
 
 						<label>Introduce tu correo electrónico:</label>
 						<StyledInputMail
 							type='email'
 							value={userEmail}
-							onChange={e => setUserEmail(e.target.value)}
+							onChange={handleEmailChange}
 							placeholder='Tu correo electrónico'
+							className={emailError ? 'invalid' : ''}
 						/>
 
-						<StyledButton onClick={sendEmail}>Enviar al correo</StyledButton>
+						<StyledButton onClick={sendEmail}>Enviar correo</StyledButton>
 					</StyledModalContent>
 				</StyledModal>
 			)}

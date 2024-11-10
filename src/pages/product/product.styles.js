@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 
 const StyledContainerProduct = styled.div`
 	display: flex;
@@ -92,9 +92,15 @@ const StyledInputContainer = styled.div`
 	}
 `;
 
+const shake = keyframes`
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+`;
+
 const StyledInput = styled.select`
 	padding: 0.625rem;
-	border: 0.125rem solid #f4a08d;
+	border: 0.125rem solid ${({ error }) => (error ? 'red' : '#f4a08d')};
 	border-radius: 0.5rem;
 	font-size: 1rem;
 	color: #000;
@@ -104,6 +110,19 @@ const StyledInput = styled.select`
 	&:focus {
 		outline: none;
 		border-color: #f29382;
+	}
+
+	${({ error }) =>
+		error &&
+		css`
+			animation: ${shake} 0.3s linear;
+		`}
+
+	&:disabled {
+		background-color: #f0f0f0;
+		color: #999;
+		cursor: not-allowed;
+		border-color: #ddd;
 	}
 `;
 
@@ -177,6 +196,29 @@ const StyledInputMail = styled.input`
 	&:focus {
 		outline: none;
 		border-color: #f29382;
+	}
+
+	&.invalid {
+		border-color: red;
+		animation: shake 0.5s ease-in-out;
+	}
+
+	@keyframes shake {
+		0% {
+			transform: translateX(0);
+		}
+		25% {
+			transform: translateX(-5px);
+		}
+		50% {
+			transform: translateX(5px);
+		}
+		75% {
+			transform: translateX(-5px);
+		}
+		100% {
+			transform: translateX(0);
+		}
 	}
 `;
 
