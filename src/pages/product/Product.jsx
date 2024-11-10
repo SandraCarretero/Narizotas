@@ -28,6 +28,7 @@ const Product = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
+	
 	const { section, productName } = useParams();
 	const product = PRODUCT_DATA.find(
 		p => p.section === section && p.name === productName

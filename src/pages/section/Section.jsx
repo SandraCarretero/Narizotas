@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import ProductCard from '../../components/productCard/ProductCard';
 import { PRODUCT_DATA } from '../../constants/product-data';
 import {
@@ -7,6 +8,10 @@ import {
 } from './section.styles';
 
 const Section = ({ section, subsection }) => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	const products = PRODUCT_DATA.filter(product => {
 		if (subsection) {
 			return (
