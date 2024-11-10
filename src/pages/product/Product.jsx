@@ -28,7 +28,7 @@ const Product = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
-	
+
 	const { section, productName } = useParams();
 	const product = PRODUCT_DATA.find(
 		p => p.section === section && p.name === productName
@@ -294,7 +294,10 @@ const Product = () => {
 						<p>
 							<strong>Precio:</strong> {totalPrice}€
 						</p>
-						<StyledException>{product.exception}</StyledException>
+						<StyledException>
+							{product.exception ||
+								(product.section === 'tiestos' ? '*Planta no incluida' : '')}
+						</StyledException>
 
 						<label>Introduce tu correo electrónico:</label>
 						<StyledInputMail
