@@ -49,6 +49,8 @@ const Product = () => {
 	const [userEmail, setUserEmail] = useState('');
 	const [emailError, setEmailError] = useState(false);
 	const [totalPrice, setTotalPrice] = useState(product?.price || 0);
+	const [isOrderSent, setIsOrderSent] = useState(false);
+	const [isError, setIsError] = useState(false);
 
 	useEffect(() => {
 		let newTotalPrice = product.price;
@@ -120,7 +122,7 @@ const Product = () => {
 
 		const templateParams = {
 			from_name: userEmail,
-			to_name: 'artesanialascositasdelamari@gmail.com',
+			to_name: 'narizotas.artesania@gmail.com',
 			subject: `Pedido de ${product.name}`,
 			patas: formValues.patas,
 			color: formValues.color,
@@ -136,14 +138,13 @@ const Product = () => {
 				'urkRLRy5TqhfT62de'
 			)
 			.then(response => {
-				alert('Correo enviado correctamente!');
-				setIsModalOpen(false);
+				setIsOrderSent(true);
 				setUserEmail('');
 				setFormValues({ patas: '', color: '', pelo: '', detalles: '' });
 			})
 			.catch(err => {
+				setIsError(true);
 				console.log('Error al enviar el correo:', err);
-				alert('Hubo un error al enviar el correo.');
 			});
 	};
 
@@ -265,50 +266,72 @@ const Product = () => {
 						<StyledCloseButton onClick={() => setIsModalOpen(false)}>
 							<img src='/images/cross.svg' alt='Cerrar menú' width='20' />
 						</StyledCloseButton>
-						<h3>Confirmación de Pedido</h3>
-						{product.inputs.includes('Patas') && (
-							<p>
-								<strong>Patas:</strong> {formValues.patas}
-							</p>
-						)}
 
-						{formValues.patas === 'si' && product.inputs.includes('Color') && (
-							<p>
-								<strong>Color patas:</strong> {formValues.color}
-							</p>
-						)}
-
-						{product.inputs.includes('Pelo') && (
-							<p>
-								<strong>Pelo:</strong> {formValues.pelo}
-							</p>
-						)}
-
-						{product.inputs.includes('Detalles') &&
-							formValues.detalles.trim() !== '' && (
+						{isOrderSent ? (
+							<>
+								<h3>¡Muchísimas gracias!</h3>
 								<p>
-									<strong>Detalles:</strong> {formValues.detalles}
+									Su pedido se ha enviado correctamente, a lo largo del día
+									recibirá un mail con su pedido y detalles.
 								</p>
-							)}
+								<img
+									src='/images/thank-you-image.jpg'
+									alt='Gracias'
+									width='200'
+								/>
+							</>
+						) : isError ? (
+							<>
+								<h3>Ups... algo ha fallado</h3>
+								<p>Vuelva a hacer la petición por favor.</p>
+								<img src='/images/error-image.jpg' alt='Error' width='200' />
+							</>
+						) : (
+							<>
+								<h3>Confirmación de Pedido</h3>
+								{product.inputs.includes('Patas') && (
+									<p>
+										<strong>Patas:</strong> {formValues.patas}
+									</p>
+								)}
 
-						<p>
-							<strong>Precio:</strong> {totalPrice}€
-						</p>
-						<StyledException>
-							{product.exception ||
-								(product.section === 'tiestos' ? '*Planta no incluida' : '')}
-						</StyledException>
+								{formValues.patas === 'Sí' &&
+									product.inputs.includes('Color') && (
+										<p>
+											<strong>Color patas:</strong> {formValues.color}
+										</p>
+									)}
 
-						<label>Introduce tu correo electrónico:</label>
-						<StyledInputMail
-							type='email'
-							value={userEmail}
-							onChange={handleEmailChange}
-							placeholder='Tu correo electrónico'
-							className={emailError ? 'invalid' : ''}
-						/>
+								{product.inputs.includes('Pelo') && (
+									<p>
+										<strong>Pelo:</strong> {formValues.pelo}
+									</p>
+								)}
 
-						<StyledButton onClick={sendEmail}>Enviar correo</StyledButton>
+								{product.inputs.includes('Detalles') &&
+									formValues.detalles.trim() !== '' && (
+										<p>
+											<strong>Detalles:</strong> {formValues.detalles}
+										</p>
+									)}
+
+								<p>
+									<strong>Precio:</strong> {totalPrice}€
+								</p>
+								<StyledException>{product.exception}</StyledException>
+
+								<label>Introduce tu correo electrónico:</label>
+								<StyledInputMail
+									type='email'
+									value={userEmail}
+									onChange={handleEmailChange}
+									placeholder='Tu correo electrónico'
+									className={emailError ? 'invalid' : ''}
+								/>
+
+								<StyledButton onClick={sendEmail}>Enviar correo</StyledButton>
+							</>
+						)}
 					</StyledModalContent>
 				</StyledModal>
 			)}
