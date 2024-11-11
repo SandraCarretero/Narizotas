@@ -6,7 +6,7 @@ export const PRODUCT_DATA = [
 		name: 'Alan',
 		price: 16,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:>strong>\nDiámetro maceta: 8cm\nAltura: 10cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de la fotografía',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:>strong>\nDiámetro maceta: 8cm\nAltura: 10cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de la imágenes',
 		exception: '*Planta no incluida',
 		img: ['/images/naricilla_alan.jpg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
