@@ -18,7 +18,7 @@ const ProductCard = ({ section, name, price, img }) => {
 			<StyledImage src={img[0]} alt={name} />
 			<StyledContainerInfo>
 				<span>{name}</span>
-				<StyledPrice>{price}</StyledPrice>
+				<StyledPrice>{price}€</StyledPrice>
 			</StyledContainerInfo>
 		</StyledCard>
 	);
