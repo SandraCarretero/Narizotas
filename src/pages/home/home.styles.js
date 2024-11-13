@@ -6,9 +6,11 @@ const StyledContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url(/images/header.png);
+	background-image: ${({ currentImage }) => `url(${currentImage})`};
 	background-size: cover;
+	background-position-x: center;
 	background-repeat: no-repeat;
+	transition: background-image 0.5s ease-in-out, opacity 0.5s ease-in-out;
 
 	@media (width < 768px) {
 		height: calc(100vh - 9.375rem);

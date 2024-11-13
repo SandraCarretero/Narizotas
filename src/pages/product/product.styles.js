@@ -99,6 +99,8 @@ const shake = keyframes`
 `;
 
 const StyledInput = styled.select`
+	-webkit-appearance: none;
+	appearance: none;
 	padding: 0.625rem;
 	border: 0.125rem solid ${({ error }) => (error ? 'red' : '#f4a08d')};
 	border-radius: 0.5rem;
@@ -106,6 +108,12 @@ const StyledInput = styled.select`
 	color: #000;
 	width: 100%;
 	box-sizing: border-box;
+
+	padding-right: 24px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'%3E%3C/path%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 8px center;
+	background-size: 12px;
 
 	&:focus {
 		outline: none;
@@ -136,6 +144,7 @@ const StyledTextarea = styled.textarea`
 	box-sizing: border-box;
 	resize: none;
 	height: 6.25rem;
+	text-transform: capitalize;
 
 	&:focus {
 		outline: none;
@@ -158,6 +167,16 @@ const StyledButton = styled.button`
 	&:hover {
 		background-color: #e07a6a;
 	}
+`;
+
+const StyledContainerModal = styled.div`
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background: #0000009c;
+	z-index: 10000;
+	top: 0;
+	left: 0;
 `;
 
 const StyledModal = styled.div`
@@ -236,6 +255,11 @@ const StyledCloseButton = styled.button`
 	cursor: pointer;
 `;
 
+const StyledPoint = styled.p`
+	margin: 5px 0;
+	text-transform: capitalize;
+`;
+
 export {
 	StyledContainerProduct,
 	StyledImageContainer,
@@ -252,9 +276,11 @@ export {
 	StyledInput,
 	StyledTextarea,
 	StyledButton,
+	StyledContainerModal,
 	StyledModal,
 	StyledInputMail,
 	StyledModalContent,
 	StyledException,
-	StyledCloseButton
+	StyledCloseButton,
+	StyledPoint
 };

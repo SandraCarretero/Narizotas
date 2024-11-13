@@ -7,7 +7,8 @@ import {
 	StyledArrowIcon,
 	StyledHamburgerButton,
 	StyledMobileMenu,
-	StyledCloseButton
+	StyledCloseButton,
+	StyledNavLink
 } from './nav.styles';
 import { useState } from 'react';
 
@@ -47,36 +48,42 @@ const Nav = () => {
 				<StyledCloseButton onClick={() => setIsMenuOpen(false)}>
 					<img src='/images/cross.svg' alt='Cerrar menú' width='20' />
 				</StyledCloseButton>
+
 				<StyledList>
-					{/* Tiestos */}
+					<StyledMenuItem>
+						<StyledNavLink onClick={closeMenu} to='/navidad'>
+							Navidad
+						</StyledNavLink>
+					</StyledMenuItem>
+					{/* Maceta */}
 					<StyledMenuItem
 						{...(!isMobile && {
-							onMouseEnter: () => toggleDropdown('tiestos'),
-							onMouseLeave: () => toggleDropdown('tiestos')
+							onMouseEnter: () => toggleDropdown('macetas'),
+							onMouseLeave: () => toggleDropdown('macetas')
 						})}
 					>
-						<NavLink onClick={closeMenu} to='/tiestos'>
-							Tiestos
+						<NavLink onClick={closeMenu} to='/macetas'>
+							Macetas
 						</NavLink>
 						<StyledArrowIcon
 							src='/images/arrow.svg'
 							alt='flecha abajo'
-							onClick={() => toggleDropdown('tiestos')}
+							onClick={() => toggleDropdown('macetas')}
 						/>
-						{dropdownVisible.tiestos && (
+						{dropdownVisible.macetas && (
 							<StyledDropdownList>
 								<StyledMenuItem>
-									<NavLink onClick={closeMenu} to='/tiestos/naricillas'>
+									<NavLink onClick={closeMenu} to='/macetas/naricillas'>
 										Naricillas
 									</NavLink>
 								</StyledMenuItem>
 								<StyledMenuItem>
-									<NavLink onClick={closeMenu} to='/tiestos/narigudos'>
+									<NavLink onClick={closeMenu} to='/macetas/narigudos'>
 										Narigudos
 									</NavLink>
 								</StyledMenuItem>
 								<StyledMenuItem>
-									<NavLink onClick={closeMenu} to='/tiestos/narizotas'>
+									<NavLink onClick={closeMenu} to='/macetas/narizotas'>
 										Narizotas
 									</NavLink>
 								</StyledMenuItem>

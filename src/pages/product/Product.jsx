@@ -19,7 +19,9 @@ import {
 	StyledPrice,
 	StyledImageContainer,
 	StyledImgBig,
-	StyledException
+	StyledException,
+	StyledPoint,
+	StyledContainerModal
 } from './product.styles';
 import { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
@@ -261,79 +263,82 @@ const Product = () => {
 			</StyledForm>
 
 			{isModalOpen && (
-				<StyledModal>
-					<StyledModalContent>
-						<StyledCloseButton onClick={() => setIsModalOpen(false)}>
-							<img src='/images/cross.svg' alt='Cerrar menú' width='20' />
-						</StyledCloseButton>
+				<StyledContainerModal>
+					<StyledModal>
+						<StyledModalContent>
+							<StyledCloseButton onClick={() => setIsModalOpen(false)}>
+								<img src='/images/cross.svg' alt='Cerrar menú' width='20' />
+							</StyledCloseButton>
 
-						{isOrderSent ? (
-							<>
-								<h3>¡Muchísimas gracias!</h3>
-								<p>
-									Su pedido se ha enviado correctamente, a lo largo del día
-									recibirá un mail con su pedido y detalles.
-								</p>
-								<img
-									src='/images/thank-you-image.jpg'
-									alt='Gracias'
-									width='200'
-								/>
-							</>
-						) : isError ? (
-							<>
-								<h3>Ups... algo ha fallado</h3>
-								<p>Vuelva a hacer la petición por favor.</p>
-								<img src='/images/error-image.jpg' alt='Error' width='200' />
-							</>
-						) : (
-							<>
-								<h3>Confirmación de Pedido</h3>
-								{product.inputs.includes('Patas') && (
+							{isOrderSent ? (
+								<>
+									<h3>¡Muchísimas gracias!</h3>
 									<p>
-										<strong>Patas:</strong> {formValues.patas}
+										Su pedido se ha enviado correctamente, a lo largo del día
+										recibirá un mail con su pedido y detalles.
 									</p>
-								)}
+									<img
+										src='/images/thank-you-image.jpg'
+										alt='Gracias'
+										width='200'
+									/>
+								</>
+							) : isError ? (
+								<>
+									<h3>Ups... algo ha fallado</h3>
+									<p>Vuelva a hacer la petición por favor.</p>
+									<img src='/images/error-image.jpg' alt='Error' width='200' />
+								</>
+							) : (
+								<>
+									<h3>Confirmación de Pedido</h3>
+									{product.inputs.includes('Patas') && (
+										<StyledPoint>
+											<strong>
+												Patas{formValues.patas === 'si' ? ' (+3€)' : ''}:
+											</strong>{' '}
+											{formValues.patas}
+										</StyledPoint>
+									)}
 
-								{formValues.patas === 'Sí' &&
-									product.inputs.includes('Color') && (
-										<p>
+									{formValues.patas && product.inputs.includes('Color') && (
+										<StyledPoint>
 											<strong>Color patas:</strong> {formValues.color}
-										</p>
+										</StyledPoint>
+									)}
+									{product.inputs.includes('Pelo') && (
+										<StyledPoint>
+											<strong>Pelo:</strong> {formValues.pelo}
+										</StyledPoint>
 									)}
 
-								{product.inputs.includes('Pelo') && (
-									<p>
-										<strong>Pelo:</strong> {formValues.pelo}
-									</p>
-								)}
+									{product.inputs.includes('Detalles') &&
+										formValues.detalles.trim() !== '' && (
+											<StyledPoint>
+												<strong>Detalles (+5€):</strong> {formValues.detalles}
+											</StyledPoint>
+										)}
 
-								{product.inputs.includes('Detalles') &&
-									formValues.detalles.trim() !== '' && (
-										<p>
-											<strong>Detalles:</strong> {formValues.detalles}
-										</p>
-									)}
+									<StyledPoint>
+										<strong>Precio Final:</strong> {totalPrice}€
+									</StyledPoint>
+									<StyledException>{product.exception}</StyledException>
 
-								<p>
-									<strong>Precio:</strong> {totalPrice}€
-								</p>
-								<StyledException>{product.exception}</StyledException>
+									<label>Introduce tu correo electrónico:</label>
+									<StyledInputMail
+										type='email'
+										value={userEmail}
+										onChange={handleEmailChange}
+										placeholder='Tu correo electrónico'
+										className={emailError ? 'invalid' : ''}
+									/>
 
-								<label>Introduce tu correo electrónico:</label>
-								<StyledInputMail
-									type='email'
-									value={userEmail}
-									onChange={handleEmailChange}
-									placeholder='Tu correo electrónico'
-									className={emailError ? 'invalid' : ''}
-								/>
-
-								<StyledButton onClick={sendEmail}>Enviar correo</StyledButton>
-							</>
-						)}
-					</StyledModalContent>
-				</StyledModal>
+									<StyledButton onClick={sendEmail}>Enviar correo</StyledButton>
+								</>
+							)}
+						</StyledModalContent>
+					</StyledModal>
+				</StyledContainerModal>
 			)}
 		</StyledContainerProduct>
 	);

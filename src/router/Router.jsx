@@ -10,18 +10,19 @@ const Router = () => {
 			<Route path='/' element={<Layout />}>
 				<Route path='/' element={<Home />} />
 				<Route path='/product/:section/:productName' element={<Product />} />
-				<Route path='/tiestos' element={<Section section='tiestos' />} />
+				<Route path='/macetas' element={<Section section='macetas' />} />
+				<Route path='/navidad' element={<Section section='navidad' />} />
 				<Route
-					path='/tiestos/naricillas'
-					element={<Section section='tiestos' subsection='naricillas' />}
+					path='/macetas/naricillas'
+					element={<Section section='macetas' subsection='naricillas' />}
 				/>
 				<Route
-					path='/tiestos/narigudos'
-					element={<Section section='tiestos' subsection='narigudos' />}
+					path='/macetas/narigudos'
+					element={<Section section='macetas' subsection='narigudos' />}
 				/>
 				<Route
-					path='/tiestos/narizotas'
-					element={<Section section='tiestos' subsection='narizotas' />}
+					path='/macetas/narizotas'
+					element={<Section section='macetas' subsection='narizotas' />}
 				/>
 				<Route path='/gnomos' element={<Section section='gnomos' />} />
 				<Route

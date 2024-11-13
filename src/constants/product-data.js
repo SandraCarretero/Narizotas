@@ -1,7 +1,19 @@
 export const PRODUCT_DATA = [
-	// TIESTOS NARICILLAS
+	// NAVIDAD
 	{
-		section: 'tiestos',
+		section: 'navidad',
+		subsection: '',
+		name: 'Vivan los novios',
+		price: 50,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:\nDiámetro maceta: 8cm\nAltura maceta: 10cm\n\n¿Quieres hacer algún cambio en el diseño?</strong>',
+		img: ['/images/naricilla_vivanlosnovios.jpeg'],
+		inputs: ['Color', 'Pelo', 'Detalles']
+	},
+
+	// MACETAS NARICILLAS
+	{
+		section: 'macetas',
 		subsection: 'naricillas',
 		name: 'Alan',
 		price: 16,
@@ -13,7 +25,7 @@ export const PRODUCT_DATA = [
 	},
 
 	{
-		section: 'tiestos',
+		section: 'macetas',
 		subsection: 'naricillas',
 		name: 'Arcoiris',
 		price: 16,
@@ -27,7 +39,7 @@ export const PRODUCT_DATA = [
 	},
 
 	{
-		section: 'tiestos',
+		section: 'macetas',
 		subsection: 'naricillas',
 		name: 'Babu',
 		price: 16,
@@ -38,7 +50,7 @@ export const PRODUCT_DATA = [
 	},
 
 	{
-		section: 'tiestos',
+		section: 'macetas',
 		subsection: 'naricillas',
 		name: 'Gruñón',
 		price: 16,
@@ -49,7 +61,7 @@ export const PRODUCT_DATA = [
 	},
 
 	{
-		section: 'tiestos',
+		section: 'macetas',
 		subsection: 'naricillas',
 		name: 'Hula',
 		price: 16,
@@ -60,7 +72,7 @@ export const PRODUCT_DATA = [
 	},
 
 	{
-		section: 'tiestos',
+		section: 'macetas',
 		subsection: 'naricillas',
 		name: 'Pescador',
 		price: 16,
@@ -71,7 +83,7 @@ export const PRODUCT_DATA = [
 	},
 
 	{
-		section: 'tiestos',
+		section: 'macetas',
 		subsection: 'naricillas',
 		name: 'Bandolero',
 		price: 16,
@@ -82,7 +94,7 @@ export const PRODUCT_DATA = [
 	},
 
 	{
-		section: 'tiestos',
+		section: 'macetas',
 		subsection: 'naricillas',
 		name: 'Pirata',
 		price: 16,
@@ -93,7 +105,7 @@ export const PRODUCT_DATA = [
 	},
 
 	{
-		section: 'tiestos',
+		section: 'macetas',
 		subsection: 'naricillas',
 		name: 'Barbie',
 		price: 16,
@@ -104,7 +116,7 @@ export const PRODUCT_DATA = [
 	},
 
 	{
-		section: 'tiestos',
+		section: 'macetas',
 		subsection: 'naricillas',
 		name: 'Roble',
 		price: 16,
@@ -115,7 +127,7 @@ export const PRODUCT_DATA = [
 	},
 
 	{
-		section: 'tiestos',
+		section: 'macetas',
 		subsection: 'naricillas',
 		name: 'Sabio',
 		price: 16,
@@ -126,7 +138,7 @@ export const PRODUCT_DATA = [
 	},
 
 	{
-		section: 'tiestos',
+		section: 'macetas',
 		subsection: 'naricillas',
 		name: 'Araña',
 		price: 16,
@@ -137,7 +149,7 @@ export const PRODUCT_DATA = [
 	},
 
 	{
-		section: 'tiestos',
+		section: 'macetas',
 		subsection: 'naricillas',
 		name: 'Borrachín',
 		price: 16,
@@ -151,7 +163,7 @@ export const PRODUCT_DATA = [
 	},
 
 	{
-		section: 'tiestos',
+		section: 'macetas',
 		subsection: 'naricillas',
 		name: 'Naricilla del bosque',
 		price: 16,
@@ -162,7 +174,7 @@ export const PRODUCT_DATA = [
 	},
 
 	{
-		section: 'tiestos',
+		section: 'macetas',
 		subsection: 'naricillas',
 		name: 'Escocés',
 		price: 16,
@@ -176,7 +188,7 @@ export const PRODUCT_DATA = [
 	},
 
 	{
-		section: 'tiestos',
+		section: 'macetas',
 		subsection: 'naricillas',
 		name: 'Naricilla del pantano',
 		price: 16,
@@ -187,7 +199,7 @@ export const PRODUCT_DATA = [
 	},
 
 	{
-		section: 'tiestos',
+		section: 'macetas',
 		subsection: 'naricillas',
 		name: 'Vivan los novios',
 		price: 50,
@@ -196,20 +208,20 @@ export const PRODUCT_DATA = [
 		img: ['/images/naricilla_vivanlosnovios.jpeg'],
 		inputs: ['Color', 'Pelo', 'Detalles']
 	},
-	// TIESTOS NARIGUDOS
+	// MACETAS NARIGUDOS
 	{
-		section: 'tiestos',
+		section: 'macetas',
 		subsection: 'narigudos',
 		name: 'Producto 2',
 		price: 12.49,
-		description: 'Un tiesto redondo perfecto para cualquier espacio.',
+		description: 'Un macetas redondo perfecto para cualquier espacio.',
 		img: ['/images/grid-2.png', '/images/grid-4.png', '/images/grid-5.png'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
 
-	// TIESTOS NARIZOTAS
+	// MACETAS NARIZOTAS
 	{
-		section: 'tiestos',
+		section: 'macetas',
 		subsection: 'narizotas',
 		name: 'Galan',
 		price: 32,
