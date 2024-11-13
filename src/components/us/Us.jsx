@@ -13,7 +13,7 @@ const Us = () => {
 				<StyledTitleIcon>Envíanos tu idea</StyledTitleIcon>
 				<span>
 					Captamos lo que quieres
-					<br />y diseñamos una figura
+					<br />y diseñamos una pieza
 					<br />
 					única para ti.
 				</span>
