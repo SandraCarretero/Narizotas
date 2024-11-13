@@ -31,7 +31,7 @@ const Us = () => {
 			</StyledContainerIcon>
 			<StyledContainerIcon>
 				<StyledIcon src='/images/ico_03.svg' alt='' />
-				<StyledTitleIcon>¡Sorpresa!</StyledTitleIcon>
+				<StyledTitleIcon>Regalo personalizado</StyledTitleIcon>
 				<span>
 					Decora tus celebraciones con
 					<br />
