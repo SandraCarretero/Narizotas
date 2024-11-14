@@ -89,11 +89,9 @@ const StyledDropdownList = styled.ul`
 `;
 
 const StyledNavLink = styled(NavLink)`
-	color: white;
+	color: #c90707;
 	font-weight: 500;
-	background: #c90707;
-	border-radius: 5px;
-	padding-inline: 10px;
+ 	text-decoration-color: #c90707; 
 `;
 
 const StyledMenuItem = styled.li`
