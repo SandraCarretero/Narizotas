@@ -11,6 +11,7 @@ const StyledContainer = styled.div`
 	background-position-x: center;
 	background-repeat: no-repeat;
 	transition: background-image 0.5s ease-in-out, opacity 0.5s ease-in-out;
+	opacity: ${({ isFading }) => (isFading ? 0 : 1)};
 
 	@media (width < 768px) {
 		height: calc(100vh - 9.375rem);
@@ -40,6 +41,11 @@ const StyledBox = styled.div`
 	}
 `;
 
+const StyledRow = styled.div`
+	display: flex;
+	justify-content: space-between;
+`;
+
 const StyledText = styled.span`
 	font-family: 'Playwrite GB S', cursive;
 	font-size: 1.125rem;
@@ -49,4 +55,4 @@ const StyledText = styled.span`
 	}
 `;
 
-export { StyledContainer, StyledBox, StyledText };
+export { StyledContainer, StyledBox, StyledRow, StyledText };

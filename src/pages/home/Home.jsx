@@ -2,13 +2,19 @@ import { useState, useEffect } from 'react';
 import Form from '../../components/form/Form';
 import ProductsGrid from '../../components/productsGrid/ProductsGrid';
 import Us from '../../components/us/Us';
-import { StyledBox, StyledContainer, StyledText } from './home.styles';
+import {
+	StyledBox,
+	StyledContainer,
+	StyledRow,
+	StyledText
+} from './home.styles';
 import { NavLink } from 'react-router-dom';
 
 const Home = () => {
 	const [currentImage, setCurrentImage] = useState('/images/header.png');
 	const [showBox, setShowBox] = useState(true);
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+	const [isFading, setIsFading] = useState(false);
 
 	useEffect(() => {
 		const handleResize = () => {
@@ -18,17 +24,22 @@ const Home = () => {
 		window.addEventListener('resize', handleResize);
 
 		const interval = setInterval(() => {
-			setCurrentImage(prevImage => {
-				if (isMobile) {
-					return prevImage === '/images/header_mb.png'
-						? '/images/header2_mb.png'
-						: '/images/header_mb.png';
-				} else {
-					return prevImage === '/images/header.png'
-						? '/images/header2.png'
-						: '/images/header.png';
-				}
-			});
+			setIsFading(true);
+
+			setTimeout(() => {
+				setCurrentImage(prevImage => {
+					if (isMobile) {
+						return prevImage === '/images/header_mb.png'
+							? '/images/header2_mb.png'
+							: '/images/header_mb.png';
+					} else {
+						return prevImage === '/images/header.png'
+							? '/images/header2.png'
+							: '/images/header.png';
+					}
+				});
+				setIsFading(false);
+			}, 500);
 		}, 8000);
 
 		return () => {
@@ -56,7 +67,7 @@ const Home = () => {
 					</StyledContainer>
 				</NavLink>
 			) : (
-				<StyledContainer currentImage={currentImage}>
+				<StyledContainer currentImage={currentImage} isFading={isFading}>
 					{showBox && (
 						<StyledBox>
 							Nuestros <strong> Narizotas </strong> son piezas únicas, hechas
@@ -71,7 +82,11 @@ const Home = () => {
 								a la obra!
 							</strong>
 							<br /> <br />
-							<StyledText>Hecho a mano y con mucho amor</StyledText>
+							<StyledRow>
+								<img src='/images/corazon.svg' alt='' width='30' />
+								<StyledText>Hecho a mano y con mucho amor</StyledText>
+								<img src='/images/corazon.svg' alt='' width='30' />
+							</StyledRow>
 						</StyledBox>
 					)}
 				</StyledContainer>

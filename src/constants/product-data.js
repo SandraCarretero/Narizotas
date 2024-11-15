@@ -433,6 +433,10 @@ export const PRODUCT_DATA = [
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:\nDiámetro maceta: 8cm\nAltura maceta: 10cm\n\n¿Quieres hacer algún cambio en el diseño?</strong>',
 		img: ['/images/naricilla_vivanlosnovios.jpeg'],
 		inputs: ['Color', 'Pelo', 'Detalles']
-	}
+	},
 	// PERSONALIZACIONES
+	{
+		section: 'personalizaciones',
+		img: ['/images/grid-2.png', '/images/grid-4.png', '/images/grid-5.png']
+	}
 ];
