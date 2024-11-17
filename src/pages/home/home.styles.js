@@ -35,7 +35,7 @@ const StyledBox = styled.div`
 
 	@media (width < 768px) {
 		width: 90%;
-		height: 28.25rem;
+		height: max-content;
 		padding: 1.25rem;
 		margin-top: 4.0625rem;
 	}
