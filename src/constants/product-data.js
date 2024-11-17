@@ -437,6 +437,16 @@ export const PRODUCT_DATA = [
 	// PERSONALIZACIONES
 	{
 		section: 'personalizaciones',
-		img: ['/images/grid-2.png', '/images/grid-4.png', '/images/grid-5.png']
+		img: [
+			'/images/gnomo_espantapajaros_1.jpeg',
+			'/images/gnomo_espantapajaros_2.jpeg',
+			'/images/gnomo_espantapajaros_3.jpeg',
+			'/images/gnomo_espantapajaros_4.jpeg',
+			'/images/gnomo_espantapajaros_1.jpeg',
+			'/images/gnomo_espantapajaros_1.jpeg',
+			'/images/gnomo_espantapajaros_2.jpeg',
+			'/images/gnomo_espantapajaros_3.jpeg',
+			'/images/gnomo_espantapajaros_4.jpeg'
+		]
 	}
 ];

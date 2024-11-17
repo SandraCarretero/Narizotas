@@ -63,7 +63,6 @@ const Home = () => {
 			currentImage === '/images/header2_mb.png' ? (
 				<NavLink to={linkPath}>
 					<StyledContainer currentImage={currentImage}>
-						{/* No mostramos StyledBox en header2 o header2_mb */}
 					</StyledContainer>
 				</NavLink>
 			) : (

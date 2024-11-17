@@ -9,6 +9,7 @@ const StyledContainerProduct = styled.div`
 	@media (width < 768px) {
 		flex-direction: column;
 		align-items: center;
+		gap: 0.625rem;
 	}
 `;
 
@@ -29,6 +30,23 @@ const StyledInfo = styled.div`
 	display: flex;
 	flex-direction: column;
 	border-bottom: 0.0625rem solid black;
+
+	@media (width < 768px) {
+		display: none;
+	}
+`;
+
+const StyledInfoMobile = styled(StyledInfo)`
+	display: none;
+
+	@media (width < 768px) {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 25px;
+		margin-bottom: 15px;
+	}
 `;
 
 const StyledName = styled.span`
@@ -265,6 +283,7 @@ export {
 	StyledImageContainer,
 	StyledImgBig,
 	StyledInfo,
+	StyledInfoMobile,
 	StyledName,
 	StyledPrice,
 	StyledDescription,

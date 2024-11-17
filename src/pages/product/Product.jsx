@@ -7,6 +7,7 @@ import {
 	StyledFormContainer,
 	StyledImg,
 	StyledInfo,
+	StyledInfoMobile,
 	StyledInputContainer,
 	StyledInput,
 	StyledTextarea,
@@ -165,6 +166,10 @@ const Product = () => {
 	return (
 		<StyledContainerProduct>
 			<StyledImageContainer>
+				<StyledInfoMobile>
+					<StyledName>{product.name}</StyledName>
+					<StyledPrice>{product.price}€</StyledPrice>
+				</StyledInfoMobile>
 				<StyledImgBig src={selectedImage} alt={product.name} />
 				<StyledThumbnails>
 					{product.img.map((image, index) => (

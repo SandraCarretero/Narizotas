@@ -7,7 +7,8 @@ import {
 	StyledProductFlex,
 	StyledParagraph,
 	StyledImgBig,
-	StyledThumbnails
+	StyledThumbnails,
+	StyledFlex
 } from './section.styles';
 import { StyledImg } from '../product/product.styles';
 
@@ -32,7 +33,7 @@ const Section = ({ section, subsection }) => {
 
 	const imagesPersonalizados = useMemo(() => {
 		const personalizadoProduct = products.find(
-			product => product.section.toUpperCase() === 'PERSONALIZADOS'
+			product => product.section.toUpperCase() === 'PERSONALIZACIONES'
 		);
 		return personalizadoProduct ? personalizadoProduct.img : [];
 	}, [products]);
@@ -58,22 +59,21 @@ const Section = ({ section, subsection }) => {
 						No dudes en escribirnos y contarnos tu idea, nosotr@s nos encargamos
 						de hacerlo realidad.
 					</StyledParagraph>
+					<StyledFlex>
+						<StyledImgBig src={selectedImage} alt='Imagen principal' />
 
-					{/* Imagen principal del carrusel */}
-					<StyledImgBig src={selectedImage} alt='Imagen principal' />
-
-					{/* Miniaturas */}
-					<StyledThumbnails>
-						{imagesPersonalizados.map((image, index) => (
-							<StyledImg
-								key={index}
-								src={image}
-								alt={`Miniatura ${index + 1}`}
-								onClick={() => setSelectedImage(image)} 
-								className={selectedImage === image ? 'active' : ''}
-							/>
-						))}
-					</StyledThumbnails>
+						<StyledThumbnails>
+							{imagesPersonalizados.map((image, index) => (
+								<StyledImg
+									key={index}
+									src={image}
+									alt={`Miniatura ${index + 1}`}
+									onClick={() => setSelectedImage(image)}
+									className={selectedImage === image ? 'active' : ''}
+								/>
+							))}
+						</StyledThumbnails>
+					</StyledFlex>
 				</>
 			) : (
 				<StyledProductFlex>
