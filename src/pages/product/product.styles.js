@@ -18,12 +18,46 @@ const StyledImageContainer = styled.div`
 
 	@media (width < 768px) {
 		width: 90%;
+		position: relative;
 	}
 `;
 
 const StyledImgBig = styled.img`
 	border-radius: 0.9375rem;
 	overflow: hidden;
+
+	@media (width < 768px) {
+		width: 100%;
+		touch-action: pan-x;
+	}
+`;
+
+const StyledThumbnails = styled.div`
+	display: flex;
+	gap: 0.625rem;
+	margin-top: 0.625rem;
+
+	@media (width < 768px) {
+		overflow-x: auto;
+		white-space: nowrap;
+		-webkit-overflow-scrolling: touch;
+	}
+`;
+
+const StyledImg = styled.img`
+	cursor: pointer;
+	width: 3.125rem;
+	margin: 0.3125rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	&:hover {
+		border-color: black;
+	}
+
+	@media (width < 768px) {
+		width: 4rem;
+		height: 4rem;
+	}
 `;
 
 const StyledInfo = styled.div`
@@ -60,23 +94,6 @@ const StyledPrice = styled.span`
 
 const StyledDescription = styled.p`
 	margin-bottom: 0;
-`;
-
-const StyledThumbnails = styled.div`
-	display: flex;
-	gap: 10px;
-	margin-top: 10px;
-`;
-
-const StyledImg = styled.img`
-	cursor: pointer;
-	width: 3.125rem;
-	margin: 0.3125rem;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	&:hover {
-		border-color: black;
-	}
 `;
 
 const StyledForm = styled.form`
