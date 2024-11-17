@@ -282,11 +282,7 @@ const Product = () => {
 										Su pedido se ha enviado correctamente, a lo largo del día
 										recibirá un mail con su pedido y detalles.
 									</p>
-									<img
-										src='/images/thank-you-image.jpg'
-										alt='Gracias'
-										width='200'
-									/>
+									<img src='/images/favicon.png' alt='Gracias' width='200' />
 								</>
 							) : isError ? (
 								<>
