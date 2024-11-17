@@ -22,13 +22,51 @@ const StyledImageContainer = styled.div`
 	}
 `;
 
+const StyledButtonContainer = styled.div`
+	position: absolute;
+	top: 50%;
+	width: 95%;
+	left: 2.5%;
+	display: flex;
+	justify-content: space-between;
+
+	@media (width > 768px) {
+		display: none;
+	}
+`;
+
+const StyledButtonArrow = styled.button`
+	border: none;
+	cursor: pointer;
+	background: #ffffff9e;
+	border-radius: 50px;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&:disabled {
+		opacity: 0.2;
+		cursor: not-allowed;
+	}
+`;
+
+const StyledArrowLeft = styled.img`
+	transform: rotate(90deg);
+`;
+
+const StyledArrowRight = styled.img`
+	transform: rotate(-90deg);
+`;
+
 const StyledImgBig = styled.img`
 	border-radius: 0.9375rem;
 	overflow: hidden;
+	position: relative;
 
 	@media (width < 768px) {
 		width: 100%;
-		touch-action: pan-x;
 	}
 `;
 
@@ -56,7 +94,6 @@ const StyledImg = styled.img`
 
 	@media (width < 768px) {
 		width: 4rem;
-		height: 4rem;
 	}
 `;
 
@@ -320,5 +357,9 @@ export {
 	StyledModalContent,
 	StyledException,
 	StyledCloseButton,
-	StyledPoint
+	StyledPoint,
+	StyledButtonContainer,
+	StyledButtonArrow,
+	StyledArrowLeft,
+	StyledArrowRight
 };

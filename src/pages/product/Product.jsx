@@ -22,7 +22,11 @@ import {
 	StyledImgBig,
 	StyledException,
 	StyledPoint,
-	StyledContainerModal
+	StyledContainerModal,
+	StyledButtonContainer,
+	StyledButtonArrow,
+	StyledArrowRight,
+	StyledArrowLeft
 } from './product.styles';
 import { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
@@ -54,31 +58,19 @@ const Product = () => {
 	const [totalPrice, setTotalPrice] = useState(product?.price || 0);
 	const [isOrderSent, setIsOrderSent] = useState(false);
 	const [isError, setIsError] = useState(false);
-	const [startX, setStartX] = useState(null);
 
-	const handleTouchStart = e => {
-		setStartX(e.touches[0].clientX);
-	};
-
-	const handleTouchMove = e => {
-		if (!startX) return;
-
-		const endX = e.touches[0].clientX;
-		const diffX = startX - endX;
-
-		if (Math.abs(diffX) > 50) {
-			const currentIndex = product.img.indexOf(selectedImage);
-			if (diffX > 0 && currentIndex < product.img.length - 1) {
-				setSelectedImage(product.img[currentIndex + 1]);
-			} else if (diffX < 0 && currentIndex > 0) {
-				setSelectedImage(product.img[currentIndex - 1]);
-			}
-			setStartX(null);
+	const handlePrevImage = () => {
+		const currentIndex = product.img.indexOf(selectedImage);
+		if (currentIndex > 0) {
+			setSelectedImage(product.img[currentIndex - 1]);
 		}
 	};
 
-	const handleTouchEnd = () => {
-		setStartX(null);
+	const handleNextImage = () => {
+		const currentIndex = product.img.indexOf(selectedImage);
+		if (currentIndex < product.img.length - 1) {
+			setSelectedImage(product.img[currentIndex + 1]);
+		}
 	};
 
 	useEffect(() => {
@@ -196,13 +188,24 @@ const Product = () => {
 					<StyledName>{product.name}</StyledName>
 					<StyledPrice>{product.price}€</StyledPrice>
 				</StyledInfoMobile>
-				<StyledImgBig
-					src={selectedImage}
-					alt={product.name}
-					onTouchStart={handleTouchStart}
-					onTouchMove={handleTouchMove}
-					onTouchEnd={handleTouchEnd}
-				/>
+
+				<StyledImgBig src={selectedImage} alt={product.name} />
+				<StyledButtonContainer>
+					<StyledButtonArrow
+						onClick={handlePrevImage}
+						disabled={product.img.indexOf(selectedImage) === 0}
+					>
+						<StyledArrowLeft src='/images/arrow.svg' alt='' width='20' />
+					</StyledButtonArrow>
+					<StyledButtonArrow
+						onClick={handleNextImage}
+						disabled={
+							product.img.indexOf(selectedImage) === product.img.length - 1
+						}
+					>
+						<StyledArrowRight src='/images/arrow.svg' alt='' width='20' />
+					</StyledButtonArrow>
+				</StyledButtonContainer>
 				<StyledThumbnails>
 					{product.img.map((image, index) => (
 						<StyledImg

@@ -41,6 +41,7 @@ const StyledParagraph = styled.p`
 const StyledFlex = styled.div`
 	display: flex;
 	justify-content: center;
+	position: relative;
 
 	@media (width < 768px) {
 		flex-direction: column;
