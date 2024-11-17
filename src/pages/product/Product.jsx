@@ -323,7 +323,7 @@ const Product = () => {
 								<>
 									<h3>Ups... algo ha fallado</h3>
 									<p>Vuelva a hacer la petición por favor.</p>
-									<img src='/images/error-image.jpg' alt='Error' width='200' />
+									<img src='/images/favicon.png' alt='Error' width='200' />
 								</>
 							) : (
 								<>
