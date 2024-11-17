@@ -51,7 +51,7 @@ const StyledText = styled.span`
 	font-size: 1.125rem;
 
 	@media (width > 1300px) {
-		font-size: 1.375rem;
+		font-size: 1.25rem;
 	}
 `;
 
