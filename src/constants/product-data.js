@@ -3,12 +3,73 @@ export const PRODUCT_DATA = [
 	{
 		section: 'navidad',
 		subsection: '',
-		name: 'Vivan los novios',
-		price: 50,
+		name: 'Cascabel',
+		price: 8,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:\nDiámetro maceta: 8cm\nAltura maceta: 10cm\n\n¿Quieres hacer algún cambio en el diseño?</strong>',
-		img: ['/images/naricilla_vivanlosnovios.jpeg'],
-		inputs: ['Color', 'Pelo', 'Detalles']
+			'Adorno navideño para el árbol.',
+		img: ['/images/navidad_adorno_cascabel.jpeg'],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'navidad',
+		subsection: '',
+		name: 'Abeto',
+		price: 8,
+		description:
+			'Adorno navideño para el árbol.',
+		img: ['/images/navidad_adorno_abeto.jpeg'],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'navidad',
+		subsection: '',
+		name: 'Copito',
+		price: 8,
+		description:
+			'Adorno navideño para el árbol.',
+		img: ['/images/navidad_adorno_copito.jpeg'],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'navidad',
+		subsection: '',
+		name: 'Rudolf',
+		price: 8,
+		description:
+			'Adorno navideño para el árbol.',
+		img: ['/images/navidad_adorno_rudolf.jpeg'],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'navidad',
+		subsection: '',
+		name: 'Lámpara Laponia',
+		price: 35,
+		description:
+			'Lámpara inalámbrica LED hecha con materiales naturales y pelo sintético.',
+		img: ['/images/lampara_laponia_1.jpeg',
+			'/images/lampara_laponia_2.jpeg',
+			'/images/lampara_laponia_3.jpeg',
+		],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'navidad',
+		subsection: '',
+		name: 'Lámpara Ártico',
+		price: 35,
+		description:
+			'Lámpara inalámbrica LED hecha con materiales naturales y pelo sintético.',
+		img: ['/images/lampara_artico_1.jpeg',
+			'/images/lampara_artico_2.jpeg',
+			'/images/lampara_artico_3.jpeg',
+		],
+		inputs: ['Detalles']
 	},
 
 	// MACETAS NARICILLAS
@@ -390,13 +451,42 @@ export const PRODUCT_DATA = [
 		inputs: ['Detalles']
 	},
 	// GNOMOS LAMPARAS
+
+	{
+		section: 'gnomos',
+		subsection: 'lámparas',
+		name: 'Laponia',
+		price: 35,
+		description:
+			'Lámpara elaborada artesanalmente con materiales naturales y pelo sintético.\n Luz LED con carga usb incluida.',
+		img: ['/images/lampara_laponia_1.jpeg',
+			'/images/lampara_laponia_2.jpeg',
+			'/images/lampara_laponia_3.jpeg',
+		],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'gnomos',
+		subsection: 'lámparas',
+		name: 'Ártico',
+		price: 35,
+		description:
+			'Lámpara elaborada artesanalmente con materiales naturales y pelo sintético.\n Luz LED con carga usb incluida.',
+		img: ['/images/lampara_artico_1.jpeg',
+			'/images/lampara_artico_2.jpeg',
+			'/images/lampara_artico_3.jpeg',
+		],
+		inputs: ['Detalles']
+	},
+
 	{
 		section: 'gnomos',
 		subsection: 'lámparas',
 		name: 'Espantapájaros',
 		price: 60,
 		description:
-			'Lámpara elaborada artesanalmente con materiales naturales.\n Luz LED con carga usb incluida\n\n<strong>Dimensiones:\nAltura: 36cm</strong>',
+			'Lámpara elaborada artesanalmente con materiales naturales.\n Luz LED con carga usb incluida.\n\n<strong>Dimensiones:\nAltura: 36cm</strong>',
 		img: [
 			'/images/gnomo_espantapajaros_1.jpeg',
 			'/images/gnomo_espantapajaros_2.jpeg',
@@ -405,6 +495,24 @@ export const PRODUCT_DATA = [
 		],
 		inputs: ['Detalles']
 	},
+
+	{
+		section: 'gnomos',
+		subsection: 'lámparas',
+		name: 'Sal Marina',
+		price: 35,
+		description:
+			'Lámpara elaborada artesanalmente con materiales naturales y pelo sintético.\n Luz LED con carga usb incluida.\n\n<strong>Dimensiones:\nAltura: 36cm</strong>',
+		img: [
+			'/images/gnomo_espantapajaros_1.jpeg',
+			'/images/gnomo_espantapajaros_2.jpeg',
+			'/images/gnomo_espantapajaros_3.jpeg',
+			'/images/gnomo_espantapajaros_4.jpeg'
+		],
+		inputs: ['Detalles']
+	},
+
+
 
 	// HOGAR LAMPARAS
 
@@ -416,13 +524,112 @@ export const PRODUCT_DATA = [
 	{
 		section: 'imanes',
 		subsection: '',
-		name: 'Producto 5',
-		price: 22,
-		description: 'Maceta colgante con un diseño moderno.',
-		img: ['/images/grid-2.png', '/images/grid-4.png', '/images/grid-5.png'],
+		name: 'Azafrán',
+		price: 12,
+		description: 'Imán elaborado artesanalmente con materiales naturales y pelo sintético.',
+		img: ['/images/iman_azafran.jpeg'],
 		inputs: ['Detalles']
 	},
 
+	{
+		section: 'imanes',
+		subsection: '',
+		name: 'Caléndula',
+		price: 12,
+		description: 'Imán elaborado artesanalmente con materiales naturales y pelo sintético.',
+		img: ['/images/iman_calendula.jpeg'],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'imanes',
+		subsection: '',
+		name: 'Clavo',
+		price: 12,
+		description: 'Imán elaborado artesanalmente con materiales naturales y pelo sintético.',
+		img: ['/images/iman_clavo.jpeg'],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'imanes',
+		subsection: '',
+		name: 'Eneldo',
+		price: 12,
+		description: 'Imán elaborado artesanalmente con materiales naturales y pelo sintético.',
+		img: ['/images/iman_eneldo.jpeg'],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'imanes',
+		subsection: '',
+		name: 'Escaramujo',
+		price: 12,
+		description: 'Imán elaborado artesanalmente con materiales naturales y pelo sintético.',
+		img: ['/images/iman_escaramujo.jpeg'],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'imanes',
+		subsection: '',
+		name: 'jengibre',
+		price: 12,
+		description: 'Imán elaborado artesanalmente con materiales naturales y pelo sintético.',
+		img: ['/images/iman_jengibre.jpeg'],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'imanes',
+		subsection: '',
+		name: 'Jojoba',
+		price: 12,
+		description: 'Imán elaborado artesanalmente con materiales naturales y pelo sintético.',
+		img: ['/images/iman_jojoba.jpeg'],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'imanes',
+		subsection: '',
+		name: 'Malojillo',
+		price: 12,
+		description: 'Imán elaborado artesanalmente con materiales naturales y pelo sintético.',
+		img: ['/images/iman_malojillo.jpeg'],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'imanes',
+		subsection: '',
+		name: 'Mirto',
+		price: 12,
+		description: 'Imán elaborado artesanalmente con materiales naturales y pelo sintético.',
+		img: ['/images/iman_mirto.jpeg'],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'imanes',
+		subsection: '',
+		name: 'Pimienta',
+		price: 12,
+		description: 'Imán elaborado artesanalmente con materiales naturales y pelo sintético.',
+		img: ['/images/iman_pimienta.jpeg'],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'imanes',
+		subsection: '',
+		name: 'Vainilla',
+		price: 12,
+		description: 'Imán elaborado artesanalmente con materiales naturales y pelo sintético.',
+		img: ['/images/iman_vainilla.jpeg'],
+		inputs: ['Detalles']
+	},
 	// EVENTOS
 	{
 		section: 'eventos',
