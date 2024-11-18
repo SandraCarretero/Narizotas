@@ -880,7 +880,7 @@ export const PRODUCT_DATA = [
 			'/images/personaliza_vikingo_1.jpeg',
 			'/images/personaliza_vikingo_2.jpeg',
 			'/images/personaliza_vikingo_3.jpeg',
-			'/images/personaliza_vivanlosnovios_1.jpeg'
+			'/images/personaliza_vivanlosnovios.jpeg'
 		]
 	}
 ];
