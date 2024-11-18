@@ -1,4 +1,19 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const sliderDesktop = keyframes`
+  0%, 22%, 50%, 72%, 100% {background-image: url(/images/header.png);}
+  25%, 47%, 75%, 97% {background-image: url(/images/header2.png);}
+`;
+
+const sliderMobile = keyframes`
+  0%, 22%, 50%, 72%, 100% {background-image: url(/images/header_mb.png);}
+  25%, 47%, 75%, 97% {background-image: url(/images/header2_mb.png);}
+`;
+
+const sliderBox = keyframes`
+  0%, 22%, 50%, 72%, 100% {display: block;}
+  25%, 47%, 75%, 97% {display:none;}
+`;
 
 const StyledContainer = styled.div`
 	width: 100%;
@@ -6,14 +21,14 @@ const StyledContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: ${({ currentImage }) => `url(${currentImage})`};
+	background-image: url(/images/header.png);
 	background-size: cover;
-	background-position-x: center;
 	background-repeat: no-repeat;
-	transition: background-image 0.5s ease-in-out, opacity 0.5s ease-in-out;
-	opacity: ${({ isFading }) => (isFading ? 0 : 1)};
+	animation: ${sliderDesktop} 15s linear infinite;
 
 	@media (width < 768px) {
+		background-image: url(/images/header_mb.png);
+		animation: ${sliderMobile} 15s linear infinite;
 		height: calc(100vh - 9.375rem);
 		align-items: flex-start;
 	}
@@ -26,6 +41,7 @@ const StyledBox = styled.div`
 	background-color: #ffffffd6;
 	padding: 1.25rem 3.125rem;
 	text-align: center;
+	animation: ${sliderBox} 15s linear infinite;
 
 	@media (width > 1300px) {
 		height: max-content;
