@@ -79,6 +79,9 @@ const Section = ({ section, subsection }) => {
 						No dudes en escribirnos y contarnos tu idea, nosotr@s nos encargamos
 						de hacerlo realidad.
 					</StyledParagraph>
+					<StyledParagraph>
+						¡Echa un vistazo a algunas de nuestras personalizaciones!
+					</StyledParagraph>
 					<StyledFlex>
 						<StyledImgBig src={selectedImage} alt='Imagen principal' />
 
