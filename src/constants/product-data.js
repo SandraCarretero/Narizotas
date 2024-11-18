@@ -14,12 +14,71 @@ export const PRODUCT_DATA = [
 		inputs: ['Detalles']
 	},
 
+	{
+		section: 'navidad',
+		subsection: '',
+		name: 'Klaus',
+		price: 50,
+		description:
+			'Klaus se cuela por las ventanas y las chimeneas, dejando a cada niño (y no tan niños) un regalo bajo el árbol de navidad.',
+		img: ['/images/gnomo_klaus_1.jpg',
+			  '/images/gnomo_klaus_2.jpg',
+			'/images/gnomo_klaus_3.JPG',
+			'/images/gnomo_klaus_4.jpg'
+		],
+		inputs: ['Detalles']
+	},
 
 	{
 		section: 'navidad',
 		subsection: '',
+		name: 'Lucecita',
+		price: 35,
+		description:
+			'Lucecita se encarga de que todas y cada una de las noches de este frío invierno sientas un poquito de calor navideño.',
+		img: ['/images/lampara_lucecita_1.jpeg',
+			  '/images/lampara_lucecita_2.jpeg',
+			  '/images/lampara_lucecita_3.jpeg',
+			  '/images/lampara_lucecita_4.jpeg'
+		],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'navidad',
+		subsection: '',
+		name: 'Narigudo Mazapán',
+		price: 25,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 14cm\nAltura: 15cm\nPatas:25cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
+		img: ['/images/narigudo_mazapan_1.jpeg',
+			'/images/narigudo_mazapan_2.jpeg',
+			'/images/narigudo_mazapan_3.jpeg'
+		],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
+
+
+	{
+		section: 'navidad',
+		subsection: '',
+		name: 'Naricilla Jingle',
+		price: 25,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas:15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
+		img: ['/images/navidad_jingle_1.jpeg',
+			'/images/navidad_jingle_2.jpeg',
+			'/images/navidad_jingle_3.jpeg'
+		],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
+	{
+		section: 'navidad',
+		subsection: '',
 		name: 'Cascabel',
-		price: 8,
+		price: 5,
 		description:
 			'Adorno navideño para el árbol.',
 		img: ['/images/navidad_adorno_cascabel.jpeg'],
@@ -30,7 +89,7 @@ export const PRODUCT_DATA = [
 		section: 'navidad',
 		subsection: '',
 		name: 'Abeto',
-		price: 8,
+		price: 5,
 		description:
 			'Adorno navideño para el árbol.',
 		img: ['/images/navidad_adorno_abeto.jpeg'],
@@ -41,7 +100,7 @@ export const PRODUCT_DATA = [
 		section: 'navidad',
 		subsection: '',
 		name: 'Copito',
-		price: 8,
+		price: 5,
 		description:
 			'Adorno navideño para el árbol.',
 		img: ['/images/navidad_adorno_copito.jpeg'],
@@ -52,7 +111,7 @@ export const PRODUCT_DATA = [
 		section: 'navidad',
 		subsection: '',
 		name: 'Rudolf',
-		price: 8,
+		price: 5,
 		description:
 			'Adorno navideño para el árbol.',
 		img: ['/images/navidad_adorno_rudolf.jpeg'],
@@ -288,10 +347,15 @@ export const PRODUCT_DATA = [
 	{
 		section: 'macetas',
 		subsection: 'narigudos',
-		name: 'Producto 2',
-		price: 12.49,
-		description: 'Un macetas redondo perfecto para cualquier espacio.',
-		img: ['/images/grid-2.png', '/images/grid-4.png', '/images/grid-5.png'],
+		name: 'Mazapán',
+		price: 25,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n<strong>Dimensiones:<strong>\nDiámetro maceta: 14cm\nAltura: 15cm\nPatas(+5€):25cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
+		img: ['/images/narigudo_mazapan_1.jpeg',
+			'/images/narigudo_mazapan_2.jpeg',
+			'/images/narigudo_mazapan_3.jpeg'
+		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
 
@@ -313,6 +377,36 @@ export const PRODUCT_DATA = [
 	},
 
 	// GNOMOS GNOMOS
+
+	{
+		section: 'gnomos',
+		subsection: 'gnomos',
+		name: 'Grinch',
+		price: 50,
+		description:
+			'Enfadado con la vida y con el mundo, el Narizotas Grinch entra por cada chimenea a arruinar la Navidad a todo el que se le cruce.',
+		img: ['/images/gnomo_grinch_1.jpeg',
+			'/images/gnomo_grinch_2.jpeg',
+			'/images/gnomo_grinch_3.jpeg'
+		],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'gnomos',
+		subsection: 'gnomos',
+		name: 'Klaus',
+		price: 50,
+		description:
+			'Klaus se cuela por las ventanas y las chimeneas, dejando a cada niño (y no tan niños) un regalo bajo el árbol de navidad.',
+		img: ['/images/gnomo_klaus_1.jpg',
+			'/images/gnomo_klaus_2.jpg',
+			'/images/gnomo_klaus_3.JPG',
+			'/images/gnomo_klaus_4.jpg'
+		],
+		inputs: ['Detalles']
+	},
+
 	{
 		section: 'gnomos',
 		subsection: 'gnomos',
@@ -466,6 +560,21 @@ export const PRODUCT_DATA = [
 		inputs: ['Detalles']
 	},
 	// GNOMOS LAMPARAS
+
+	{
+		section: 'gnomos',
+		subsection: 'lamparas',
+		name: 'Lucecita',
+		price: 35,
+		description:
+			'Lucecita se encarga de que todas y cada una de las noches de este frío invierno sientas un poquito de calor navideño.',
+		img: ['/images/lampara_lucecita_1.jpeg',
+			'/images/lampara_lucecita_2.jpeg',
+			'/images/lampara_lucecita_3.jpeg',
+			'/images/lampara_lucecita_4.jpeg'
+		],
+		inputs: ['Detalles']
+	},
 
 	{
 		section: 'gnomos',
