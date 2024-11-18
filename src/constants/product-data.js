@@ -146,6 +146,34 @@ export const PRODUCT_DATA = [
 		inputs: ['Detalles']
 	},
 
+	{
+		section: 'navidad',
+		subsection: '',
+		name: 'Lucero',
+		price: 25,
+		description:
+			'Lámpara hecha con materiales naturales.',
+		img: ['/images/navidad_lucero_1.jpeg',
+			  '/images/navidad_lucero_2.jpeg',
+			  '/images/navidad_lucero_3.jpeg',
+		],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'navidad',
+		subsection: '',
+		name: 'Candela',
+		price: 25,
+		description:
+			'Lámpara hecha con materiales naturales.',
+		img: ['/images/navidad_candela_1.jpeg',
+			  '/images/navidad_candela_2.jpeg',
+			  '/images/navidad_candela_3.jpeg',
+		],
+		inputs: ['Detalles']
+	},
+
 	// MACETAS NARICILLAS
 	{
 		section: 'macetas',
@@ -370,6 +398,20 @@ export const PRODUCT_DATA = [
 		img: ['/images/narigudo_mazapan_1.jpeg',
 			'/images/narigudo_mazapan_2.jpeg',
 			'/images/narigudo_mazapan_3.jpeg'
+		],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
+
+	{
+		section: 'macetas',
+		subsection: 'narigudos',
+		name: 'Duende',
+		price: 30,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n<strong>Dimensiones:<strong>\nDiámetro maceta: 14cm\nAltura: 15cm\nPatas:25cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
+		img: ['/images/narigudo_duende_1.jpeg',
+			  '/images/narigudo_duende_2.jpeg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
