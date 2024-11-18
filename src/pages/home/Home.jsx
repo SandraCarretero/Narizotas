@@ -40,7 +40,7 @@ const Home = () => {
 				});
 				setIsFading(false);
 			}, 500);
-		}, 8000);
+		}, 2500);
 
 		return () => {
 			clearInterval(interval);
