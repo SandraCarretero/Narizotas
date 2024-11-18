@@ -50,7 +50,7 @@ export const PRODUCT_DATA = [
 		name: 'Narigudo Mazapán',
 		price: 25,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 14cm\nAltura: 15cm\nPatas:25cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 14cm\nAltura: 15cm\nPatas: 25cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>',
 		exception: '*Planta no incluida',
 		img: ['/images/narigudo_mazapan_1.jpeg',
 			'/images/narigudo_mazapan_2.jpeg',
@@ -65,7 +65,7 @@ export const PRODUCT_DATA = [
 		name: 'Naricilla Jingle',
 		price: 16,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas:15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>',
 		exception: '*Planta no incluida',
 		img: ['/images/navidad_jingle_1.jpeg',
 			'/images/navidad_jingle_2.jpeg',
@@ -181,7 +181,7 @@ export const PRODUCT_DATA = [
 		name: 'Jingle',
 		price: 16,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas:15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
 		exception: '*Planta no incluida',
 		img: ['/images/navidad_jingle_1.jpeg',
 			'/images/navidad_jingle_2.jpeg',
@@ -196,7 +196,7 @@ export const PRODUCT_DATA = [
 		name: 'Alan',
 		price: 16,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
 		exception: '*Planta no incluida',
 		img: ['/images/naricilla_alan.jpg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
@@ -208,7 +208,8 @@ export const PRODUCT_DATA = [
 		name: 'Arcoiris',
 		price: 16,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:\nDiámetro maceta: 8cm\nAltura: 10cm\n\n¿Quieres hacer algún cambio en el diseño?</strong>',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
 		img: [
 			'/images/naricilla_arcoiris_1.jpeg',
 			'/images/naricilla_arcoiris_2.jpeg'
@@ -222,7 +223,8 @@ export const PRODUCT_DATA = [
 		name: 'Babu',
 		price: 16,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:\nDiámetro maceta: 8cm\nAltura: 10cm\n\n¿Quieres hacer algún cambio en el diseño?</strong>',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
 		img: ['/images/naricilla_babu.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -233,7 +235,8 @@ export const PRODUCT_DATA = [
 		name: 'Gruñón',
 		price: 16,
 		description:
-			'Macetero hecho artesanalmente con materiales naturales y pelo sintético.<strong>\n\nDimensiones: Diámetro maceta 8cm.\nAltura 10cm</strong>',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
 		img: ['/images/naricilla_gruñon.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -244,7 +247,8 @@ export const PRODUCT_DATA = [
 		name: 'Hula',
 		price: 16,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:\nDiámetro maceta: 8cm\nAltura: 10cm\n\n¿Quieres hacer algún cambio en el diseño?</strong>',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
 		img: ['/images/naricilla_hula.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -255,7 +259,8 @@ export const PRODUCT_DATA = [
 		name: 'Pescador',
 		price: 16,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:\nDiámetro maceta: 8cm\nAltura: 10cm\n\n¿Quieres hacer algún cambio en el diseño?</strong>',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
 		img: ['/images/naricilla_pescador.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -266,7 +271,8 @@ export const PRODUCT_DATA = [
 		name: 'Bandolero',
 		price: 16,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\n<strong>Dimensiones:\nDiámetro maceta: 8cm\nAltura: 10cm\n\n¿Quieres hacer algún cambio en el diseño?</strong>',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
 		img: ['/images/naricilla_bandolero.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -277,7 +283,8 @@ export const PRODUCT_DATA = [
 		name: 'Pirata',
 		price: 16,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:\nDiámetro maceta: 8cm\nAltura: 10cm\n\n¿Quieres hacer algún cambio en el diseño?</strong>',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
 		img: ['/images/naricilla_pirata.jpg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -288,7 +295,8 @@ export const PRODUCT_DATA = [
 		name: 'Barbie',
 		price: 16,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:\nDiámetro maceta: 8cm\nAltura: 10cm\n\n¿Quieres hacer algún cambio en el diseño?</strong>',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
 		img: ['/images/naricilla_barbie.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -299,7 +307,8 @@ export const PRODUCT_DATA = [
 		name: 'Roble',
 		price: 16,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:\nDiámetro maceta: 8cm\nAltura: 10cm\n\n¿Quieres hacer algún cambio en el diseño?</strong>',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
 		img: ['/images/naricilla_roble.jpg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -310,7 +319,8 @@ export const PRODUCT_DATA = [
 		name: 'Sabio',
 		price: 16,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:\nDiámetro maceta: 8cm\nAltura: 10cm\n\n¿Quieres hacer algún cambio en el diseño?</strong>',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
 		img: ['/images/naricilla_sabio.jpg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -321,7 +331,8 @@ export const PRODUCT_DATA = [
 		name: 'Araña',
 		price: 16,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:\nDiámetro maceta: 8cm \nAltura: 10cm\n\n¿Quieres hacer algún cambio en el diseño?</strong>',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
 		img: ['/images/naricilla_araña.jpeg'],
 		inputs: ['Pelo', 'Detalles']
 	},
@@ -332,7 +343,8 @@ export const PRODUCT_DATA = [
 		name: 'Borrachín',
 		price: 16,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\n<strong>Dimensiones:\nDiámetro maceta: 8cm\nAltura: 10cm\n\n¿Quieres hacer algún cambio en el diseño?</strong>',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
 		img: [
 			'/images/naricilla_borrachin_1.jpeg',
 			'/images/naricilla_borrachin_2.jpeg'
@@ -346,7 +358,8 @@ export const PRODUCT_DATA = [
 		name: 'Naricilla del bosque',
 		price: 16,
 		description:
-			'Macetero hecho artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones: Diámetro maceta 8cm.\nAltura 10cm</strong>',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
 		img: ['/images/naricilla_delbosque.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -357,7 +370,8 @@ export const PRODUCT_DATA = [
 		name: 'Escocés',
 		price: 16,
 		description:
-			'Macetero hecho artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones: Diámetro maceta 8cm.\nAltura 10cm</strong>',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
 		img: [
 			'/images/naricilla_escoces_1.jpeg',
 			'/images/naricilla_escoces_2.jpeg'
@@ -371,7 +385,8 @@ export const PRODUCT_DATA = [
 		name: 'Naricilla del pantano',
 		price: 16,
 		description:
-			'Macetero hecho artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones: Diámetro maceta 8cm.\nAltura 10cm</strong>',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
 		img: ['/images/naricilla_delpantano.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -382,7 +397,8 @@ export const PRODUCT_DATA = [
 		name: 'Vivan los novios',
 		price: 50,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:\nDiámetro maceta: 8cm\nAltura maceta: 10cm\n\n¿Quieres hacer algún cambio en el diseño?</strong>',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
 		img: ['/images/naricilla_vivanlosnovios.jpeg'],
 		inputs: ['Color', 'Pelo', 'Detalles']
 	},
@@ -393,7 +409,7 @@ export const PRODUCT_DATA = [
 		name: 'Mazapán',
 		price: 25,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n<strong>Dimensiones:<strong>\nDiámetro maceta: 14cm\nAltura: 15cm\nPatas(+5€):25cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n<strong>Dimensiones:</strong>\nDiámetro maceta: 14cm\nAltura: 15cm\nPatas: 25cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>',
 		exception: '*Planta no incluida',
 		img: ['/images/narigudo_mazapan_1.jpeg',
 			'/images/narigudo_mazapan_2.jpeg',
@@ -408,7 +424,7 @@ export const PRODUCT_DATA = [
 		name: 'Duende',
 		price: 30,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n<strong>Dimensiones:<strong>\nDiámetro maceta: 14cm\nAltura: 15cm\nPatas:25cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n<strong>Dimensiones:</strong>\nDiámetro maceta: 14cm\nAltura: 15cm\nPatas: 25cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
 		exception: '*Planta no incluida',
 		img: ['/images/narigudo_duende_1.jpeg',
 			  '/images/narigudo_duende_2.jpeg'
@@ -423,7 +439,7 @@ export const PRODUCT_DATA = [
 		name: 'Galan',
 		price: 32,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\n<strong>Dimensiones:\nDiámetro maceta: 17cm\nAltura maceta: 15cm\nLongitud patas (opcional): 30cm \n\n¿Quieres hacer algún cambio en el diseño?</strong>',
+			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 17cm\nAltura maceta: 15cm\nPatas: 30cm \n\n¿Quieres hacer algún cambio en el diseño?</strong>',
 		img: [
 			'/images/narizota_galan_1.jpeg',
 			'/images/narizota_galan_2.jpeg',
