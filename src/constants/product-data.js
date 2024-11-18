@@ -59,12 +59,11 @@ export const PRODUCT_DATA = [
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
 
-
 	{
 		section: 'navidad',
 		subsection: '',
 		name: 'Naricilla Jingle',
-		price: 25,
+		price: 16,
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas:15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
 		exception: '*Planta no incluida',
@@ -74,6 +73,7 @@ export const PRODUCT_DATA = [
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
+
 	{
 		section: 'navidad',
 		subsection: '',
@@ -147,6 +147,21 @@ export const PRODUCT_DATA = [
 	},
 
 	// MACETAS NARICILLAS
+	{
+		section: 'macetas',
+		subsection: 'naricillas',
+		name: 'Jingle',
+		price: 16,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas:15cm\n\n<strong>¿Quieres hacer algún cambio en el diseño?</strong>\n\n*si no se seleccionan colores se asumen los colores predeterminados de las imágenes',
+		exception: '*Planta no incluida',
+		img: ['/images/navidad_jingle_1.jpeg',
+			'/images/navidad_jingle_2.jpeg',
+			'/images/navidad_jingle_3.jpeg'
+		],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
+
 	{
 		section: 'macetas',
 		subsection: 'naricillas',
