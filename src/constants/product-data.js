@@ -519,10 +519,9 @@ export const PRODUCT_DATA = [
 		description:
 			'Lámpara elaborada artesanalmente con materiales naturales y pelo sintético.\n Luz LED con carga usb incluida.\n\n<strong>Dimensiones:\nAltura: 36cm</strong>',
 		img: [
-			'/images/gnomo_espantapajaros_1.jpeg',
-			'/images/gnomo_espantapajaros_2.jpeg',
-			'/images/gnomo_espantapajaros_3.jpeg',
-			'/images/gnomo_espantapajaros_4.jpeg'
+			'/images/lampara_salmarina_1.jpeg',
+			'/images/lampara_salmarina_2.jpeg',
+			'/images/lampara_salmarina_3.jpeg'
 		],
 		inputs: ['Detalles']
 	},
