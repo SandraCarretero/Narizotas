@@ -77,7 +77,7 @@ export const PRODUCT_DATA = [
 	{
 		section: 'navidad',
 		subsection: '',
-		name: 'Cascabel',
+		name: 'Adorno Cascabel',
 		price: 5,
 		description:
 			'Adorno navideño para el árbol.',
@@ -88,7 +88,7 @@ export const PRODUCT_DATA = [
 	{
 		section: 'navidad',
 		subsection: '',
-		name: 'Abeto',
+		name: 'Adorno Abeto',
 		price: 5,
 		description:
 			'Adorno navideño para el árbol.',
@@ -99,7 +99,7 @@ export const PRODUCT_DATA = [
 	{
 		section: 'navidad',
 		subsection: '',
-		name: 'Copito',
+		name: 'Adorno Copito',
 		price: 5,
 		description:
 			'Adorno navideño para el árbol.',
@@ -110,7 +110,7 @@ export const PRODUCT_DATA = [
 	{
 		section: 'navidad',
 		subsection: '',
-		name: 'Rudolf',
+		name: 'Adorno Rudolf',
 		price: 5,
 		description:
 			'Adorno navideño para el árbol.',
@@ -149,10 +149,10 @@ export const PRODUCT_DATA = [
 	{
 		section: 'navidad',
 		subsection: '',
-		name: 'Lucero',
+		name: 'Adorno Lucero',
 		price: 25,
 		description:
-			'Lámpara hecha con materiales naturales.',
+			'Adorno hecho con materiales naturales.',
 		img: ['/images/navidad_lucero_1.jpeg',
 			  '/images/navidad_lucero_2.jpeg',
 			  '/images/navidad_lucero_3.jpeg',
@@ -163,10 +163,10 @@ export const PRODUCT_DATA = [
 	{
 		section: 'navidad',
 		subsection: '',
-		name: 'Candela',
+		name: 'Adorno Candela',
 		price: 25,
 		description:
-			'Lámpara hecha con materiales naturales.',
+			'Adorno hecho con materiales naturales.',
 		img: ['/images/navidad_candela_1.jpeg',
 			  '/images/navidad_candela_2.jpeg',
 			  '/images/navidad_candela_3.jpeg',
