@@ -11,8 +11,8 @@ const sliderMobile = keyframes`
 `;
 
 const sliderBox = keyframes`
-  0%, 22%, 50%, 72%, 100% {display: block;}
-  25%, 47%, 75%, 97% {display:none;}
+  0%, 22%, 50%, 72%, 100% {opacity: 1;}
+  25%, 47%, 75%, 97% {opacity:0;}
 `;
 
 const StyledContainer = styled.div`
