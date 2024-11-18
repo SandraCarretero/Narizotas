@@ -683,7 +683,7 @@ export const PRODUCT_DATA = [
 		name: 'Espantapájaros',
 		price: 60,
 		description:
-			'Lámpara elaborada artesanalmente con materiales naturales.\n Luz LED con carga usb incluida.\n\n<strong>Dimensiones:\nAltura: 36cm</strong>',
+			'Lámpara elaborada artesanalmente con materiales naturales.\n Luz LED con carga usb incluida.\n\n<strong>Dimensiones:</strong>\nAltura: 36cm',
 		img: [
 			'/images/gnomo_espantapajaros_1.jpeg',
 			'/images/gnomo_espantapajaros_2.jpeg',
@@ -699,7 +699,7 @@ export const PRODUCT_DATA = [
 		name: 'Sal Marina',
 		price: 35,
 		description:
-			'Lámpara elaborada artesanalmente con materiales naturales y pelo sintético.\n Luz LED con carga usb incluida.\n\n<strong>Dimensiones:\nAltura: 36cm</strong>',
+			'Lámpara elaborada artesanalmente con materiales naturales y pelo sintético.\n Luz LED con carga usb incluida.',
 		img: [
 			'/images/lampara_salmarina_1.jpeg',
 			'/images/lampara_salmarina_2.jpeg',
