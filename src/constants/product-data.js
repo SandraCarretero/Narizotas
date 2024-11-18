@@ -3,6 +3,21 @@ export const PRODUCT_DATA = [
 	{
 		section: 'navidad',
 		subsection: '',
+		name: 'Grinch',
+		price: 50,
+		description:
+			'Enfadado con la vida y con el mundo, el Narizotas Grinch entra por cada chimenea a arruinar la Navidad a todo el que se le cruce.',
+		img: ['/images/gnomo_grinch_1.jpeg',
+			'/images/gnomo_grinch_2.jpeg',
+			'/images/gnomo_grinch_3.jpeg'
+		],
+		inputs: ['Detalles']
+	},
+
+
+	{
+		section: 'navidad',
+		subsection: '',
 		name: 'Cascabel',
 		price: 8,
 		description:
@@ -517,8 +532,38 @@ export const PRODUCT_DATA = [
 	// HOGAR LAMPARAS
 
 	// HOGAR DECORACION
+	{
+		section: 'hogar',
+		subsection: '',
+		name: 'Adorno Álamo',
+		price: 25,
+		description:
+			'Ornamentación de pared.',
+		img: [
+			'/images/hogar_alamo_1.jpeg',
+			'/images/hogar_alamo_2.jpeg',
+			'/images/hogar_alamo_3.jpeg'
+		],
+		inputs: []
+	},
 
 	// HOGAR CENTRO-MESA
+
+
+	{
+		section: 'hogar',
+		subsection: '',
+		name: 'Delantal Narizotas',
+		price: 25,
+		description:
+			'Delantal elaborado artesanalmente. \nLogo dintintivo Narizotas.',
+		img: [
+			'/images/hogar_delantal_1.jpeg',
+			'/images/hogar_delantal_2.jpeg',
+			'/images/hogar_delantal_3.jpeg'
+		],
+		inputs: []
+	},
 
 	// IMANES
 	{
