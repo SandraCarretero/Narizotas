@@ -813,15 +813,16 @@ export const PRODUCT_DATA = [
 	{
 		section: 'personalizaciones',
 		img: [
-			'/images/gnomo_espantapajaros_1.jpeg',
-			'/images/gnomo_espantapajaros_2.jpeg',
-			'/images/gnomo_espantapajaros_3.jpeg',
-			'/images/gnomo_espantapajaros_4.jpeg',
-			'/images/gnomo_espantapajaros_1.jpeg',
-			'/images/gnomo_espantapajaros_1.jpeg',
-			'/images/gnomo_espantapajaros_2.jpeg',
-			'/images/gnomo_espantapajaros_3.jpeg',
-			'/images/gnomo_espantapajaros_4.jpeg'
+			'/images/personaliza_drpez_1.jpeg',
+			'/images/personaliza_drpez_2.jpeg',
+			'/images/personaliza_drpez_3.JPG',
+			'/images/personaliza_mexicano_1.jpeg',
+			'/images/personaliza_mexicano_2.jpeg',
+			'/images/personaliza_mexicano_3.jpeg',
+			'/images/personaliza_vikingo_1.jpeg',
+			'/images/personaliza_vikingo_2.jpeg',
+			'/images/personaliza_vikingo_3.jpeg',
+			'/images/personaliza_vivanlosnovios_1.jpeg'
 		]
 	}
 ];
