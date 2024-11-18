@@ -6,9 +6,14 @@ import {
 	StyledMainContainer,
 	StyledProductFlex,
 	StyledParagraph,
+	StyledParagraphMobile,
 	StyledImgBig,
 	StyledThumbnails,
-	StyledFlex
+	StyledFlex,
+	StyledRelative,
+	StyledContainer,
+	StyledInfoContainer,
+	StyledForm
 } from './section.styles';
 import {
 	StyledArrowLeft,
@@ -17,8 +22,47 @@ import {
 	StyledButtonContainer,
 	StyledImg
 } from '../product/product.styles';
+import {
+	StyledButton,
+	StyledInput,
+	StyledTextarea
+} from '../../components/form/form.styles';
+import emailjs from 'emailjs-com';
 
 const Section = ({ section, subsection }) => {
+	const [userName, setUserName] = useState('');
+	const [userEmail, setUserEmail] = useState('');
+	const [userMessage, setUserMessage] = useState('');
+
+	const sendEmail = e => {
+		e.preventDefault();
+		const templateParams = {
+			from_name: userEmail,
+			to_name: 'artesanialascositasdelamari@gmail.com',
+			subject: `Personalizaciones`,
+			name: userName,
+			message: userMessage
+		};
+
+		emailjs
+			.send(
+				'service_sym6y4h',
+				'template_tiey5xg',
+				templateParams,
+				'urkRLRy5TqhfT62de'
+			)
+			.then(response => {
+				alert('Correo enviado correctamente!');
+				setUserName('');
+				setUserEmail('');
+				setUserMessage('');
+			})
+			.catch(err => {
+				console.log('Error al enviar el correo:', err);
+				alert('Hubo un error al enviar el correo.');
+			});
+	};
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -73,35 +117,39 @@ const Section = ({ section, subsection }) => {
 			</StyledSectionTitle>
 			{/* Contenido personalizado para Personalizaciones */}
 			{section.toUpperCase() === 'PERSONALIZACIONES' ? (
-				<>
-					<StyledParagraph>
-						¿Quieres un Narizotas diferente? ¿Estás buscando un regalo original?{' '}
-						No dudes en escribirnos y contarnos tu idea, nosotr@s nos encargamos
-						de hacerlo realidad.
-					</StyledParagraph>
-					<StyledParagraph>
-						<strong>¡Echa un vistazo a algunas de nuestras personalizaciones!</strong>
-					</StyledParagraph>
-					<StyledFlex>
-						<StyledImgBig src={selectedImage} alt='Imagen principal' />
+				<StyledFlex>
+					<StyledContainer>
+						<StyledParagraphMobile>
+							¿Quieres un Narizotas diferente? ¿Estás buscando un regalo
+							original? No dudes en escribirnos y contarnos tu idea, nosotr@s
+							nos encargamos de hacerlo realidad.
+						</StyledParagraphMobile>
+						<StyledParagraphMobile>
+							<strong>
+								¡Echa un vistazo a algunas de nuestras personalizaciones!
+							</strong>
+						</StyledParagraphMobile>
+						<StyledRelative>
+							<StyledImgBig src={selectedImage} alt='Imagen principal' />
 
-						<StyledButtonContainer>
-							<StyledButtonArrow
-								onClick={handlePrevImage}
-								disabled={imagesPersonalizados.indexOf(selectedImage) === 0}
-							>
-								<StyledArrowLeft src='/images/arrow.svg' alt='' width='20' />
-							</StyledButtonArrow>
-							<StyledButtonArrow
-								onClick={handleNextImage}
-								disabled={
-									imagesPersonalizados.indexOf(selectedImage) ===
-									imagesPersonalizados.length - 1
-								}
-							>
-								<StyledArrowRight src='/images/arrow.svg' alt='' width='20' />
-							</StyledButtonArrow>
-						</StyledButtonContainer>
+							<StyledButtonContainer>
+								<StyledButtonArrow
+									onClick={handlePrevImage}
+									disabled={imagesPersonalizados.indexOf(selectedImage) === 0}
+								>
+									<StyledArrowLeft src='/images/arrow.svg' alt='' width='20' />
+								</StyledButtonArrow>
+								<StyledButtonArrow
+									onClick={handleNextImage}
+									disabled={
+										imagesPersonalizados.indexOf(selectedImage) ===
+										imagesPersonalizados.length - 1
+									}
+								>
+									<StyledArrowRight src='/images/arrow.svg' alt='' width='20' />
+								</StyledButtonArrow>
+							</StyledButtonContainer>
+						</StyledRelative>
 
 						<StyledThumbnails>
 							{imagesPersonalizados.map((image, index) => (
@@ -114,8 +162,44 @@ const Section = ({ section, subsection }) => {
 								/>
 							))}
 						</StyledThumbnails>
-					</StyledFlex>
-				</>
+					</StyledContainer>
+					<StyledInfoContainer>
+						<StyledParagraph>
+							¿Quieres un Narizotas diferente? ¿Estás buscando un regalo
+							original? No dudes en escribirnos y contarnos tu idea, nosotr@s
+							nos encargamos de hacerlo realidad.
+						</StyledParagraph>
+						<StyledParagraph>
+							<strong>
+								¡Echa un vistazo a algunas de nuestras personalizaciones!
+							</strong>
+						</StyledParagraph>
+						<StyledForm onSubmit={sendEmail}>
+							<StyledInput
+								type='text'
+								name='name'
+								placeholder='Nombre'
+								value={userName}
+								onChange={e => setUserName(e.target.value)}
+							/>
+							<StyledInput
+								type='email'
+								name='email'
+								placeholder='Email'
+								value={userEmail}
+								onChange={e => setUserEmail(e.target.value)}
+							/>
+							<StyledTextarea
+								type='text'
+								name='message'
+								placeholder='Mensaje'
+								value={userMessage}
+								onChange={e => setUserMessage(e.target.value)}
+							/>
+							<StyledButton type='submit'>Enviar pedido</StyledButton>
+						</StyledForm>
+					</StyledInfoContainer>
+				</StyledFlex>
 			) : (
 				<StyledProductFlex>
 					{products.map(product => (

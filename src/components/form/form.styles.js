@@ -44,6 +44,7 @@ const StyledForm = styled.form`
 
 const StyledInput = styled.input`
 	width: 48%;
+	min-height: 3.125rem;
 	padding: 0.625rem;
 	border: 0.125rem solid #f4a08d;
 	border-radius: 0.5rem;

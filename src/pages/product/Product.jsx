@@ -30,6 +30,7 @@ import {
 } from './product.styles';
 import { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
+import { StyledRelative } from '../section/section.styles';
 
 const Product = () => {
 	useEffect(() => {
@@ -188,24 +189,25 @@ const Product = () => {
 					<StyledName>{product.name}</StyledName>
 					<StyledPrice>{product.price}€</StyledPrice>
 				</StyledInfoMobile>
-
-				<StyledImgBig src={selectedImage} alt={product.name} />
-				<StyledButtonContainer>
-					<StyledButtonArrow
-						onClick={handlePrevImage}
-						disabled={product.img.indexOf(selectedImage) === 0}
-					>
-						<StyledArrowLeft src='/images/arrow.svg' alt='' width='20' />
-					</StyledButtonArrow>
-					<StyledButtonArrow
-						onClick={handleNextImage}
-						disabled={
-							product.img.indexOf(selectedImage) === product.img.length - 1
-						}
-					>
-						<StyledArrowRight src='/images/arrow.svg' alt='' width='20' />
-					</StyledButtonArrow>
-				</StyledButtonContainer>
+				<StyledRelative>
+					<StyledImgBig src={selectedImage} alt={product.name} />
+					<StyledButtonContainer>
+						<StyledButtonArrow
+							onClick={handlePrevImage}
+							disabled={product.img.indexOf(selectedImage) === 0}
+						>
+							<StyledArrowLeft src='/images/arrow.svg' alt='' width='20' />
+						</StyledButtonArrow>
+						<StyledButtonArrow
+							onClick={handleNextImage}
+							disabled={
+								product.img.indexOf(selectedImage) === product.img.length - 1
+							}
+						>
+							<StyledArrowRight src='/images/arrow.svg' alt='' width='20' />
+						</StyledButtonArrow>
+					</StyledButtonContainer>
+				</StyledRelative>
 				<StyledThumbnails>
 					{product.img.map((image, index) => (
 						<StyledImg
