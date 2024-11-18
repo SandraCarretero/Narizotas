@@ -80,7 +80,7 @@ const Section = ({ section, subsection }) => {
 						de hacerlo realidad.
 					</StyledParagraph>
 					<StyledParagraph>
-						¡Echa un vistazo a algunas de nuestras personalizaciones!
+						<strong>¡Echa un vistazo a algunas de nuestras personalizaciones!</strong>
 					</StyledParagraph>
 					<StyledFlex>
 						<StyledImgBig src={selectedImage} alt='Imagen principal' />
