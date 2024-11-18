@@ -36,10 +36,10 @@ export const PRODUCT_DATA = [
 		price: 35,
 		description:
 			'Lucecita se encarga de que todas y cada una de las noches de este frío invierno sientas un poquito de calor navideño.',
-		img: ['/images/lampara_lucecita_1.jpeg',
-			  '/images/lampara_lucecita_2.jpeg',
+		img: ['/images/lampara_lucecita_4.jpeg',
 			  '/images/lampara_lucecita_3.jpeg',
-			  '/images/lampara_lucecita_4.jpeg'
+			  '/images/lampara_lucecita_1.jpeg',
+			  '/images/lampara_lucecita_2.jpeg'
 		],
 		inputs: ['Detalles']
 	},
