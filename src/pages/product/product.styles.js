@@ -274,7 +274,6 @@ const StyledModalContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 0.3125rem;
-	align-items: center;
 `;
 
 const StyledInputMail = styled.input`
