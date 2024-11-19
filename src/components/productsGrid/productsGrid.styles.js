@@ -148,6 +148,16 @@ const StyledBox2 = styled(StyledBox)`
 	:before {
 		content: 'NAVIDAD';
 	}
+
+ 	@media (width < 768px) {
+		:after {
+			background-image: linear-gradient(
+				-180deg,
+				rgba(212, 57, 57, 0) 0%,
+				rgba(212, 57, 57, 0.8) 100%
+			) !important;
+		}
+	}
 `;
 
 const StyledBox3 = styled(StyledBox)`
