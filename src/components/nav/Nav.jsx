@@ -123,50 +123,21 @@ const Nav = () => {
 					</StyledMenuItem>
 
 					{/* Hogar */}
-					<StyledMenuItem
-						{...(!isMobile && {
-							onMouseEnter: () => toggleDropdown('hogar'),
-							onMouseLeave: () => toggleDropdown('hogar')
-						})}
-					>
+					<StyledMenuItem>
 						<NavLink onClick={closeMenu} to='/hogar'>
 							Hogar
 						</NavLink>
-						<StyledArrowIcon
-							src='/images/arrow.svg'
-							alt='flecha abajo'
-							onClick={() => toggleDropdown('hogar')}
-						/>
-						{dropdownVisible.hogar && (
-							<StyledDropdownList>
-								<StyledMenuItem>
-									<NavLink onClick={closeMenu} to='/hogar/lamparas'>
-										Lámparas
-									</NavLink>
-								</StyledMenuItem>
-								<StyledMenuItem>
-									<NavLink onClick={closeMenu} to='/hogar/decoracion'>
-										Decoración pared
-									</NavLink>
-								</StyledMenuItem>
-								<StyledMenuItem>
-									<NavLink onClick={closeMenu} to='/hogar/centro-mesa'>
-										Centros de mesa
-									</NavLink>
-								</StyledMenuItem>
-							</StyledDropdownList>
-						)}
 					</StyledMenuItem>
 					<StyledMenuItem>
 						<NavLink onClick={closeMenu} to='/imanes'>
 							Imanes
 						</NavLink>
 					</StyledMenuItem>
-					<StyledMenuItem>
+					{/* <StyledMenuItem>
 						<NavLink onClick={closeMenu} to='/eventos'>
 							Eventos
 						</NavLink>
-					</StyledMenuItem>
+					</StyledMenuItem> */}
 					<StyledMenuItem>
 						<NavLink onClick={closeMenu} to='/personalizaciones'>
 							Personalizaciones
