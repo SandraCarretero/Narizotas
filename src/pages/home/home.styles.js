@@ -29,7 +29,6 @@ const StyledContainer = styled.div`
 	@media (width < 768px) {
 		background-image: url(/images/header_mb.png);
 		animation: ${sliderMobile} 15s linear infinite;
-		height: auto;
 		align-items: flex-start;
   		max-width: 100%;
 	}
