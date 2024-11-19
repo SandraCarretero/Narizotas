@@ -31,6 +31,7 @@ const StyledContainer = styled.div`
 		animation: ${sliderMobile} 15s linear infinite;
 		align-items: flex-start;
   		max-width: 100%;
+    		height: 100%;
 	}
 `;
 
