@@ -32,6 +32,7 @@ const StyledContainer = styled.div`
 		align-items: flex-start;
   		max-width: 100%;
     		height: 100%;
+      		background-position-x: center;
 	}
 `;
 
