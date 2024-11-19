@@ -29,8 +29,9 @@ const StyledContainer = styled.div`
 	@media (width < 768px) {
 		background-image: url(/images/header_mb.png);
 		animation: ${sliderMobile} 15s linear infinite;
-		height: calc(100vh - 9.375rem);
+		height: auto;
 		align-items: flex-start;
+  		max-width: 100%;
 	}
 `;
 
@@ -53,7 +54,7 @@ const StyledBox = styled.div`
 		width: 90%;
 		height: max-content;
 		padding: 1.25rem;
-		margin-top: 4.0625rem;
+		margin-block: 4.0625rem;
 	}
 `;
 
