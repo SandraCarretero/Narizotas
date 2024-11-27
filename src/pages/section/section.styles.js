@@ -24,17 +24,48 @@ const StyledMainContainer = styled.div`
 	text-align: center;
 `;
 
+const StyledInfoContainer = styled.div`
+	width: 40%;
+
+	@media (width < 768px) {
+		width: 90%;
+	}
+`;
+
+const StyledForm = styled.form`
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 20px;
+`;
+
 const StyledParagraph = styled.p`
-	width: 70%;
 	font-size: 1.25rem;
 	margin: 1.5rem auto;
 	line-height: 1.6;
-	text-align: center;
+	text-align: left;
 	color: #333;
 
 	@media (width < 768px) {
 		font-size: 1rem;
 		width: 90%;
+		display: none;
+	}
+`;
+
+const StyledParagraphBold = styled(StyledParagraph)`
+	font-weight: bold;
+
+	@media (width < 768px) {
+		display: none;
+	}
+`;
+
+const StyledParagraphMobile = styled(StyledParagraph)`
+	display: none;
+
+	@media (width < 768px) {
+		display: block;
 	}
 `;
 
@@ -42,11 +73,24 @@ const StyledFlex = styled.div`
 	display: flex;
 	justify-content: center;
 	position: relative;
+	gap: 2.1875rem;
 
 	@media (width < 768px) {
 		flex-direction: column;
 		align-items: center;
 	}
+`;
+
+const StyledContainer = styled.div`
+	display: flex;
+
+	@media (width < 768px) {
+		flex-direction: column;
+	}
+`;
+
+const StyledRelative = styled.div`
+	position: relative;
 `;
 
 const StyledImgBig = styled.img`
@@ -133,9 +177,15 @@ const StyledProductFlex = styled.div`
 export {
 	StyledSectionTitle,
 	StyledMainContainer,
+	StyledInfoContainer,
 	StyledParagraph,
+	StyledParagraphBold,
+	StyledParagraphMobile,
+	StyledContainer,
 	StyledFlex,
+	StyledRelative,
 	StyledImgBig,
 	StyledThumbnails,
-	StyledProductFlex
+	StyledProductFlex,
+	StyledForm
 };

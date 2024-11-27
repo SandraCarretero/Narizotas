@@ -1,4 +1,24 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const sliderDesktop = keyframes`
+  0%, 47%, 100% {background-image: url(/images/header.png);}
+  50%, 97% {background-image: url(/images/header2.png);}
+`;
+
+const sliderMobile = keyframes`
+  0%, 47%, 100% {background-image: url(/images/header_mb.png);}
+  50%, 97% {background-image: url(/images/header2_mb.png);}
+`;
+
+const sliderBox = keyframes`
+  0%, 47%, 100% {opacity: 1;}
+  50%, 97%  {opacity:0;}
+`;
+
+const sliderButton = keyframes`
+  0%, 47%, 100% {opacity: 0;}
+  50%, 97%  {opacity:1;}
+`;
 
 const StyledContainer = styled.div`
 	width: 100%;
@@ -6,16 +26,20 @@ const StyledContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: ${({ currentImage }) => `url(${currentImage})`};
+	background-image: url(/images/header.png);
 	background-size: cover;
-	background-position-x: center;
 	background-repeat: no-repeat;
-	transition: background-image 0.5s ease-in-out, opacity 0.5s ease-in-out;
-	opacity: ${({ isFading }) => (isFading ? 0 : 1)};
+	animation: ${sliderDesktop} 10s linear infinite;
 
 	@media (width < 768px) {
-		height: calc(100vh - 9.375rem);
+		background-image: url(/images/header_mb.png);
+		animation: ${sliderMobile} 10s linear infinite;
 		align-items: flex-start;
+		max-width: 100%;
+		height: 100%;
+		background-position-x: center;
+		position: relative;
+		background-size: cover;
 	}
 `;
 
@@ -26,6 +50,7 @@ const StyledBox = styled.div`
 	background-color: #ffffffd6;
 	padding: 1.25rem 3.125rem;
 	text-align: center;
+	animation: ${sliderBox} 10s linear infinite;
 
 	@media (width > 1300px) {
 		height: max-content;
@@ -37,7 +62,7 @@ const StyledBox = styled.div`
 		width: 90%;
 		height: max-content;
 		padding: 1.25rem;
-		margin-top: 4.0625rem;
+		margin-block: 4.0625rem;
 	}
 `;
 
@@ -55,4 +80,31 @@ const StyledText = styled.span`
 	}
 `;
 
-export { StyledContainer, StyledBox, StyledRow, StyledText };
+const StyledButton = styled.button`
+	position: absolute;
+	bottom: 24%;
+	right: 19%;
+	padding: 15px;
+	background-color: white;
+	color: #c90707;
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	text-transform: uppercase;
+	animation: ${sliderButton} 10s linear infinite;
+
+	@media (width < 1300px) {
+		bottom: 18%;
+		right: 17%;
+	}
+
+	@media (width < 768px) {
+		top: 28%;
+		bottom: initial;
+		right: 10%;
+	}
+`;
+
+export { StyledContainer, StyledBox, StyledRow, StyledText, StyledButton };

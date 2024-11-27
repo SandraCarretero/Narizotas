@@ -22,7 +22,7 @@ const Us = () => {
 				<StyledIcon src='/images/ico_02.svg' alt='' />
 				<StyledTitleIcon>No habrá 2 igual</StyledTitleIcon>
 				<span>
-					Todas las figuras son
+					Todas las piezas están
 					<br />
 					hechas a mano,
 					<br />
@@ -35,7 +35,7 @@ const Us = () => {
 				<span>
 					Decora tus celebraciones con
 					<br />
-					gomos únicos para bodas,
+					gnomos únicos para bodas,
 					<br />
 					comuniones y más.
 				</span>

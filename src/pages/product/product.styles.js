@@ -29,10 +29,6 @@ const StyledButtonContainer = styled.div`
 	left: 2.5%;
 	display: flex;
 	justify-content: space-between;
-
-	@media (width > 768px) {
-		display: none;
-	}
 `;
 
 const StyledButtonArrow = styled.button`
@@ -274,7 +270,6 @@ const StyledModalContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 0.3125rem;
-	align-items: center;
 `;
 
 const StyledInputMail = styled.input`

@@ -110,23 +110,53 @@ const StyledBox1 = styled(StyledBox)`
 	}
 `;
 
+// const StyledBox2 = styled(StyledBox)`
+// 	grid-column: span 3 / span 3;
+// 	grid-row: span 4 / span 4;
+// 	grid-column-start: 1;
+// 	grid-row-start: 8;
+// 	background-image: url(/images/grid-2.png);
+
+// 	:after {
+// 		background-image: linear-gradient(
+// 			-180deg,
+// 			rgba(86, 178, 128, 0) 0%,
+// 			rgba(86, 178, 128, 0.8) 100%
+// 		);
+// 	}
+
+// 	:before {
+// 		content: 'EVENTOS';
+// 	}
+// `;
+
 const StyledBox2 = styled(StyledBox)`
 	grid-column: span 3 / span 3;
 	grid-row: span 4 / span 4;
 	grid-column-start: 1;
 	grid-row-start: 8;
-	background-image: url(/images/grid-2.png);
+	background-image: url(/images/grid-2_navidad.png);
 
 	:after {
 		background-image: linear-gradient(
 			-180deg,
-			rgba(86, 178, 128, 0) 0%,
-			rgba(86, 178, 128, 0.8) 100%
+			rgba(212, 57, 57, 0) 0%,
+			rgba(212, 57, 57, 0.8) 100%
 		);
 	}
 
 	:before {
-		content: 'EVENTOS';
+		content: 'NAVIDAD';
+	}
+
+ 	@media (width < 768px) {
+		:after {
+			background-image: linear-gradient(
+				-180deg,
+				rgba(212, 57, 57, 0) 0%,
+				rgba(212, 57, 57, 0.8) 100%
+			) !important;
+		}
 	}
 `;
 
