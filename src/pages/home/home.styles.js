@@ -93,6 +93,11 @@ const StyledButton = styled.button`
 	text-transform: uppercase;
 	animation: ${sliderButton} 10s linear infinite;
 
+	@media (width < 1300px) {
+		bottom: 18%;
+		right: 17%;
+	}
+
 	@media (width < 768px) {
 		bottom: 56%;
 		right: 7%;
