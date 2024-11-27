@@ -10,7 +10,7 @@ const ProductCard = ({ section, name, price, img }) => {
 	const navigate = useNavigate();
 
 	const handleClick = () => {
-		navigate(`/product/${section}/${name}`);
+		navigate(`/${section}/${name}`);
 	};
 
 	return (
