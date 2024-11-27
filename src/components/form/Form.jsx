@@ -30,8 +30,8 @@ const Form = () => {
 		}
 
 		const templateParams = {
-			from_email: userEmail,
-			to_email: 'narizotas.artesania@gmail.com',
+			from_name: userEmail,
+			to_name: 'narizotas.artesania@gmail.com',
 			subject: `Contacta con nosotros`,
 			name: userName,
 			message: userMessage
