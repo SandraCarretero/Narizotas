@@ -38,6 +38,8 @@ const StyledContainer = styled.div`
 		max-width: 100%;
 		height: 100%;
 		background-position-x: center;
+		position: relative;
+		background-size: cover;
 	}
 `;
 
@@ -99,8 +101,9 @@ const StyledButton = styled.button`
 	}
 
 	@media (width < 768px) {
-		bottom: 56%;
-		right: 7%;
+		top: 28%;
+		bottom: initial;
+		right: 10%;
 	}
 `;
 
