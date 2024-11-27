@@ -25,7 +25,8 @@ import {
 import {
 	StyledButton,
 	StyledInput,
-	StyledTextarea
+	StyledTextarea,
+	StyledInputMail
 } from '../../components/form/form.styles';
 import emailjs from 'emailjs-com';
 
@@ -33,9 +34,18 @@ const Section = ({ section, subsection }) => {
 	const [userName, setUserName] = useState('');
 	const [userEmail, setUserEmail] = useState('');
 	const [userMessage, setUserMessage] = useState('');
+	const [emailError, setEmailError] = useState(false);
+	const [isOrderSent, setIsOrderSent] = useState(false);
+	const [isError, setIsError] = useState(false);
 
 	const sendEmail = e => {
 		e.preventDefault();
+
+		if (!userEmail || !isEmailValid(userEmail)) {
+			setEmailError(true);
+			return;
+		}
+
 		const templateParams = {
 			from_name: userEmail,
 			to_name: 'artesanialascositasdelamari@gmail.com',
@@ -52,15 +62,30 @@ const Section = ({ section, subsection }) => {
 				'urkRLRy5TqhfT62de'
 			)
 			.then(response => {
-				alert('Correo enviado correctamente!');
+				setIsOrderSent(true);
+				setIsError(false);
 				setUserName('');
 				setUserEmail('');
 				setUserMessage('');
 			})
 			.catch(err => {
+				setIsError(true);
+				setIsOrderSent(false);
 				console.log('Error al enviar el correo:', err);
-				alert('Hubo un error al enviar el correo.');
 			});
+	};
+
+	const handleEmailChange = e => {
+		const email = e.target.value;
+		setUserEmail(email);
+		if (emailError && isEmailValid(email)) {
+			setEmailError(false);
+		}
+	};
+
+	const isEmailValid = email => {
+		const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+		return emailRegex.test(email);
 	};
 
 	useEffect(() => {
@@ -175,28 +200,48 @@ const Section = ({ section, subsection }) => {
 							</strong>
 						</StyledParagraph>
 						<StyledForm onSubmit={sendEmail}>
-							<StyledInput
-								type='text'
-								name='name'
-								placeholder='Nombre'
-								value={userName}
-								onChange={e => setUserName(e.target.value)}
-							/>
-							<StyledInput
-								type='email'
-								name='email'
-								placeholder='Email'
-								value={userEmail}
-								onChange={e => setUserEmail(e.target.value)}
-							/>
-							<StyledTextarea
-								type='text'
-								name='message'
-								placeholder='Mensaje'
-								value={userMessage}
-								onChange={e => setUserMessage(e.target.value)}
-							/>
-							<StyledButton type='submit'>Enviar pedido</StyledButton>
+							{isOrderSent ? (
+								<>
+									<h3>¡Muchísimas gracias!</h3>
+									<p>
+										Su pedido se ha enviado correctamente, a lo largo del día
+										recibirá un mail con su pedido y detalles.
+									</p>
+									<img src='/images/favicon.png' alt='Gracias' width='200' />
+								</>
+							) : isError ? (
+								<>
+									<h3>Ups... algo ha fallado</h3>
+									<p>Vuelva a hacer la petición por favor.</p>
+									<img src='/images/favicon.png' alt='Error' width='200' />
+								</>
+							) : (
+								<>
+									<StyledInput
+										type='text'
+										name='name'
+										placeholder='Nombre'
+										value={userName}
+										onChange={e => setUserName(e.target.value)}
+									/>
+									<StyledInputMail
+										type='email'
+										name='email'
+										onChange={handleEmailChange}
+										placeholder='Email'
+										value={userEmail}
+										className={emailError ? 'invalid' : ''}
+									/>
+									<StyledTextarea
+										type='text'
+										name='message'
+										placeholder='Mensaje'
+										value={userMessage}
+										onChange={e => setUserMessage(e.target.value)}
+									/>
+									<StyledButton type='submit'>Enviar pedido</StyledButton>
+								</>
+							)}
 						</StyledForm>
 					</StyledInfoContainer>
 				</StyledFlex>

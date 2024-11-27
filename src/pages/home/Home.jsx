@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import Form from '../../components/form/Form';
 import ProductsGrid from '../../components/productsGrid/ProductsGrid';
 import Us from '../../components/us/Us';
@@ -5,7 +6,8 @@ import {
 	StyledBox,
 	StyledContainer,
 	StyledRow,
-	StyledText
+	StyledText,
+	StyledButton
 } from './home.styles';
 
 const Home = () => {
@@ -31,6 +33,9 @@ const Home = () => {
 						<img src='/images/corazon.svg' alt='' width='30' />
 					</StyledRow>
 				</StyledBox>
+				<StyledButton>
+					<NavLink to='/navidad'>Descúbrelos</NavLink>
+				</StyledButton>
 			</StyledContainer>
 			<ProductsGrid />
 			<Us />

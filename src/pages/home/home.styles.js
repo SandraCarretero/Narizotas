@@ -1,18 +1,23 @@
 import styled, { keyframes } from 'styled-components';
 
 const sliderDesktop = keyframes`
-  0%, 22%, 50%, 72%, 100% {background-image: url(/images/header.png);}
-  25%, 47%, 75%, 97% {background-image: url(/images/header2.png);}
+  0%, 47%, 100% {background-image: url(/images/header.png);}
+  50%, 97% {background-image: url(/images/header2.png);}
 `;
 
 const sliderMobile = keyframes`
-  0%, 22%, 50%, 72%, 100% {background-image: url(/images/header_mb.png);}
-  25%, 47%, 75%, 97% {background-image: url(/images/header2_mb.png);}
+  0%, 47%, 100% {background-image: url(/images/header_mb.png);}
+  50%, 97% {background-image: url(/images/header2_mb.png);}
 `;
 
 const sliderBox = keyframes`
-  0%, 22%, 50%, 72%, 100% {opacity: 1;}
-  25%, 47%, 75%, 97% {opacity:0;}
+  0%, 47%, 100% {opacity: 1;}
+  50%, 97%  {opacity:0;}
+`;
+
+const sliderButton = keyframes`
+  0%, 47%, 100% {opacity: 0;}
+  50%, 97%  {opacity:1;}
 `;
 
 const StyledContainer = styled.div`
@@ -24,15 +29,15 @@ const StyledContainer = styled.div`
 	background-image: url(/images/header.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	animation: ${sliderDesktop} 15s linear infinite;
+	animation: ${sliderDesktop} 10s linear infinite;
 
 	@media (width < 768px) {
 		background-image: url(/images/header_mb.png);
-		animation: ${sliderMobile} 15s linear infinite;
+		animation: ${sliderMobile} 10s linear infinite;
 		align-items: flex-start;
-  		max-width: 100%;
-    		height: 100%;
-      		background-position-x: center;
+		max-width: 100%;
+		height: 100%;
+		background-position-x: center;
 	}
 `;
 
@@ -43,7 +48,7 @@ const StyledBox = styled.div`
 	background-color: #ffffffd6;
 	padding: 1.25rem 3.125rem;
 	text-align: center;
-	animation: ${sliderBox} 15s linear infinite;
+	animation: ${sliderBox} 10s linear infinite;
 
 	@media (width > 1300px) {
 		height: max-content;
@@ -73,4 +78,25 @@ const StyledText = styled.span`
 	}
 `;
 
-export { StyledContainer, StyledBox, StyledRow, StyledText };
+const StyledButton = styled.button`
+	position: absolute;
+	bottom: 24%;
+	right: 19%;
+	padding: 15px;
+	background-color: white;
+	color: #c90707;
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	text-transform: uppercase;
+	animation: ${sliderButton} 10s linear infinite;
+
+	@media (width < 768px) {
+		bottom: 56%;
+		right: 7%;
+	}
+`;
+
+export { StyledContainer, StyledBox, StyledRow, StyledText, StyledButton };
