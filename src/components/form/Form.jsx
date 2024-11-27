@@ -7,7 +7,8 @@ import {
 	StyledInput,
 	StyledTextarea,
 	StyledButton,
-	StyledInputMail
+	StyledInputMail,
+	StyledMessage
 } from './form.styles';
 
 import emailjs from 'emailjs-com';
@@ -27,7 +28,7 @@ const Form = () => {
 			setEmailError(true);
 			return;
 		}
-		
+
 		const templateParams = {
 			from_name: userEmail,
 			to_name: 'artesanialascositasdelamari@gmail.com',
@@ -72,18 +73,35 @@ const Form = () => {
 
 	return (
 		<StyledFormContainer>
-			{!isOrderSent && !isError && (
-				<>
-					<StyledText>
-						<StyledTitle>Contacta con nosotros</StyledTitle>
+			<StyledText>
+				<StyledTitle>Contacta con nosotros</StyledTitle>
+				<p>
+					¿No has encontrado lo que buscabas?
+					<br />
+					Cuéntanos tu idea, tus dudas o tus intereses. ¡Nos pondremos en
+					contacto contigo lo antes posible!
+				</p>
+			</StyledText>
+			<StyledForm onSubmit={sendEmail}>
+				{isOrderSent && !isError && (
+					<StyledMessage>
+						<h3>¡Muchísimas gracias!</h3>
 						<p>
-							¿No has encontrado lo que buscabas?
-							<br />
-							Cuéntanos tu idea, tus dudas o tus intereses. ¡Nos pondremos en
-							contacto contigo lo antes posible!
+							Su pedido se ha enviado correctamente, a lo largo del día recibirá
+							un mail con su pedido y detalles.
 						</p>
-					</StyledText>
-					<StyledForm onSubmit={sendEmail}>
+						<img src='/images/favicon.png' alt='Gracias' width='100' />
+					</StyledMessage>
+				)}
+				{isError && !isOrderSent && (
+					<StyledMessage>
+						<h3>Ups... algo ha fallado</h3>
+						<p>Vuelva a hacer la petición por favor.</p>
+						<img src='/images/favicon.png' alt='Error' width='100' />
+					</StyledMessage>
+				)}
+				{!isOrderSent && !isError && (
+					<>
 						<StyledInput
 							type='text'
 							name='name'
@@ -107,26 +125,9 @@ const Form = () => {
 							onChange={e => setUserMessage(e.target.value)}
 						/>
 						<StyledButton type='submit'>Enviar pedido</StyledButton>
-					</StyledForm>
-				</>
-			)}
-			{isOrderSent && (
-				<>
-					<h3>¡Muchísimas gracias!</h3>
-					<p>
-						Su pedido se ha enviado correctamente, a lo largo del día recibirá
-						un mail con su pedido y detalles.
-					</p>
-					<img src='/images/favicon.png' alt='Gracias' width='200' />
-				</>
-			)}
-			{isError && (
-				<>
-					<h3>Ups... algo ha fallado</h3>
-					<p>Vuelva a hacer la petición por favor.</p>
-					<img src='/images/favicon.png' alt='Error' width='200' />
-				</>
-			)}
+					</>
+				)}
+			</StyledForm>
 		</StyledFormContainer>
 	);
 };

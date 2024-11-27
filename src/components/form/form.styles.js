@@ -42,6 +42,12 @@ const StyledForm = styled.form`
 	}
 `;
 
+const StyledMessage = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`;
+
 const StyledInput = styled.input`
 	width: 48%;
 	min-height: 3.125rem;
@@ -130,5 +136,6 @@ export {
 	StyledInput,
 	StyledTextarea,
 	StyledButton,
-	StyledInputMail
+	StyledInputMail,
+	StyledMessage
 };

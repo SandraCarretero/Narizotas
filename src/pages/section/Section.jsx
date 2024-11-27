@@ -26,7 +26,8 @@ import {
 	StyledButton,
 	StyledInput,
 	StyledTextarea,
-	StyledInputMail
+	StyledInputMail,
+	StyledMessage
 } from '../../components/form/form.styles';
 import emailjs from 'emailjs-com';
 
@@ -201,20 +202,20 @@ const Section = ({ section, subsection }) => {
 						</StyledParagraph>
 						<StyledForm onSubmit={sendEmail}>
 							{isOrderSent ? (
-								<>
+								<StyledMessage>
 									<h3>¡Muchísimas gracias!</h3>
 									<p>
 										Su pedido se ha enviado correctamente, a lo largo del día
 										recibirá un mail con su pedido y detalles.
 									</p>
-									<img src='/images/favicon.png' alt='Gracias' width='200' />
-								</>
+									<img src='/images/favicon.png' alt='Gracias' width='100' />
+								</StyledMessage>
 							) : isError ? (
-								<>
+								<StyledMessage>
 									<h3>Ups... algo ha fallado</h3>
 									<p>Vuelva a hacer la petición por favor.</p>
-									<img src='/images/favicon.png' alt='Error' width='200' />
-								</>
+									<img src='/images/favicon.png' alt='Error' width='100' />
+								</StyledMessage>
 							) : (
 								<>
 									<StyledInput
