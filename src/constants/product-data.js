@@ -226,8 +226,8 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/naricilla_villancico_1.jpeg',
-			'/images/naricilla_villancico_2.jpeg'
+		img: ['/images/naricilla_villancico_1.jpg',
+			'/images/naricilla_villancico_2.jpg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
