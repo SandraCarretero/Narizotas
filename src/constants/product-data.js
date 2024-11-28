@@ -518,7 +518,7 @@ export const PRODUCT_DATA = [
 			'/images/narigudo_feliz_3.jpg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
-	}
+	},
 
 	// MACETAS NARIZOTAS
 	{
