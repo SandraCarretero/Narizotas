@@ -235,7 +235,7 @@ const StyledBox6 = styled(StyledBox)`
 	}
 
 	:before {
-		content: 'TIESTOS';
+		content: 'MACETAS';
 	}
 `;
 
