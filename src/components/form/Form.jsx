@@ -90,14 +90,24 @@ const Form = () => {
 							Su pedido se ha enviado correctamente, a lo largo del día recibirá
 							un mail con su pedido y detalles.
 						</p>
-						<img src='/images/favicon.png' alt='Gracias' width='100' />
+						<img
+							src='/images/favicon.png'
+							alt='Gracias'
+							width='100'
+							loading='lazy'
+						/>
 					</StyledMessage>
 				)}
 				{isError && !isOrderSent && (
 					<StyledMessage>
 						<h3>Ups... algo ha fallado</h3>
 						<p>Vuelva a hacer la petición por favor.</p>
-						<img src='/images/favicon.png' alt='Error' width='100' />
+						<img
+							src='/images/favicon.png'
+							alt='Error'
+							width='100'
+							loading='lazy'
+						/>
 					</StyledMessage>
 				)}
 				{!isOrderSent && !isError && (

@@ -15,7 +15,7 @@ const ProductCard = ({ section, name, price, img }) => {
 
 	return (
 		<StyledCard onClick={handleClick}>
-			<StyledImage src={img[0]} alt={name} />
+			<StyledImage src={img[0]} alt={name} loading="lazy"/>
 			<StyledContainerInfo>
 				<span>{name}</span>
 				<StyledPrice>{price}€</StyledPrice>

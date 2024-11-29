@@ -38,15 +38,20 @@ const Nav = () => {
 		<StyledHeader>
 			<div>
 				<Link to='/'>
-					<img src='/images/logo.png' alt='Logo' width='170' />
+					<img src='/images/logo.png' alt='Logo' width='170' loading='lazy' />
 				</Link>
 			</div>
 			<StyledHamburgerButton onClick={handleMenuToggle}>
-				<img src='/images/hamburger.svg' alt='Menu' width='25' />
+				<img src='/images/hamburger.svg' alt='Menu' width='25' loading='lazy' />
 			</StyledHamburgerButton>
 			<StyledMobileMenu $isOpen={isMenuOpen}>
 				<StyledCloseButton onClick={() => setIsMenuOpen(false)}>
-					<img src='/images/cross.svg' alt='Cerrar menú' width='20' />
+					<img
+						src='/images/cross.svg'
+						alt='Cerrar menú'
+						width='20'
+						loading='lazy'
+					/>
 				</StyledCloseButton>
 
 				<StyledList>
@@ -68,6 +73,7 @@ const Nav = () => {
 						<StyledArrowIcon
 							src='/images/arrow.svg'
 							alt='flecha abajo'
+							loading='lazy'
 							onClick={() => toggleDropdown('macetas')}
 						/>
 						{dropdownVisible.macetas && (
@@ -104,6 +110,7 @@ const Nav = () => {
 						<StyledArrowIcon
 							src='/images/arrow.svg'
 							alt='flecha abajo'
+							loading='lazy'
 							onClick={() => toggleDropdown('gnomos')}
 						/>
 						{dropdownVisible.gnomos && (
