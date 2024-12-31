@@ -801,8 +801,8 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 17cm\nAltura maceta: 15cm\nPatas: 30cm',
 		img: [
-			'/images/narizotas/narizota_romero_1.jpeg',
-			'/images/narizotas/narizota_romero_2.jpeg'
+			'/images/narizotas/narizota_romero_1.jpg',
+			'/images/narizotas/narizota_romero_2.jpg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 		
