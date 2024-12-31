@@ -1001,10 +1001,10 @@ export const PRODUCT_DATA = [
 		price: 35,
 		description:
 			'Lucecita se encarga de que todas y cada una de las noches de este frío invierno sientas un poquito de calor navideño.',
-		img: ['/images/navidad/navidad_lampara_lucecita_4.jpeg',
-			  '/images/navidad/navidad_lampara_lucecita_3.jpeg',
-			  '/images/navidad/navidad_lampara_lucecita_1.jpeg',
-			  '/images/navidad/navidad_lampara_lucecita_2.jpeg'
+		img: ['/images/navidad/navidad_gnomolampara_lucecita_4.jpeg',
+			  '/images/navidad/navidad_gnomolampara_lucecita_3.jpeg',
+			  '/images/navidad/navidad_gnomolampara_lucecita_1.jpeg',
+			  '/images/navidad/navidad_gnomolampara_lucecita_2.jpeg'
 		],
 		inputs: ['Detalles']
 	},
@@ -1045,10 +1045,10 @@ export const PRODUCT_DATA = [
 		description:
 			'Lámpara elaborada artesanalmente con materiales naturales.\n Luz LED con carga usb incluida.\n\n<strong>Dimensiones:</strong>\nAltura: 36cm',
 		img: [
-			'/images/gnomos/gnomolamp/gnomolamapara_espantapajaros_1.jpeg',
-			'/images/gnomos/gnomolamp/gnomolamapara_espantapajaros_2.jpeg',
-			'/images/gnomos/gnomolamp/gnomolamapara_espantapajaros_3.jpeg',
-			'/images/gnomos/gnomolamp/gnomolamapara_espantapajaros_4.jpeg'
+			'/images/gnomolamp/gnomolamapara_espantapajaros_1.jpeg',
+			'/images/gnomolamp/gnomolamapara_espantapajaros_2.jpeg',
+			'/images/gnomolamp/gnomolamapara_espantapajaros_3.jpeg',
+			'/images/gnomolamp/gnomolamapara_espantapajaros_4.jpeg'
 		],
 		inputs: ['Detalles']
 	},
@@ -1061,9 +1061,9 @@ export const PRODUCT_DATA = [
 		description:
 			'Lámpara elaborada artesanalmente con materiales naturales y pelo sintético.\n Luz LED con carga usb incluida.',
 		img: [
-			'/images/gnomos/gnomolamp/gnomolampara_salmarina_1.jpeg',
-			'/images/gnomos/gnomolamp/gnomolampara_salmarina_2.jpeg',
-			'/images/gnomos/gnomolamp/gnomolampara_salmarina_3.jpeg'
+			'/images/gnomolamp/gnomolampara_salmarina_1.jpeg',
+			'/images/gnomolamp/gnomolampara_salmarina_2.jpeg',
+			'/images/gnomolamp/gnomolampara_salmarina_3.jpeg'
 		],
 		inputs: ['Detalles']
 	},
