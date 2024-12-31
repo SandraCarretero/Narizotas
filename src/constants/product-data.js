@@ -129,8 +129,8 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/navidad/navidad_naricilla_villancico_1.jpeg',
-			  '/images/navidad/navidad_naricilla_villancico_2.jpeg'
+		img: ['/images/navidad/navidad_naricilla_villancico_1.jpg',
+			  '/images/navidad/navidad_naricilla_villancico_2.jpg'
 		],
 		inputs: ['Pelo', 'Detalles']
 	},
@@ -354,21 +354,7 @@ export const PRODUCT_DATA = [
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
 
-	{
-		section: 'navidad',
-		subsection: '',
-		name: 'Naricilla Villancico',
-		price: 16,
-		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
-		exception: '*Planta no incluida',
-		img: ['/images/navidad/navidad_naricilla_villancico_1.jpeg',
-			  '/images/navidad/navidad_naricilla_villancico_2.jpeg'
-		],
-		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
-	},
-
-
+	
 	// MACETAS NARICILLAS
 	{
 		section: 'macetas',
@@ -393,8 +379,8 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/navidad/navidad_naricilla_villancico_1.jpeg',
-			'/images/navidad/navidad_naricilla_villancico_2.jpeg'
+		img: ['/images/navidad/navidad_naricilla_villancico_1.jpg',
+			'/images/navidad/navidad_naricilla_villancico_2.jpg'
 		],
 		inputs: ['Pelo', 'Detalles']
 	},
