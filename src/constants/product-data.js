@@ -9,8 +9,8 @@ export const PRODUCT_DATA = [
 		description:
 			'Enfadado con la vida y con el mundo, el Narizotas Grinch entra por cada chimenea a arruinar la Navidad a todo el que se le cruce.',
 		img: ['/images/gnomos/gnomo_grinch_1.jpeg',
-			'/images/gnomos/gnomo_grinch_2.jpeg',
-			'/images/gnomos/gnomo_grinch_3.jpeg'
+			  '/images/gnomos/gnomo_grinch_2.jpeg',
+			  '/images/gnomos/gnomo_grinch_3.jpeg'
 		],
 		inputs: ['Detalles']
 	},
@@ -24,8 +24,8 @@ export const PRODUCT_DATA = [
 			'Klaus se cuela por las ventanas y las chimeneas, dejando a cada niño (y no tan niños) un regalo bajo el árbol de navidad.',
 		img: ['/images/gnomos/gnomo_klaus_1.jpg',
 			  '/images/gnomos/gnomo_klaus_2.jpg',
-			'/images/gnomos/gnomo_klaus_3.JPG',
-			'/images/gnomos/gnomo_klaus_4.jpg'
+			  '/images/gnomos/gnomo_klaus_3.JPG',
+			  '/images/gnomos/gnomo_klaus_4.jpg'
 		],
 		inputs: ['Detalles']
 	},
@@ -38,8 +38,8 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n<strong>Dimensiones:</strong>\nDiámetro maceta: 14cm\nAltura: 15cm\nPatas: 25cm',
 		exception: '*Planta no incluida',
-		img: ['/images/narigudo_casitadelarbol_1.jpg',
-			'/images/narigudo_casitadelarbol_2.jpg'
+		img: ['/images/navidad/navidad_narigudo_casitadelarbol_1.jpg',
+			  '/images/navidad/navidad_narigudo_casitadelarbol_2.jpg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -51,10 +51,10 @@ export const PRODUCT_DATA = [
 		price: 35,
 		description:
 			'Lucecita se encarga de que todas y cada una de las noches de este frío invierno sientas un poquito de calor navideño.',
-		img: ['/images/lampara_lucecita_4.jpeg',
-			  '/images/lampara_lucecita_3.jpeg',
-			  '/images/lampara_lucecita_1.jpeg',
-			  '/images/lampara_lucecita_2.jpeg'
+		img: ['/images/navidad/navidad_gnomolampara_lucecita_4.jpeg',
+			  '/images/navidad/navidad_gnomolampara_lucecita_3.jpeg',
+			  '/images/navidad/navidad_gnomolampara_lucecita_1.jpeg',
+			  '/images/navidad/navidad_gnomolampara_lucecita_2.jpeg'
 		],
 		inputs: ['Detalles']
 	},
@@ -67,9 +67,9 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 14cm\nAltura: 15cm\nPatas: 25cm',
 		exception: '*Planta no incluida',
-		img: ['/images/narigudo_mazapan_1.jpeg',
-			'/images/narigudo_mazapan_2.jpeg',
-			'/images/narigudo_mazapan_3.jpeg'
+		img: ['/images/navidad/navidad_narigudo_mazapan_1.jpeg',
+			  '/images/navidad/navidad_narigudo_mazapan_2.jpeg',
+			  '/images/navidad/navidad_narigudo_mazapan_3.jpeg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -82,9 +82,9 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/navidad_jingle_1.jpeg',
-			'/images/navidad_jingle_2.jpeg',
-			'/images/navidad_jingle_3.jpeg'
+		img: ['/images/navidad/navidad_naricilla_jingle_1.jpeg',
+			  '/images/navidad/navidad_naricilla_jingle_2.jpeg',
+			  '/images/navidad/navidad_naricilla_jingle_3.jpeg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -96,7 +96,7 @@ export const PRODUCT_DATA = [
 		price: 5,
 		description:
 			'Adorno navideño para el árbol.',
-		img: ['/images/navidad_adorno_cascabel.jpeg'],
+		img: ['/images/navidad/navidad_adorno_cascabel.jpeg'],
 		inputs: ['Detalles']
 	},
 
@@ -107,7 +107,7 @@ export const PRODUCT_DATA = [
 		price: 5,
 		description:
 			'Adorno navideño para el árbol.',
-		img: ['/images/navidad_adorno_abeto.jpeg'],
+		img: ['/images/navidad/navidad_adorno_abeto.jpeg'],
 		inputs: ['Detalles']
 	},
 
@@ -118,7 +118,7 @@ export const PRODUCT_DATA = [
 		price: 5,
 		description:
 			'Adorno navideño para el árbol.',
-		img: ['/images/navidad_adorno_copito.jpeg'],
+		img: ['/images/navidad/navidad_adorno_copito.jpeg'],
 		inputs: ['Detalles']
 	},
 
@@ -129,7 +129,7 @@ export const PRODUCT_DATA = [
 		price: 5,
 		description:
 			'Adorno navideño para el árbol.',
-		img: ['/images/navidad_adorno_rudolf.jpeg'],
+		img: ['/images/navidad/navidad_adorno_rudolf.jpeg'],
 		inputs: ['Detalles']
 	},
 
@@ -140,9 +140,9 @@ export const PRODUCT_DATA = [
 		price: 35,
 		description:
 			'Lámpara inalámbrica LED hecha con materiales naturales y pelo sintético.',
-		img: ['/images/lampara_laponia_1.jpeg',
-			'/images/lampara_laponia_2.jpeg',
-			'/images/lampara_laponia_3.jpeg',
+		img: ['/images/navidad/navidad_gnomolampara_laponia_1.jpeg',
+			  '/images/navidad/navidad_gnomolampara_laponia_2.jpeg',
+			  '/images/navidad/navidad_gnomolampara_laponia_3.jpeg',
 		],
 		inputs: ['Detalles']
 	},
@@ -154,9 +154,9 @@ export const PRODUCT_DATA = [
 		price: 35,
 		description:
 			'Lámpara inalámbrica LED hecha con materiales naturales y pelo sintético.',
-		img: ['/images/lampara_artico_1.jpeg',
-			'/images/lampara_artico_2.jpeg',
-			'/images/lampara_artico_3.jpeg',
+		img: ['/images/navidad/navidad_gnomolampara_artico_1.jpeg',
+			  '/images/navidad/navidad_gnomolampara_artico_2.jpeg',
+			  '/images/navidad/navidad_gnomolampara_artico_3.jpeg',
 		],
 		inputs: ['Detalles']
 	},
@@ -168,9 +168,9 @@ export const PRODUCT_DATA = [
 		price: 25,
 		description:
 			'Adorno hecho con materiales naturales.',
-		img: ['/images/navidad_lucero_1.jpeg',
-			  '/images/navidad_lucero_2.jpeg',
-			  '/images/navidad_lucero_3.jpeg',
+		img: ['/images/navidad/navidad_lucero_1.jpeg',
+			  '/images/navidad/navidad_lucero_2.jpeg',
+			  '/images/navidad/navidad_lucero_3.jpeg',
 		],
 		inputs: ['Detalles']
 	},
@@ -182,9 +182,9 @@ export const PRODUCT_DATA = [
 		price: 25,
 		description:
 			'Adorno hecho con materiales naturales.',
-		img: ['/images/navidad_candela_1.jpeg',
-			  '/images/navidad_candela_2.jpeg',
-			  '/images/navidad_candela_3.jpeg',
+		img: ['/images/navidad/navidad_candela_1.jpeg',
+			  '/images/navidad/navidad_candela_2.jpeg',
+			  '/images/navidad/navidad_candela_3.jpeg',
 		],
 		inputs: ['Detalles']
 	},
@@ -197,9 +197,9 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/naricilla_muerdago_1.jpeg',
-			'/images/naricilla_muerdago_2.jpeg',
-			'/images/naricilla_muerdago_3.jpeg'
+		img: ['/images/navidad/navidad_naricilla_muerdago_1.jpeg',
+			  '/images/navidad/navidad_naricilla_muerdago_2.jpeg',
+			  '/images/navidad/navidad_naricilla_muerdago_3.jpeg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -212,8 +212,8 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/naricilla_muneco_1.jpeg',
-			'/images/naricilla_muneco_2.jpeg'
+		img: ['/images/navidad/navidad_naricilla_muneco_1.jpeg',
+			  '/images/navidad/navidad_naricilla_muneco_2.jpeg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -226,11 +226,12 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/naricilla_villancico_1.jpeg',
-			'/images/naricilla_villancico_2.jpeg'
+		img: ['/images/navidad/navidad_naricilla_villancico_1.jpeg',
+			  '/images/navidad/navidad_naricilla_villancico_2.jpeg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
+
 
 	// MACETAS NARICILLAS
 	{
@@ -241,9 +242,9 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/navidad_jingle_1.jpeg',
-			'/images/navidad_jingle_2.jpeg',
-			'/images/navidad_jingle_3.jpeg'
+		img: ['/images/navidad/navidad_naricilla_jingle_1.jpeg',
+			  '/images/navidad/navidad_naricilla_jingle_2.jpeg',
+			  '/images/navidad/navidad_naricilla_jingle_3.jpeg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -256,7 +257,7 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/naricilla_alan.jpg'],
+		img: ['/images/naricillas/naricilla_alan.jpg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
 
@@ -269,8 +270,8 @@ export const PRODUCT_DATA = [
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
 		img: [
-			'/images/naricilla_arcoiris_1.jpeg',
-			'/images/naricilla_arcoiris_2.jpeg'
+			'/images/naricillas/naricilla_arcoiris_1.jpeg',
+			'/images/naricillas/naricilla_arcoiris_2.jpeg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -283,7 +284,7 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/naricilla_babu.jpeg'],
+		img: ['/images/naricillas/naricilla_babu.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
 
@@ -295,7 +296,7 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/naricilla_gruñon.jpeg'],
+		img: ['/images/naricillas/naricilla_gruñon.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
 
@@ -307,7 +308,7 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/naricilla_hula.jpeg'],
+		img: ['/images/naricillas/naricilla_hula.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
 
@@ -319,7 +320,7 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/naricilla_pescador.jpeg'],
+		img: ['/images/naricillas/naricilla_pescador.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
 
@@ -331,7 +332,7 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/naricilla_bandolero.jpeg'],
+		img: ['/images/naricillas/naricilla_bandolero.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
 
@@ -343,7 +344,7 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/naricilla_pirata.jpg'],
+		img: ['/images/naricillas/naricilla_pirata.jpg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
 
@@ -355,7 +356,7 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/naricilla_barbie.jpeg'],
+		img: ['/images/naricillas/naricilla_barbie.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
 
@@ -367,7 +368,7 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/naricilla_roble.jpg'],
+		img: ['/images/naricillas/naricilla_roble.jpg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
 
@@ -379,7 +380,7 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/naricilla_sabio.jpg'],
+		img: ['/images/naricillas/naricilla_sabio.jpg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
 
@@ -391,7 +392,7 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/naricilla_araña.jpeg'],
+		img: ['/images/naricillas/naricilla_araña.jpeg'],
 		inputs: ['Pelo', 'Detalles']
 	},
 
@@ -404,8 +405,8 @@ export const PRODUCT_DATA = [
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
 		img: [
-			'/images/naricilla_borrachin_1.jpeg',
-			'/images/naricilla_borrachin_2.jpeg'
+			'/images/naricillas/naricilla_borrachin_1.jpeg',
+			'/images/naricillas/naricilla_borrachin_2.jpeg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -418,7 +419,7 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/naricilla_delbosque.jpeg'],
+		img: ['/images/naricillas/naricilla_delbosque.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
 
@@ -431,8 +432,8 @@ export const PRODUCT_DATA = [
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
 		img: [
-			'/images/naricilla_escoces_1.jpeg',
-			'/images/naricilla_escoces_2.jpeg'
+			'/images/naricillas/naricilla_escoces_1.jpeg',
+			'/images/naricillas/naricilla_escoces_2.jpeg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -445,7 +446,7 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/naricilla_delpantano.jpeg'],
+		img: ['/images/naricillas/naricilla_delpantano.jpeg'],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
 
@@ -457,7 +458,7 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida',
-		img: ['/images/naricilla_vivanlosnovios.jpeg'],
+		img: ['/images/naricillas/naricilla_vivanlosnovios.jpeg'],
 		inputs: ['Color', 'Pelo', 'Detalles']
 	},
 
@@ -471,9 +472,9 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n<strong>Dimensiones:</strong>\nDiámetro maceta: 14cm\nAltura: 15cm\nPatas: 25cm',
 		exception: '*Planta no incluida',
-		img: ['/images/narigudo_mazapan_1.jpeg',
-			'/images/narigudo_mazapan_2.jpeg',
-			'/images/narigudo_mazapan_3.jpeg'
+		img: ['/images/navidad/navidad_narigudo_mazapan_1.jpeg',
+			  '/images/navidad/navidad_narigudo_mazapan_2.jpeg',
+			  '/images/navidad/navidad_narigudo_mazapan_3.jpeg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -486,8 +487,8 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n<strong>Dimensiones:</strong>\nDiámetro maceta: 14cm\nAltura: 15cm\nPatas: 25cm',
 		exception: '*Planta no incluida',
-		img: ['/images/narigudo_duende_1.jpeg',
-			  '/images/narigudo_duende_2.jpeg'
+		img: ['/images/narigudos/narigudo_duende_1.jpeg',
+			  '/images/narigudos/narigudo_duende_2.jpeg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
@@ -501,8 +502,8 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n<strong>Dimensiones:</strong>\nDiámetro maceta: 14cm\nAltura: 15cm\nPatas: 25cm',
 		exception: '*Planta no incluida',
-		img: ['/images/narigudo_casitadelarbol_1.jpg',
-			'/images/narigudo_casitadelarbol_2.jpg'
+		img: ['/images/navidad/navidad_narigudo_casitadelarbol_1.jpg',
+			  '/images/navidad/navidad_narigudo_casitadelarbol_2.jpg'
 		],
 		inputs: [ 'Detalles']
 	},
@@ -515,9 +516,9 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n<strong>Dimensiones:</strong>\nDiámetro maceta: 14cm\nAltura: 15cm\nPatas: 25cm',
 		exception: '*Planta no incluida',
-		img: ['/images/narigudo_feliz_1.jpg',
-			'/images/narigudo_feliz_2.jpg',
-			'/images/narigudo_feliz_3.jpg'
+		img: ['/images/narigudos/narigudo_feliz_1.jpg',
+			  '/images/narigudos/narigudo_feliz_2.jpg',
+			  '/images/narigudos/narigudo_feliz_3.jpg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	}
@@ -970,7 +971,7 @@ export const PRODUCT_DATA = [
 		price: 50,
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:\nDiámetro maceta: 8cm\nAltura maceta: 10cm',
-		img: ['/images/naricillas/naricilla_vivanlosnovios.jpeg'],
+		img: ['/images/naricillas/naricillas/naricilla_vivanlosnovios.jpeg'],
 		inputs: ['Color', 'Pelo', 'Detalles']
 	},
 	// PERSONALIZACIONES
