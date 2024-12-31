@@ -95,7 +95,7 @@ const StyledBox = styled.div`
 const StyledBox1 = styled(StyledBox)`
 	grid-column: span 4 / span 4;
 	grid-row: span 7 / span 7;
-	background-image: url(/images/grid-1.png);
+	background-image: url(/images/grid-1.webp);
 
 	:after {
 		background-image: linear-gradient(
@@ -115,7 +115,7 @@ const StyledBox1 = styled(StyledBox)`
 // 	grid-row: span 4 / span 4;
 // 	grid-column-start: 1;
 // 	grid-row-start: 8;
-// 	background-image: url(/images/grid-2.png);
+// 	background-image: url(/images/grid-2.webp);
 
 // 	:after {
 // 		background-image: linear-gradient(
@@ -135,7 +135,7 @@ const StyledBox2 = styled(StyledBox)`
 	grid-row: span 4 / span 4;
 	grid-column-start: 1;
 	grid-row-start: 8;
-	background-image: url(/images/grid-2_navidad.png);
+	background-image: url(/images/grid-2_navidad.webp);
 
 	:after {
 		background-image: linear-gradient(
@@ -165,7 +165,7 @@ const StyledBox3 = styled(StyledBox)`
 	grid-row: span 4 / span 4;
 	grid-column-start: 4;
 	grid-row-start: 8;
-	background-image: url(/images/grid-3.png);
+	background-image: url(/images/grid-3.webp);
 	:after {
 		background-image: linear-gradient(
 			-90deg,
@@ -184,7 +184,7 @@ const StyledBox4 = styled(StyledBox)`
 	grid-row: span 4 / span 4;
 	grid-column-start: 5;
 	grid-row-start: 4;
-	background-image: url(/images/grid-4.png);
+	background-image: url(/images/grid-4.webp);
 
 	:after {
 		background-image: linear-gradient(
@@ -204,7 +204,7 @@ const StyledBox5 = styled(StyledBox)`
 	grid-row: span 4 / span 4;
 	grid-column-start: 8;
 	grid-row-start: 4;
-	background-image: url(/images/grid-5.png);
+	background-image: url(/images/grid-5.webp);
 
 	:after {
 		background-image: linear-gradient(
@@ -224,7 +224,7 @@ const StyledBox6 = styled(StyledBox)`
 	grid-row: span 3 / span 3;
 	grid-column-start: 5;
 	grid-row-start: 1;
-	background-image: url(/images/grid-6.png);
+	background-image: url(/images/grid-6.webp);
 
 	:after {
 		background-image: linear-gradient(
@@ -235,7 +235,7 @@ const StyledBox6 = styled(StyledBox)`
 	}
 
 	:before {
-		content: 'TIESTOS';
+		content: 'MACETAS';
 	}
 `;
 

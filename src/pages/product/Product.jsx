@@ -190,13 +190,18 @@ const Product = () => {
 					<StyledPrice>{product.price}€</StyledPrice>
 				</StyledInfoMobile>
 				<StyledRelative>
-					<StyledImgBig src={selectedImage} alt={product.name} />
+					<StyledImgBig src={selectedImage} alt={product.name} loading='lazy' />
 					<StyledButtonContainer>
 						<StyledButtonArrow
 							onClick={handlePrevImage}
 							disabled={product.img.indexOf(selectedImage) === 0}
 						>
-							<StyledArrowLeft src='/images/arrow.svg' alt='' width='20' />
+							<StyledArrowLeft
+								src='/images/arrow.svg'
+								alt=''
+								width='20'
+								loading='lazy'
+							/>
 						</StyledButtonArrow>
 						<StyledButtonArrow
 							onClick={handleNextImage}
@@ -204,7 +209,12 @@ const Product = () => {
 								product.img.indexOf(selectedImage) === product.img.length - 1
 							}
 						>
-							<StyledArrowRight src='/images/arrow.svg' alt='' width='20' />
+							<StyledArrowRight
+								src='/images/arrow.svg'
+								alt=''
+								width='20'
+								loading='lazy'
+							/>
 						</StyledButtonArrow>
 					</StyledButtonContainer>
 				</StyledRelative>
@@ -215,6 +225,7 @@ const Product = () => {
 							src={image}
 							alt={`Miniatura ${index + 1}`}
 							onClick={() => setSelectedImage(image)}
+							loading='lazy'
 						/>
 					))}
 				</StyledThumbnails>
@@ -309,7 +320,7 @@ const Product = () => {
 					<StyledModal>
 						<StyledModalContent>
 							<StyledCloseButton onClick={() => setIsModalOpen(false)}>
-								<img src='/images/cross.svg' alt='Cerrar menú' width='20' />
+								<img src='/images/cross.svg' alt='Cerrar menú' width='20' loading="lazy"/>
 							</StyledCloseButton>
 
 							{isOrderSent ? (
@@ -319,13 +330,13 @@ const Product = () => {
 										Su pedido se ha enviado correctamente, a lo largo del día
 										recibirá un mail con su pedido y detalles.
 									</p>
-									<img src='/images/favicon.png' alt='Gracias' width='200' />
+									<img src='/images/favicon.png' alt='Gracias' width='200' loading="lazy"/>
 								</>
 							) : isError ? (
 								<>
 									<h3>Ups... algo ha fallado</h3>
 									<p>Vuelva a hacer la petición por favor.</p>
-									<img src='/images/favicon.png' alt='Error' width='200' />
+									<img src='/images/favicon.png' alt='Error' width='200' loading="lazy"/>
 								</>
 							) : (
 								<>

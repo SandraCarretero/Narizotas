@@ -28,9 +28,9 @@ const Home = () => {
 					</strong>
 					<br /> <br />
 					<StyledRow>
-						<img src='/images/corazon.svg' alt='' width='30' />
+						<img src='/images/corazon.svg' alt='' width='30' loading="lazy"/>
 						<StyledText>Hecho a mano y con mucho amor</StyledText>
-						<img src='/images/corazon.svg' alt='' width='30' />
+						<img src='/images/corazon.svg' alt='' width='30' loading="lazy"/>
 					</StyledRow>
 				</StyledBox>
 				<StyledButton>

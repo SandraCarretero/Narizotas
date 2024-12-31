@@ -156,14 +156,23 @@ const Section = ({ section, subsection }) => {
 							</strong>
 						</StyledParagraphMobile>
 						<StyledRelative>
-							<StyledImgBig src={selectedImage} alt='Imagen principal' />
+							<StyledImgBig
+								src={selectedImage}
+								alt='Imagen principal'
+								loading='lazy'
+							/>
 
 							<StyledButtonContainer>
 								<StyledButtonArrow
 									onClick={handlePrevImage}
 									disabled={imagesPersonalizados.indexOf(selectedImage) === 0}
 								>
-									<StyledArrowLeft src='/images/arrow.svg' alt='' width='20' />
+									<StyledArrowLeft
+										src='/images/arrow.svg'
+										alt=''
+										width='20'
+										loading='lazy'
+									/>
 								</StyledButtonArrow>
 								<StyledButtonArrow
 									onClick={handleNextImage}
@@ -172,7 +181,12 @@ const Section = ({ section, subsection }) => {
 										imagesPersonalizados.length - 1
 									}
 								>
-									<StyledArrowRight src='/images/arrow.svg' alt='' width='20' />
+									<StyledArrowRight
+										src='/images/arrow.svg'
+										alt=''
+										width='20'
+										loading='lazy'
+									/>
 								</StyledButtonArrow>
 							</StyledButtonContainer>
 						</StyledRelative>
@@ -185,6 +199,7 @@ const Section = ({ section, subsection }) => {
 									alt={`Miniatura ${index + 1}`}
 									onClick={() => setSelectedImage(image)}
 									className={selectedImage === image ? 'active' : ''}
+									loading='lazy'
 								/>
 							))}
 						</StyledThumbnails>
@@ -208,13 +223,23 @@ const Section = ({ section, subsection }) => {
 										Su pedido se ha enviado correctamente, a lo largo del día
 										recibirá un mail con su pedido y detalles.
 									</p>
-									<img src='/images/favicon.png' alt='Gracias' width='100' />
+									<img
+										src='/images/favicon.png'
+										alt='Gracias'
+										width='100'
+										loading='lazy'
+									/>
 								</StyledMessage>
 							) : isError ? (
 								<StyledMessage>
 									<h3>Ups... algo ha fallado</h3>
 									<p>Vuelva a hacer la petición por favor.</p>
-									<img src='/images/favicon.png' alt='Error' width='100' />
+									<img
+										src='/images/favicon.png'
+										alt='Error'
+										width='100'
+										loading='lazy'
+									/>
 								</StyledMessage>
 							) : (
 								<>

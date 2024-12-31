@@ -3,6 +3,7 @@ import Layout from '../layout/Layout';
 import Home from '../pages/home/Home';
 import Section from '../pages/section/Section';
 import Product from '../pages/product/Product';
+import Politica from '../pages/politica/Politica';
 
 const Router = () => {
 	return (
@@ -10,6 +11,7 @@ const Router = () => {
 			<Route path='/' element={<Layout />}>
 				<Route path='/' element={<Home />} />
 				<Route path='/:section/:productName' element={<Product />} />
+				<Route path='/politica' element={<Politica />} />
 				<Route path='/macetas' element={<Section section='macetas' />} />
 				<Route path='/navidad' element={<Section section='navidad' />} />
 				<Route

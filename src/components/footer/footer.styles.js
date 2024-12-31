@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
@@ -21,4 +22,15 @@ const StyledContact = styled.div`
 	flex-direction: column;
 `;
 
-export { StyledFooter, StyledContact };
+const StyledNavLink = styled(NavLink)`
+	&.active {
+		border-bottom: none;
+	}
+`;
+
+const StyledPolitica = styled.span`
+	font-size: 0.75rem;
+	text-decoration: underline;
+`;
+
+export { StyledFooter, StyledContact, StyledNavLink, StyledPolitica };

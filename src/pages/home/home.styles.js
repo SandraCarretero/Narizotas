@@ -1,13 +1,13 @@
 import styled, { keyframes } from 'styled-components';
 
 const sliderDesktop = keyframes`
-  0%, 47%, 100% {background-image: url(/images/header.png);}
-  50%, 97% {background-image: url(/images/header2.png);}
+  0%, 47%, 100% {background-image: url(/images/header.webp);}
+  50%, 97% {background-image: url(/images/header2.webp);}
 `;
 
 const sliderMobile = keyframes`
-  0%, 47%, 100% {background-image: url(/images/header_mb.png);}
-  50%, 97% {background-image: url(/images/header2_mb.png);}
+  0%, 47%, 100% {background-image: url(/images/header_mb.webp);}
+  50%, 97% {background-image: url(/images/header2_mb.webp);}
 `;
 
 const sliderBox = keyframes`
@@ -26,13 +26,13 @@ const StyledContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url(/images/header.png);
+	background-image: url(/images/header.webp);
 	background-size: cover;
 	background-repeat: no-repeat;
 	animation: ${sliderDesktop} 10s linear infinite;
 
 	@media (width < 768px) {
-		background-image: url(/images/header_mb.png);
+		background-image: url(/images/header_mb.webp);
 		animation: ${sliderMobile} 10s linear infinite;
 		align-items: flex-start;
 		max-width: 100%;
