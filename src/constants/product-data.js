@@ -1016,9 +1016,9 @@ export const PRODUCT_DATA = [
 		price: 35,
 		description:
 			'Lámpara elaborada artesanalmente con materiales naturales y pelo sintético.\n Luz LED con carga usb incluida.',
-		img: ['/images/navidad/navidad_lampara_laponia_1.jpeg',
-			  '/images/navidad/navidad_lampara_laponia_2.jpeg',
-			  '/images/navidad/navidad_lampara_laponia_3.jpeg',
+		img: ['/images/navidad/navidad_gnomolampara_laponia_1.jpeg',
+			  '/images/navidad/navidad_gnomolampara_laponia_2.jpeg',
+			  '/images/navidad/navidad_gnomolampara_laponia_3.jpeg',
 		],
 		inputs: ['Detalles']
 	},
@@ -1030,9 +1030,9 @@ export const PRODUCT_DATA = [
 		price: 35,
 		description:
 			'Lámpara elaborada artesanalmente con materiales naturales y pelo sintético.\n Luz LED con carga usb incluida.',
-		img: ['/images/navidad/navidad_lampara_artico_1.jpeg',
-			  '/images/navidad/navidad_lampara_artico_2.jpeg',
-			  '/images/navidad/navidad_lampara_artico_3.jpeg',
+		img: ['/images/navidad/navidad_gnomolampara_artico_1.jpeg',
+			  '/images/navidad/navidad_gnomolampara_artico_2.jpeg',
+			  '/images/navidad/navidad_gnomolampara_artico_3.jpeg',
 		],
 		inputs: ['Detalles']
 	},
@@ -1045,10 +1045,10 @@ export const PRODUCT_DATA = [
 		description:
 			'Lámpara elaborada artesanalmente con materiales naturales.\n Luz LED con carga usb incluida.\n\n<strong>Dimensiones:</strong>\nAltura: 36cm',
 		img: [
-			'/images/gnomolamp/gnomolamapara_espantapajaros_1.jpeg',
-			'/images/gnomolamp/gnomolamapara_espantapajaros_2.jpeg',
-			'/images/gnomolamp/gnomolamapara_espantapajaros_3.jpeg',
-			'/images/gnomolamp/gnomolamapara_espantapajaros_4.jpeg'
+			'/images/gnomolamp/gnomolampara_espantapajaros_1.jpeg',
+			'/images/gnomolamp/gnomolampara_espantapajaros_2.jpeg',
+			'/images/gnomolamp/gnomolampara_espantapajaros_3.jpeg',
+			'/images/gnomolamp/gnomolampara_espantapajaros_4.jpeg'
 		],
 		inputs: ['Detalles']
 	},
