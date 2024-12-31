@@ -31,7 +31,7 @@ export const PRODUCT_DATA = [
 	},
 
 	{
-		section: '',
+		section: 'navidad',
 		subsection: '',
 		name: 'Casita del árbol',
 		price: 32,
@@ -42,6 +42,97 @@ export const PRODUCT_DATA = [
 			  '/images/navidad/navidad_narigudo_casitadelarbol_2.jpg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
+
+	{
+		section: 'navidad',
+		subsection: '',
+		name: 'Narizota Hohoho',
+		price: 32,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 17cm\nAltura maceta: 15cm\nPatas: 30cm',
+		img: [
+			'/images/navidad/navidad_narizota_hohoho_1.jpeg',
+			'/images/navidad/navidad_narizota_hohoho_2.jpeg',
+			'/images/navidad/navidad_narizota_hohoho_3.jpeg'
+		],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
+
+	{
+		section: 'navidad',
+		subsection: '',
+		name: 'Narizota Noel',
+		price: 32,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 17cm\nAltura maceta: 15cm\nPatas: 30cm',
+		img: [
+			'/images/navidad/navidad_narizota_noel_1.jpeg',
+			'/images/navidad/navidad_narizota_noel_2.jpeg',
+			'/images/navidad/navidad_narizota_noel_3.jpeg'
+		],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
+
+	{
+		section: 'navidad',
+		subsection: '',
+		name: 'Adorno Trineo',
+		price: 5,
+		description:
+			'Adorno navideño para el árbol.',
+		img: ['/images/navidad/navidad_adorno_trineo.jpeg'],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'navidad',
+		subsection: '',
+		name: 'Adorno Turron',
+		price: 5,
+		description:
+			'Adorno navideño para el árbol.',
+		img: ['/images/navidad/navidad_adorno_turron.jpeg'],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'navidad',
+		subsection: '',
+		name: 'Adorno Muerdago',
+		price: 5,
+		description:
+			'Adorno navideño para el árbol.',
+		img: ['/images/navidad/navidad_adorno_muerdago.jpeg'],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'navidad',
+		subsection: '',
+		name: 'Narigudo Cozy',
+		price: 25,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n<strong>Dimensiones:</strong>\nDiámetro maceta: 14cm\nAltura: 15cm\nPatas: 25cm',
+		exception: '*Planta no incluida',
+		img: ['/images/navidad/navidad_narigudo_cozy_1.jpeg',
+			  '/images/navidad/navidad_narigudo_cozy_2.jpeg'
+		],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
+
+	{
+		section: 'navidad',
+		subsection: '',
+		name: 'Naricilla Villancico',
+		price: 18,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
+		exception: '*Planta no incluida',
+		img: ['/images/navidad/navidad_naricilla_villancico_1.jpeg',
+			  '/images/navidad/navidad_naricilla_villancico_2.jpeg'
+		],
+		inputs: ['Pelo', 'Detalles']
 	},
 
 	{
@@ -136,6 +227,35 @@ export const PRODUCT_DATA = [
 	{
 		section: 'navidad',
 		subsection: '',
+		name: 'Naricilla Fiesta',
+		price: 16,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
+		exception: '*Planta no incluida',
+		img: ['/images/navidad/navidad_naricilla_fiesta_1.jpeg',
+			  '/images/navidad/navidad_naricilla_fiesta_2.jpeg'
+		],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
+
+	{
+		section: 'navidad',
+		subsection: '',
+		name: 'Naricilla Nube',
+		price: 16,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
+		exception: '*Planta no incluida',
+		img: ['/images/navidad/navidad_naricilla_nube_1.jpeg',
+			  '/images/navidad/navidad_naricilla_nube_2.jpeg',
+			  '/images/navidad/navidad_naricilla_nube_3.jpeg'
+		],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
+
+	{
+		section: 'navidad',
+		subsection: '',
 		name: 'Lámpara Laponia',
 		price: 35,
 		description:
@@ -188,6 +308,22 @@ export const PRODUCT_DATA = [
 		],
 		inputs: ['Detalles']
 	},
+
+
+	{
+		section: 'navidad',
+		subsection: '',
+		name: 'Adorno Nochebuena',
+		price: 25,
+		description:
+			'Adorno hecho con materiales naturales.',
+		img: ['/images/navidad/navidad_nochebuena_1.jpeg',
+			  '/images/navidad/navidad_nochebuena_2.jpeg',
+			  '/images/navidad/navidad_nochebuena_3.jpeg',
+		],
+		inputs: ['Detalles']
+	},
+
 
 	{
 		section: 'navidad',
@@ -249,6 +385,78 @@ export const PRODUCT_DATA = [
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
 
+	{
+		section: 'macetas',
+		subsection: 'naricillas',
+		name: 'Villancico',
+		price: 18,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
+		exception: '*Planta no incluida',
+		img: ['/images/navidad/navidad_naricilla_villancico_1.jpeg',
+			'/images/navidad/navidad_naricilla_villancico_2.jpeg'
+		],
+		inputs: ['Pelo', 'Detalles']
+	},
+
+	{
+		section: 'macetas',
+		subsection: 'naricillas',
+		name: 'Muerdago',
+		price: 16,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
+		exception: '*Planta no incluida',
+		img: ['/images/navidad/navidad_naricilla_muerdago_1.jpeg',
+			'/images/navidad/navidad_naricilla_muerdago_2.jpeg',
+			'/images/navidad/navidad_naricilla_muerdago_3.jpeg'
+		],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
+
+	{
+		section: 'macetas',
+		subsection: 'naricillas',
+		name: 'Muñeco de Nieve',
+		price: 16,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
+		exception: '*Planta no incluida',
+		img: ['/images/navidad/navidad_naricilla_muneco_1.jpeg',
+			'/images/navidad/navidad_naricilla_muneco_2.jpeg'
+		],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
+
+
+	{
+		section: 'macetas',
+		subsection: 'naricillas',
+		name: 'Fiesta',
+		price: 16,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
+		exception: '*Planta no incluida',
+		img: ['/images/navidad/navidad_naricilla_fiesta_1.jpeg',
+			'/images/navidad/navidad_naricilla_fiesta_2.jpeg'
+		],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
+
+	{
+		section: 'macetas',
+		subsection: 'naricillas',
+		name: 'Nube',
+		price: 16,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
+		exception: '*Planta no incluida',
+		img: ['/images/navidad/navidad_naricilla_nube_1.jpeg',
+			'/images/navidad/navidad_naricilla_nube_2.jpeg',
+			'/images/navidad/navidad_naricilla_nube_3.jpeg'
+		],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
 	{
 		section: 'macetas',
 		subsection: 'naricillas',
@@ -482,6 +690,20 @@ export const PRODUCT_DATA = [
 	{
 		section: 'macetas',
 		subsection: 'narigudos',
+		name: 'Cozy',
+		price: 25,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n<strong>Dimensiones:</strong>\nDiámetro maceta: 14cm\nAltura: 15cm\nPatas: 25cm',
+		exception: '*Planta no incluida',
+		img: ['/images/navidad/navidad_narigudo_cozy_1.jpeg',
+			'/images/navidad/navidad_narigudo_cozy_2.jpeg'
+		],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
+
+	{
+		section: 'macetas',
+		subsection: 'narigudos',
 		name: 'Duende',
 		price: 30,
 		description:
@@ -521,9 +743,54 @@ export const PRODUCT_DATA = [
 			  '/images/narigudos/narigudo_feliz_3.jpg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
-	}
+	},
+
+	{
+		section: 'macetas',
+		subsection: 'narigudos',
+		name: 'Casita mágica',
+		price: 32,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n<strong>Dimensiones:</strong>\nDiámetro maceta: 14cm\nAltura: 15cm\nPatas: 25cm',
+		exception: '*Planta no incluida',
+		img: ['/images/navidad/navidad_narigudo_casitamagica_1.jpeg',
+			  '/images/navidad/navidad_narigudo_casitamagica_2.jpeg',
+			  '/images/navidad/navidad_narigudo_casitamagica_3.jpeg'
+		],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
 
 	// MACETAS NARIZOTAS
+
+	{
+		section: 'macetas',
+		subsection: 'narizotas',
+		name: 'Hohoho',
+		price: 32,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 17cm\nAltura maceta: 15cm\nPatas: 30cm',
+		img: [
+			'/images/navidad/navidad_narizota_hohoho_1.jpeg',
+			'/images/navidad/navidad_narizota_hohoho_2.jpeg',
+			'/images/navidad/navidad_narizota_hohoho_3.jpeg'
+		],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
+
+	{
+		section: 'macetas',
+		subsection: 'narizotas',
+		name: 'Noel',
+		price: 32,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 17cm\nAltura maceta: 15cm\nPatas: 30cm',
+		img: [
+			'/images/navidad/navidad_narizota_noel_1.jpeg',
+			'/images/navidad/navidad_narizota_noel_2.jpeg',
+			'/images/navidad/navidad_narizota_noel_3.jpeg'
+		],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
 	{
 		section: 'macetas',
 		subsection: 'narizotas',
@@ -987,7 +1254,11 @@ export const PRODUCT_DATA = [
 			'/images/personalizaciones/personaliza_vikingo_1.jpeg',
 			'/images/personalizaciones/personaliza_vikingo_2.jpeg',
 			'/images/personalizaciones/personaliza_vikingo_3.jpeg',
-			'/images/personalizaciones/personaliza_vivanlosnovios.jpeg'
+			'/images/personalizaciones/personaliza_granjero_1.jpeg',
+			'/images/personalizaciones/personaliza_granjero_2.jpeg',
+			'/images/personalizaciones/personaliza_farmaceutica_1.jpeg',
+			'/images/personalizaciones/personaliza_farmaceutica_2.jpeg',
+			'/images/personalizaciones/personaliza_farmaceutica_3.jpeg'
 		]
 	}
 ];
