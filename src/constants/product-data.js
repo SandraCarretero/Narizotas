@@ -739,9 +739,9 @@ export const PRODUCT_DATA = [
 		description:
 			'Maceta hecha artesanalmente con materiales naturales y pelo sintético. \n<strong>Dimensiones:</strong>\nDiámetro maceta: 14cm\nAltura: 15cm\nPatas: 25cm',
 		exception: '*Planta no incluida',
-		img: ['/images/navidad/navidad_narigudo_casitamagica_1.jpeg',
-			  '/images/navidad/navidad_narigudo_casitamagica_2.jpeg',
-			  '/images/navidad/navidad_narigudo_casitamagica_3.jpeg'
+		img: ['/images/narigudos/narigudo_casitamagica_1.jpeg',
+			  '/images/narigudos/narigudo_casitamagica_2.jpeg',
+			  '/images/narigudos/narigudo_casitamagica_3.jpeg'
 		],
 		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
 	},
