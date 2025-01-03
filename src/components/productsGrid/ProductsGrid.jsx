@@ -34,7 +34,7 @@ const ProductsGrid = () => {
 					<Link to='/hogar' />
 				</StyledBox5>
 				<StyledBox6>
-					<Link to='/tiestos' />
+					<Link to='/macetas' />
 				</StyledBox6>
 			</StyledContainerBox>
 		</>
