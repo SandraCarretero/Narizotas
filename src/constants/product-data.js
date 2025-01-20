@@ -1,6 +1,20 @@
 export const PRODUCT_DATA = [
+	//SANVALENTIN
+	{
+		section: 'sanvalentin',
+		subsection: '',
+		name: '',
+		price: 50,
+		description:
+			'Enfadado con la vida y con el mundo, el Narizotas Grinch entra por cada chimenea a arruinar la Navidad a todo el que se le cruce.',
+		img: ['/images/gnomos/gnomo_grinch_1.jpeg',
+			  '/images/gnomos/gnomo_grinch_2.jpeg',
+			  '/images/gnomos/gnomo_grinch_3.jpeg'
+		],
+		inputs: ['Detalles']
+	},
+	
 	// NAVIDAD
-
 	{
 		section: 'navidad',
 		subsection: '',
