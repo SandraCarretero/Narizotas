@@ -34,7 +34,7 @@ const Home = () => {
 					</StyledRow>
 				</StyledBox>
 				<StyledButton>
-					<NavLink to='/navidad'>Descúbrelos</NavLink>
+					<NavLink to='/san valentin'>Descúbrelos</NavLink>
 				</StyledButton>
 			</StyledContainer>
 			<ProductsGrid />

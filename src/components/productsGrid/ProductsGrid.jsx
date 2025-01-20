@@ -21,8 +21,11 @@ const ProductsGrid = () => {
 				{/* <StyledBox2>
 					<Link to='/eventos' />
 				</StyledBox2> */}
-				<StyledBox2>
+				{/* <StyledBox2>
 					<Link to='/navidad' />
+				</StyledBox2> */}
+				<StyledBox2>
+					<Link to='/san valentin' />
 				</StyledBox2>
 				<StyledBox3>
 					<Link to='/personalizaciones' />

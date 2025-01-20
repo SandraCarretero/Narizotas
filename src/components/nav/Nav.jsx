@@ -55,9 +55,14 @@ const Nav = () => {
 				</StyledCloseButton>
 
 				<StyledList>
-					<StyledMenuItem>
+					{/* <StyledMenuItem>
 						<StyledNavLink onClick={closeMenu} to='/navidad'>
 							Navidad
+						</StyledNavLink>
+					</StyledMenuItem> */}
+					<StyledMenuItem>
+						<StyledNavLink onClick={closeMenu} to='/san valentin'>
+							San Valentín
 						</StyledNavLink>
 					</StyledMenuItem>
 					{/* Maceta */}

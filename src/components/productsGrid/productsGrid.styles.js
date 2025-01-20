@@ -135,7 +135,7 @@ const StyledBox2 = styled(StyledBox)`
 	grid-row: span 4 / span 4;
 	grid-column-start: 1;
 	grid-row-start: 8;
-	background-image: url(/images/grid-2_navidad.webp);
+	background-image: url(/images/grid-2_sanvalentin.webp);
 
 	:after {
 		background-image: linear-gradient(
@@ -146,7 +146,7 @@ const StyledBox2 = styled(StyledBox)`
 	}
 
 	:before {
-		content: 'NAVIDAD';
+		content: 'SAN VALENTIN';
 	}
 
  	@media (width < 768px) {

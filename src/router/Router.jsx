@@ -13,7 +13,8 @@ const Router = () => {
 				<Route path='/:section/:productName' element={<Product />} />
 				<Route path='/politica' element={<Politica />} />
 				<Route path='/macetas' element={<Section section='macetas' />} />
-				<Route path='/navidad' element={<Section section='navidad' />} />
+				{/* <Route path='/navidad' element={<Section section='navidad' />} /> */}
+				<Route path='/san valentin' element={<Section section='san valentin' />}/>
 				<Route
 					path='/macetas/naricillas'
 					element={<Section section='macetas' subsection='naricillas' />}
