@@ -6,7 +6,7 @@ export const PRODUCT_DATA = [
 		name: 'Cupido',
 		price: 36,
 		description:
-			'Cupido Narizotas está rellenito de amor y alegría. Con su arco y su flecha está busca a toda esa gente enamorada que necesita un empujoncín para soltar todo el amor que llevan dentro.\n\n</strong>Dimensiones:</strong>\nAltura: 45cm',
+			'Cupido Narizotas está rellenito de amor y alegría. Con su arco y su flecha está busca a toda esa gente enamorada que necesita un empujoncín para soltar todo el amor que llevan dentro.\n\n<strong>Dimensiones:</strong>\nAltura: 45cm',
 		img: [
 			'/images/sanvalentin/sanvalentin_gnomo_cupido_1.jpeg',
 			'/images/sanvalentin/sanvalentin_gnomo_cupido_2.jpeg',
@@ -23,7 +23,7 @@ export const PRODUCT_DATA = [
 		name: 'Querubín',
 		price: 25,
 		description:
-			'Enfadado con la vida y con el mundo, el Narizotas Grinch entra por cada chimenea a arruinar la Navidad a todo el que se le cruce.\n\n</strong>Dimensiones:</strong>\nAltura: 20cm',
+			'Enfadado con la vida y con el mundo, el Narizotas Grinch entra por cada chimenea a arruinar la Navidad a todo el que se le cruce.\n\n<strong>Dimensiones:</strong>\nAltura: 20cm',
 		img: [
 			'/images/sanvalentin/sanvalentin_querubin_1.jpeg',
 			'/images/sanvalentin/sanvalentin_querubin_2.jpeg',
@@ -38,7 +38,7 @@ export const PRODUCT_DATA = [
 		name: 'Romeo',
 		price: 25,
 		description:
-			'En la vida y la muerte, su amor incondicional no tiene límites ni fronteras.\n\n</strong>Dimensiones:</strong>\nAltura: 40cm',
+			'En la vida y la muerte, su amor incondicional no tiene límites ni fronteras.\n\n<strong>Dimensiones:</strong>\nAltura: 40cm',
 		img: [
 			'/images/sanvalentin/sanvalentin_romeo_1.jpeg',
 			'/images/sanvalentin/sanvalentin_romeo_2.jpeg',
@@ -53,7 +53,7 @@ export const PRODUCT_DATA = [
 		name: 'Julieta',
 		price: 25,
 		description:
-			'En la vida y la muerte, su amor incondicional no tiene límites ni fronteras.\n\n</strong>Dimensiones:</strong>\nAltura: 40cm',
+			'En la vida y la muerte, su amor incondicional no tiene límites ni fronteras.\n\n<strong>Dimensiones:</strong>\nAltura: 40cm',
 		img: [
 			'/images/sanvalentin/sanvalentin_julieta_1.jpeg',
 			'/images/sanvalentin/sanvalentin_julieta_2.jpeg',
@@ -68,7 +68,7 @@ export const PRODUCT_DATA = [
 		name: 'Romeo y Julieta',
 		price: 40,
 		description:
-			'Enamorados e inseparables, con un amor puro y sin límites. ¿Serías capaz de querer así de bonito?\n\n</strong>Dimensiones:</strong>\nAltura: 40cm',
+			'Enamorados e inseparables, con un amor puro y sin límites. ¿Serías capaz de querer así de bonito?\n\n<strong>Dimensiones:</strong>\nAltura: 40cm',
 		img: [
 			'/images/sanvalentin/sanvalentin_romeo_y_julieta.jpeg',
 			'/images/sanvalentin/sanvalentin_romeo_1.jpeg',
@@ -85,7 +85,7 @@ export const PRODUCT_DATA = [
 		name: 'Naricilla Clavel',
 		price: 16,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\nn<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
+			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
 		exception: '*Planta no incluida\n*Disponible en tamaño narigudo y narizota',
 		img: [
 			'/images/sanvalentin/sanvalentin_naricilla_clavel_1.jpeg',
@@ -101,7 +101,7 @@ export const PRODUCT_DATA = [
 		name: 'Narizota Corazón',
 		price: 32,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\nn<strong>Dimensiones:<strong>\nDiámetro maceta: 17cm\nAltura maceta: 15cm\nPatas: 30cm',
+			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\nn<strong>Dimensiones:</strong>\nDiámetro maceta: 17cm\nAltura maceta: 15cm\nPatas: 30cm',
 		exception: '*Planta no incluida\n*Disponible en tamaño narigudo y naricilla',
 		img: [
 			'/images/sanvalentin/sanvalentin_narizota_corazon_1.jpeg',
