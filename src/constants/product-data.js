@@ -101,7 +101,7 @@ export const PRODUCT_DATA = [
 		name: 'Narizota Corazón',
 		price: 32,
 		description:
-			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\nn<strong>Dimensiones:</strong>\nDiámetro maceta: 17cm\nAltura maceta: 15cm\nPatas: 30cm',
+			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 17cm\nAltura maceta: 15cm\nPatas: 30cm',
 		exception: '*Planta no incluida\n*Disponible en tamaño narigudo y naricilla',
 		img: [
 			'/images/sanvalentin/sanvalentin_narizota_corazon_1.jpeg',
