@@ -1,23 +1,23 @@
 import styled, { keyframes } from 'styled-components';
 
 const sliderDesktop = keyframes`
-  0%, 47%, 100% {background-image: url(/images/header.webp);}
-  50%, 97% {background-image: url(/images/header2.webp);}
+  0%, 47%, 100% {background-image: url(/images/header2.webp);}
+  50%, 97% {background-image: url(/images/header.webp);}
 `;
 
 const sliderMobile = keyframes`
-  0%, 47%, 100% {background-image: url(/images/header_mb.webp);}
-  50%, 97% {background-image: url(/images/header2_mb.webp);}
+  0%, 47%, 100% {background-image: url(/images/header2_mb.webp);}
+  50%, 97% {background-image: url(/images/header_mb.webp);}
 `;
 
 const sliderBox = keyframes`
-  0%, 47%, 100% {opacity: 1;}
-  50%, 97%  {opacity:0;}
+  0%, 47%, 100% {opacity: 0;}
+  50%, 97%  {opacity:1;}
 `;
 
 const sliderButton = keyframes`
-  0%, 47%, 100% {opacity: 0;}
-  50%, 97%  {opacity:1;}
+  0%, 47%, 100% {opacity: 1;}
+  50%, 97%  {opacity:0;}
 `;
 
 const StyledContainer = styled.div`
