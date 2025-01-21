@@ -141,6 +141,7 @@ const Section = ({ section, subsection }) => {
 			<StyledSectionTitle section={section}>
 				{subsection ? subsection.toUpperCase() : section.toUpperCase()}
 			</StyledSectionTitle>
+			
 			{/* Contenido personalizado para Personalizaciones */}
 			{section.toUpperCase() === 'PERSONALIZACIONES' ? (
 				<StyledFlex>

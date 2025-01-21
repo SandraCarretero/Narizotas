@@ -8,11 +8,11 @@ export const PRODUCT_DATA = [
 		description:
 			'Cupido Narizotas está rellenito de amor y alegría. Con su arco y su flecha está busca a toda esa gente enamorada que necesita un empujoncín para soltar todo el amor que llevan dentro.\n\n<strong>Dimensiones:</strong>\nAltura: 45cm',
 		img: [
-			'/images/sanvalentin/sanvalentin_gnomo_cupido_1.jpeg',
-			'/images/sanvalentin/sanvalentin_gnomo_cupido_2.jpeg',
-			'/images/sanvalentin/sanvalentin_gnomo_cupido_3.jpeg',
-			'/images/sanvalentin/sanvalentin_gnomo_cupido_4.jpeg',
-			'/images/sanvalentin/sanvalentin_gnomo_cupido_5.jpeg',
+			'/images/sanvalentin/sanvalentin_gnomo_cupido_1.jpg',
+			'/images/sanvalentin/sanvalentin_gnomo_cupido_2.jpg',
+			'/images/sanvalentin/sanvalentin_gnomo_cupido_3.jpg',
+			'/images/sanvalentin/sanvalentin_gnomo_cupido_4.jpg',
+			'/images/sanvalentin/sanvalentin_gnomo_cupido_5.jpg'
 		],
 		inputs: ['Detalles']
 	},
@@ -74,7 +74,7 @@ export const PRODUCT_DATA = [
 			'/images/sanvalentin/sanvalentin_romeo_1.jpeg',
 			'/images/sanvalentin/sanvalentin_romeo_3.jpeg',
 			'/images/sanvalentin/sanvalentin_julieta_1.jpeg',
-			'/images/sanvalentin/sanvalentin_julieta_2.jpeg',
+			'/images/sanvalentin/sanvalentin_julieta_2.jpeg'
 		],
 		inputs: ['Detalles']
 	},
@@ -102,7 +102,8 @@ export const PRODUCT_DATA = [
 		price: 32,
 		description:
 			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 17cm\nAltura maceta: 15cm\nPatas: 30cm',
-		exception: '*Planta no incluida\n*Disponible en tamaño narigudo y naricilla',
+		exception:
+			'*Planta no incluida\n*Disponible en tamaño narigudo y naricilla',
 		img: [
 			'/images/sanvalentin/sanvalentin_narizota_corazon_1.jpeg',
 			'/images/sanvalentin/sanvalentin_narizota_corazon_2.jpeg',
@@ -122,8 +123,6 @@ export const PRODUCT_DATA = [
 		img: ['/images/naricillas/naricilla_vivanlosnovios.jpeg'],
 		inputs: ['Color', 'Pelo', 'Detalles']
 	},
-
-	
 
 	// NAVIDAD
 	{

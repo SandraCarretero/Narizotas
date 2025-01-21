@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledSectionTitle = styled.h1`
 	background-image: ${({ section }) =>
-		section.toUpperCase() === 'NAVIDAD'
+		section.toUpperCase() === 'SAN VALENTIN'
 			? 'url(/images/color_navidad.svg)'
 			: 'url(/images/color.svg)'};
 	background-repeat: no-repeat;
