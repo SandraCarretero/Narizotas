@@ -6,7 +6,7 @@ export const PRODUCT_DATA = [
 		name: 'Cupido',
 		price: 36,
 		description:
-			'Cupido Narizotas está rellenito de amor y alegría. Con su arco y su flecha está busca a toda esa gente enamorada que necesita un empujoncín para soltar todo el amor que llevan dentro.\n\n<strong>Dimensiones:</strong>\nAltura: 45cm',
+			'Cupido Narizotas está rellenito de amor y alegría. Con su arco y su flecha está en busca de toda esa gente enamorada que necesita un empujoncín para soltar todo el amor que llevan dentro.\n\n<strong>Dimensiones:</strong>\nAltura: 45cm',
 		img: [
 			'/images/sanvalentin/sanvalentin_gnomo_cupido_1.jpg',
 			'/images/sanvalentin/sanvalentin_gnomo_cupido_2.jpg',
@@ -23,7 +23,7 @@ export const PRODUCT_DATA = [
 		name: 'Querubín',
 		price: 25,
 		description:
-			'Enfadado con la vida y con el mundo, el Narizotas Grinch entra por cada chimenea a arruinar la Navidad a todo el que se le cruce.\n\n<strong>Dimensiones:</strong>\nAltura: 20cm',
+			'El narizotas Querubín representa el amor sin florituras ni extravagancias. Cuida de ese amor que hay en las cosas pequeñas, que pasan desapercibidas, pero que son igual o más importantes que todas las demás.\n\n<strong>Dimensiones:</strong>\nAltura: 20cm',
 		img: [
 			'/images/sanvalentin/sanvalentin_querubin_1.jpeg',
 			'/images/sanvalentin/sanvalentin_querubin_2.jpeg',
