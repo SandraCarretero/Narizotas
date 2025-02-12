@@ -484,98 +484,7 @@ export const PRODUCT_DATA = [
 	},
 
 	// MACETAS NARICILLAS
-	{
-		section: 'macetas',
-		subsection: 'naricillas',
-		name: 'Jingle',
-		price: 16,
-		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
-		exception: '*Planta no incluida',
-		img: [
-			'/images/navidad/navidad_naricilla_jingle_1.jpeg',
-			'/images/navidad/navidad_naricilla_jingle_2.jpeg',
-			'/images/navidad/navidad_naricilla_jingle_3.jpeg'
-		],
-		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
-	},
-
-	{
-		section: 'macetas',
-		subsection: 'naricillas',
-		name: 'Villancico',
-		price: 18,
-		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
-		exception: '*Planta no incluida',
-		img: [
-			'/images/navidad/navidad_naricilla_villancico_1.jpg',
-			'/images/navidad/navidad_naricilla_villancico_2.jpg'
-		],
-		inputs: ['Pelo', 'Detalles']
-	},
-
-	{
-		section: 'macetas',
-		subsection: 'naricillas',
-		name: 'Muerdago',
-		price: 16,
-		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
-		exception: '*Planta no incluida',
-		img: [
-			'/images/navidad/navidad_naricilla_muerdago_1.jpeg',
-			'/images/navidad/navidad_naricilla_muerdago_2.jpeg',
-			'/images/navidad/navidad_naricilla_muerdago_3.jpeg'
-		],
-		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
-	},
-
-	{
-		section: 'macetas',
-		subsection: 'naricillas',
-		name: 'Muñeco de Nieve',
-		price: 16,
-		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
-		exception: '*Planta no incluida',
-		img: [
-			'/images/navidad/navidad_naricilla_muneco_1.jpeg',
-			'/images/navidad/navidad_naricilla_muneco_2.jpeg'
-		],
-		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
-	},
-
-	{
-		section: 'macetas',
-		subsection: 'naricillas',
-		name: 'Fiesta',
-		price: 16,
-		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
-		exception: '*Planta no incluida',
-		img: [
-			'/images/navidad/navidad_naricilla_fiesta_1.jpeg',
-			'/images/navidad/navidad_naricilla_fiesta_2.jpeg'
-		],
-		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
-	},
-
-	{
-		section: 'macetas',
-		subsection: 'naricillas',
-		name: 'Nube',
-		price: 16,
-		description:
-			'Maceta hecha artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Dimensiones:<strong>\nDiámetro maceta: 8cm\nAltura: 10cm\nPatas: 15cm',
-		exception: '*Planta no incluida',
-		img: [
-			'/images/navidad/navidad_naricilla_nube_1.jpeg',
-			'/images/navidad/navidad_naricilla_nube_2.jpeg',
-			'/images/navidad/navidad_naricilla_nube_3.jpeg'
-		],
-		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
-	},
+	
 	{
 		section: 'macetas',
 		subsection: 'naricillas',
@@ -884,36 +793,6 @@ export const PRODUCT_DATA = [
 	},
 
 	// MACETAS NARIZOTAS
-
-	{
-		section: 'macetas',
-		subsection: 'narizotas',
-		name: 'Hohoho',
-		price: 32,
-		description:
-			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 17cm\nAltura maceta: 15cm\nPatas: 30cm',
-		img: [
-			'/images/navidad/navidad_narizota_hohoho_1.jpeg',
-			'/images/navidad/navidad_narizota_hohoho_2.jpeg',
-			'/images/navidad/navidad_narizota_hohoho_3.jpeg'
-		],
-		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
-	},
-
-	{
-		section: 'macetas',
-		subsection: 'narizotas',
-		name: 'Noel',
-		price: 32,
-		description:
-			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 17cm\nAltura maceta: 15cm\nPatas: 30cm',
-		img: [
-			'/images/navidad/navidad_narizota_noel_1.jpeg',
-			'/images/navidad/navidad_narizota_noel_2.jpeg',
-			'/images/navidad/navidad_narizota_noel_3.jpeg'
-		],
-		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
-	},
 	{
 		section: 'macetas',
 		subsection: 'narizotas',
@@ -945,22 +824,50 @@ export const PRODUCT_DATA = [
 	},
 
 	// GNOMOS GNOMOS
-
 	{
 		section: 'gnomos',
 		subsection: 'gnomos',
-		name: 'Grinch',
-		price: 50,
+		name: 'Sabalillo',
+		price: 28,
 		description:
-			'Enfadado con la vida y con el mundo, el Narizotas Grinch entra por cada chimenea a arruinar la Navidad a todo el que se le cruce.',
+			'Gnomo hecho artesanalmente con materiales naturales y pelo sintético.\n\nAltura: 20cm',
 		img: [
-			'/images/gnomos/gnomo_grinch_1.jpeg',
-			'/images/gnomos/gnomo_grinch_2.jpeg',
-			'/images/gnomos/gnomo_grinch_3.jpeg'
+			'/images/gnomos/gnomo_sabalillo_1.jpeg',
+			'/images/gnomos/gnomo_sabalillo_2.jpeg',
+			'/images/gnomos/gnomo_sabalillo_3.jpeg'
 		],
 		inputs: ['Detalles']
 	},
-
+	{
+		section: 'gnomos',
+		subsection: 'gnomos',
+		name: 'Harissa',
+		price: 28,
+		description:
+			'Gnomo hecho artesanalmente con materiales naturales y pelo sintético.\n\nAltura: 20cm',
+		img: [
+			'/images/gnomos/gnomo_harissa_1.jpeg',
+			'/images/gnomos/gnomo_harissa_2.jpeg',
+			'/images/gnomos/gnomo_harissa_3.jpeg'
+		],
+		inputs: ['Detalles']
+	},
+	{
+		section: 'gnomos',
+		subsection: 'gnomos',
+		name: 'Kion',
+		price: 28,
+		description:
+			'Gnomo hecho artesanalmente con materiales naturales y pelo sintético.\n\nAltura: 20cm',
+		img: [
+			'/images/gnomos/gnomo_kion_1.jpeg',
+			'/images/gnomos/gnomo_kion_2.jpeg',
+			'/images/gnomos/gnomo_kion_3.jpeg',
+			'/images/gnomos/gnomo_kion_4.jpeg',
+			'/images/gnomos/gnomo_kion_5.jpeg'
+		],
+		inputs: ['Detalles']
+	},
 	{
 		section: 'gnomos',
 		subsection: 'gnomos',
@@ -1094,7 +1001,7 @@ export const PRODUCT_DATA = [
 		name: 'Mago',
 		price: 36,
 		description:
-			'Con su sombrero de arcilla del pantano y su varita blanca, nuestro Mago es capaz de conjurar los hechizos más enrevesados y rocambolescos.\n\n<strong>Dimensiones:\nAltura: 30cm</strong>',
+			'Con su sombrero de arcilla del pantano y su varita blanca, nuestro Mago es capaz de conjurar los hechizos más enrevesados y rocambolescos.\n\nAltura: 30cm',
 		img: [
 			'/images/gnomos/gnomo_mago_1.jpeg',
 			'/images/gnomos/gnomo_mago_2.jpeg'
@@ -1108,7 +1015,7 @@ export const PRODUCT_DATA = [
 		name: 'Rosita',
 		price: 36,
 		description:
-			'Rosita es una narizotas coqueta y risueña, con ganas de jugar, siempre en compañía de su perrito.\n\n<strong>Dimensiones:\nAltura: 55cm</strong>',
+			'Rosita es una narizotas coqueta y risueña, con ganas de jugar, siempre en compañía de su perrito.\n\nAltura: 55cm',
 		img: [
 			'/images/gnomos/gnomo_rosita_1.jpeg',
 			'/images/gnomos/gnomo_rosita_2.jpeg',
@@ -1124,7 +1031,7 @@ export const PRODUCT_DATA = [
 		name: 'Viki',
 		price: 36,
 		description:
-			'Directo del Valhalla y bendecido por Odín, Viki llega preparado para todo lo que se presente en su camino.\n\n<strong>Dimensiones:\nAltura: 36cm</strong>',
+			'Directo del Valhalla y bendecido por Odín, Viki llega preparado para todo lo que se presente en su camino.\n\nAltura: 36cm',
 		img: [
 			'/images/gnomos/gnomo_vikingo_1.jpeg',
 			'/images/gnomos/gnomo_vikingo_2.jpeg',
@@ -1133,34 +1040,20 @@ export const PRODUCT_DATA = [
 		inputs: ['Detalles']
 	},
 	// GNOMOS LAMPARAS
-
-	{
-		section: 'gnomos',
-		subsection: 'lamparas',
-		name: 'Lucecita',
-		price: 35,
-		description:
-			'Lucecita se encarga de que todas y cada una de las noches de este frío invierno sientas un poquito de calor navideño.',
-		img: [
-			'/images/navidad/navidad_gnomolampara_lucecita_4.jpeg',
-			'/images/navidad/navidad_gnomolampara_lucecita_3.jpeg',
-			'/images/navidad/navidad_gnomolampara_lucecita_1.jpeg',
-			'/images/navidad/navidad_gnomolampara_lucecita_2.jpeg'
-		],
-		inputs: ['Detalles']
-	},
-
 	{
 		section: 'gnomos',
 		subsection: 'lámparas',
-		name: 'Laponia',
-		price: 35,
+		name: 'Lector',
+		price: 40,
 		description:
-			'Lámpara elaborada artesanalmente con materiales naturales y pelo sintético.\n Luz LED con carga usb incluida.',
+			'Lámpara elaborada artesanalmente con materiales naturales y pelo sintético.\n\nAltura: 40cm',
 		img: [
-			'/images/navidad/navidad_gnomolampara_laponia_1.jpeg',
-			'/images/navidad/navidad_gnomolampara_laponia_2.jpeg',
-			'/images/navidad/navidad_gnomolampara_laponia_3.jpeg'
+			'/images/gnomolamp/gnomolampara_lector_1.jpeg',
+			'/images/gnomolamp/gnomolampara_lector_2.jpeg',
+			'/images/gnomolamp/gnomolampara_lector_3.jpeg',
+			'/images/gnomolamp/gnomolampara_lector_4.jpeg',
+			'/images/gnomolamp/gnomolampara_lector_5.jpeg',
+			'/images/gnomolamp/gnomolampara_lector_6.jpeg'
 		],
 		inputs: ['Detalles']
 	},
