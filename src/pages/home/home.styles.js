@@ -15,10 +15,10 @@ const sliderBox = keyframes`
   50%, 97%  {opacity:1;}
 `;
 
-const sliderButton = keyframes`
-  0%, 47%, 100% {opacity: 1;}
-  50%, 97%  {opacity:0;}
-`;
+// const sliderButton = keyframes`
+//   0%, 47%, 100% {opacity: 1;}
+//   50%, 97%  {opacity:0;}
+// `; 
 
 const StyledContainer = styled.div`
 	width: 100%;
@@ -29,11 +29,11 @@ const StyledContainer = styled.div`
 	background-image: url(/images/header.webp);
 	background-size: cover;
 	background-repeat: no-repeat;
-	animation: ${sliderDesktop} 10s linear infinite;
+	/* animation: ${sliderDesktop} 10s linear infinite; */
 
 	@media (width < 768px) {
 		background-image: url(/images/header_mb.webp);
-		animation: ${sliderMobile} 10s linear infinite;
+		/* animation: ${sliderMobile} 10s linear infinite; */
 		align-items: flex-start;
 		max-width: 100%;
 		height: 100%;
@@ -50,7 +50,7 @@ const StyledBox = styled.div`
 	background-color: #ffffffd6;
 	padding: 1.25rem 3.125rem;
 	text-align: center;
-	animation: ${sliderBox} 10s linear infinite;
+	/* animation: ${sliderBox} 10s linear infinite; */
 
 	@media (width > 1300px) {
 		height: max-content;
@@ -80,31 +80,31 @@ const StyledText = styled.span`
 	}
 `;
 
-const StyledButton = styled.button`
-	position: absolute;
-	bottom: 24%;
-	right: 19%;
-	padding: 15px;
-	background-color: white;
-	color: #c90707;
-	border: none;
-	border-radius: 8px;
-	font-size: 16px;
-	font-weight: bold;
-	cursor: pointer;
-	text-transform: uppercase;
-	animation: ${sliderButton} 10s linear infinite;
+// const StyledButton = styled.button`
+// 	position: absolute;
+// 	bottom: 24%;
+// 	right: 19%;
+// 	padding: 15px;
+// 	background-color: white;
+// 	color: #c90707;
+// 	border: none;
+// 	border-radius: 8px;
+// 	font-size: 16px;
+// 	font-weight: bold;
+// 	cursor: pointer;
+// 	text-transform: uppercase;
+// 	/* animation: ${sliderButton} 10s linear infinite; */
 
-	@media (width < 1300px) {
-		bottom: 18%;
-		right: 17%;
-	}
+// 	@media (width < 1300px) {
+// 		bottom: 18%;
+// 		right: 17%;
+// 	}
 
-	@media (width < 768px) {
-		top: 28%;
-		bottom: initial;
-		right: 10%;
-	}
-`;
+// 	@media (width < 768px) {
+// 		top: 28%;
+// 		bottom: initial;
+// 		right: 10%;
+// 	}
+// `;
 
-export { StyledContainer, StyledBox, StyledRow, StyledText, StyledButton };
+export { StyledContainer, StyledBox, StyledRow, StyledText };

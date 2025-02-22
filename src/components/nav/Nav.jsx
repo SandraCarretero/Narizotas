@@ -7,8 +7,7 @@ import {
 	StyledArrowIcon,
 	StyledHamburgerButton,
 	StyledMobileMenu,
-	StyledCloseButton,
-	StyledNavLink
+	StyledCloseButton
 } from './nav.styles';
 import { useState } from 'react';
 
@@ -60,11 +59,11 @@ const Nav = () => {
 							Navidad
 						</StyledNavLink>
 					</StyledMenuItem> */}
-					<StyledMenuItem>
+					{/* <StyledMenuItem>
 						<StyledNavLink onClick={closeMenu} to='/san valentin'>
 							San Valentín
 						</StyledNavLink>
-					</StyledMenuItem>
+					</StyledMenuItem> */}
 					{/* Maceta */}
 					<StyledMenuItem
 						{...(!isMobile && {

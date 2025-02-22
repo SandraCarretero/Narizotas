@@ -130,40 +130,41 @@ const StyledBox1 = styled(StyledBox)`
 // 	}
 // `;
 
-const StyledBox2 = styled(StyledBox)`
-	grid-column: span 3 / span 3;
-	grid-row: span 4 / span 4;
-	grid-column-start: 1;
-	grid-row-start: 8;
-	background-image: url(/images/grid-2_sanvalentin.webp);
+// const StyledBox2 = styled(StyledBox)`
+// 	grid-column: span 3 / span 3;
+// 	grid-row: span 4 / span 4;
+// 	grid-column-start: 1;
+// 	grid-row-start: 8;
+// 	background-image: url(/images/grid-2_sanvalentin.webp);
 
-	:after {
-		background-image: linear-gradient(
-			-180deg,
-			rgba(212, 57, 57, 0) 0%,
-			rgba(212, 57, 57, 0.8) 100%
-		);
-	}
+// 	:after {
+// 		background-image: linear-gradient(
+// 			-180deg,
+// 			rgba(212, 57, 57, 0) 0%,
+// 			rgba(212, 57, 57, 0.8) 100%
+// 		);
+// 	}
 
-	:before {
-		content: 'SAN VALENTIN';
-	}
+// 	:before {
+// 		content: 'SAN VALENTIN';
+// 	}
 
- 	@media (width < 768px) {
-		:after {
-			background-image: linear-gradient(
-				-180deg,
-				rgba(212, 57, 57, 0) 0%,
-				rgba(212, 57, 57, 0.8) 100%
-			) !important;
-		}
-	}
-`;
+//  	@media (width < 768px) {
+// 		:after {
+// 			background-image: linear-gradient(
+// 				-180deg,
+// 				rgba(212, 57, 57, 0) 0%,
+// 				rgba(212, 57, 57, 0.8) 100%
+// 			) !important;
+// 		}
+// 	}
+// `;
 
 const StyledBox3 = styled(StyledBox)`
 	grid-column: span 7 / span 7;
 	grid-row: span 4 / span 4;
-	grid-column-start: 4;
+	/* grid-column-start: 4; */
+	grid-column-start: 1;
 	grid-row-start: 8;
 	background-image: url(/images/grid-3.webp);
 	:after {
@@ -201,7 +202,8 @@ const StyledBox4 = styled(StyledBox)`
 
 const StyledBox5 = styled(StyledBox)`
 	grid-column: span 3 / span 3;
-	grid-row: span 4 / span 4;
+	/* grid-row: span 4 / span 4; */
+	grid-row: span 8 / span 8;
 	grid-column-start: 8;
 	grid-row-start: 4;
 	background-image: url(/images/grid-5.webp);
@@ -243,7 +245,6 @@ export {
 	StyledTitle,
 	StyledContainerBox,
 	StyledBox1,
-	StyledBox2,
 	StyledBox3,
 	StyledBox4,
 	StyledBox5,

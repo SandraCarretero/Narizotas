@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import {
 	StyledTitle,
 	StyledBox1,
-	StyledBox2,
 	StyledBox3,
 	StyledBox4,
 	StyledBox5,
@@ -24,9 +23,9 @@ const ProductsGrid = () => {
 				{/* <StyledBox2>
 					<Link to='/navidad' />
 				</StyledBox2> */}
-				<StyledBox2>
+				{/* <StyledBox2>
 					<Link to='/san valentin' />
-				</StyledBox2>
+				</StyledBox2> */}
 				<StyledBox3>
 					<Link to='/personalizaciones' />
 				</StyledBox3>

@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
@@ -88,11 +88,11 @@ const StyledDropdownList = styled.ul`
 	}
 `;
 
-const StyledNavLink = styled(NavLink)`
-	color: #c90707;
-	font-weight: 500;
- 	text-decoration-color: #c90707; 
-`;
+// const StyledNavLink = styled(NavLink)`
+// 	color: #c90707;
+// 	font-weight: 500;
+//  	text-decoration-color: #c90707;
+// `;
 
 const StyledMenuItem = styled.li`
 	position: relative;
@@ -119,7 +119,6 @@ export {
 	StyledHeader,
 	StyledList,
 	StyledDropdownList,
-	StyledNavLink,
 	StyledMenuItem,
 	StyledArrowIcon,
 	StyledHamburgerButton,
