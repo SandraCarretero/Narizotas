@@ -796,6 +796,38 @@ export const PRODUCT_DATA = [
 	{
 		section: 'macetas',
 		subsection: 'narizotas',
+		name: 'Musgoso',
+		price: 32,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 17cm\nAltura maceta: 15cm\nPatas: 30cm',
+		img: [
+			'/images/narizotas/narizota_musgoso_1.webp',
+			'/images/narizotas/narizota_musgoso_2.webp',
+			'/images/narizotas/narizota_musgoso_3.webp',
+			'/images/narizotas/narizota_musgoso_4.webp'
+		],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
+
+	{
+		section: 'macetas',
+		subsection: 'narizotas',
+		name: 'Moscada',
+		price: 32,
+		description:
+			'Maceta hecha artesanalmente con materiales naturales, pelo sintético y diversos detalles.\n\n<strong>Dimensiones:</strong>\nDiámetro maceta: 17cm\nAltura maceta: 15cm\nPatas: 30cm',
+		img: [
+			'/images/narizotas/narizota_moscada_1.webp',
+			'/images/narizotas/narizota_moscada_2.webp',
+			'/images/narizotas/narizota_moscada_3.webp',
+			'/images/narizotas/narizota_moscada_4.webp'
+		],
+		inputs: ['Patas', 'Color', 'Pelo', 'Detalles']
+	},
+
+	{
+		section: 'macetas',
+		subsection: 'narizotas',
 		name: 'Galan',
 		price: 32,
 		description:
@@ -827,10 +859,27 @@ export const PRODUCT_DATA = [
 	{
 		section: 'gnomos',
 		subsection: 'gnomos',
+		name: 'Regaliz',
+		price: 36,
+		description:
+			'Gnomo hecho artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Altura:</strong> 40cm',
+		img: [
+			'/images/gnomos/gnomo_regaliz_1.webp',
+			'/images/gnomos/gnomo_regaliz_2.webp',
+			'/images/gnomos/gnomo_regaliz_3.webp',
+			'/images/gnomos/gnomo_regaliz_4.webp',
+			'/images/gnomos/gnomo_regaliz_5.webp'
+		],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'gnomos',
+		subsection: 'gnomos',
 		name: 'Sabalillo',
 		price: 28,
 		description:
-			'Gnomo hecho artesanalmente con materiales naturales y pelo sintético.\n\nAltura: 20cm',
+			'Gnomo hecho artesanalmente con materiales naturales y pelo sintético.\n\n<strong>Altura:</strong> 20cm',
 		img: [
 			'/images/gnomos/gnomo_sabalillo_1.jpeg',
 			'/images/gnomos/gnomo_sabalillo_2.jpeg',
@@ -890,7 +939,7 @@ export const PRODUCT_DATA = [
 		name: 'Mr Narizotas',
 		price: 36,
 		description:
-			'Mr. Narizotas se pasa horas y horas en su taller poniendo un toque de magia en cada uno de nuestros productos.\n\n<strong>Dimensiones:\nAltura: 45cm</strong>',
+			'Mr. Narizotas se pasa horas y horas en su taller poniendo un toque de magia en cada uno de nuestros productos.\n\n<strong>Altura</strong>: 45cm',
 		img: [
 			'/images/gnomos/gnomo_mrnarizotas-1.jpeg',
 			'/images/gnomos/gnomo_mrnarizotas-2.jpeg',
@@ -905,7 +954,7 @@ export const PRODUCT_DATA = [
 		name: 'Estrella de Rock',
 		price: 36,
 		description:
-			'Comenzó como telonero y actualmente recorre el mundo como uno de los cantantes de rock más famosos del momento. ¿Aún no le conoces?\n\nDimensiones:\nAltura: 40cm</strong>',
+			'Comenzó como telonero y actualmente recorre el mundo como uno de los cantantes de rock más famosos del momento. ¿Aún no le conoces?\n\n<strong>Altura:</strong> 40cm',
 		img: [
 			'/images/gnomos/gnomo_estrellarock-1.jpeg',
 			'/images/gnomos/gnomo_estrellarock-2.jpeg',
@@ -922,7 +971,7 @@ export const PRODUCT_DATA = [
 		name: 'Piruja',
 		price: 36,
 		description:
-			'Piruja vive entre sapos y culebras maldiciendo a todo aquel que se cruce en su camino.\n\n <strong>Dimensiones:\nAltura: 50cm</strong>',
+			'Piruja vive entre sapos y culebras maldiciendo a todo aquel que se cruce en su camino.\n\n <strong>Altura:</strong> 50cm',
 		img: [
 			'/images/gnomos/gnomo_bruja_1.jpeg',
 			'/images/gnomos/gnomo_bruja_2.jpeg',
@@ -938,7 +987,7 @@ export const PRODUCT_DATA = [
 		name: 'Dalmata',
 		price: 36,
 		description:
-			'El más fiel amigo y compañero, para todos aquellos papás y mamás perrunos.\n\n<strong>Dimensiones:\nAltura: 30cm</strong>',
+			'El más fiel amigo y compañero, para todos aquellos papás y mamás perrunos.\n\n<strong>Altura:</strong> 30cm',
 		img: [
 			'/images/gnomos/gnomo_dalmata_1.jpeg',
 			'/images/gnomos/gnomo_dalmata_2.jpeg',
@@ -954,7 +1003,7 @@ export const PRODUCT_DATA = [
 		name: 'Dulce hogar',
 		price: 36,
 		description:
-			'Como en casa en ningún sitio.\n\n<strong>Dimensiones:\nAltura: 30cm\nPatas: 20cm</strong>',
+			'Como en casa en ningún sitio.\n\n<strong>Dimensiones:</strong>\nAltura: 30cm\nPatas: 20cm',
 		img: [
 			'/images/gnomos/gnomo_dulcehogar_1.jpeg',
 			'/images/gnomos/gnomo_dulcehogar_2.jpeg',
@@ -969,7 +1018,7 @@ export const PRODUCT_DATA = [
 		name: 'Irlandés',
 		price: 36,
 		description:
-			'Nuestro narizotas Irlandés viene de las tierras altas de Escocia, y trae con él la alegría y la fortuna de los Leprechaun.\n\n<strong>Dimensiones:\nAltura: 30cm</strong>',
+			'Nuestro narizotas Irlandés viene de las tierras altas de Escocia, y trae con él la alegría y la fortuna de los Leprechaun.\n\n<strong>Altura:</strong> 30cm',
 		img: [
 			'/images/gnomos/gnomo_irlandes_1.jpeg',
 			'/images/gnomos/gnomo_irlandes_2.jpeg',
@@ -985,7 +1034,7 @@ export const PRODUCT_DATA = [
 		name: 'Maestro del tiempo',
 		price: 36,
 		description:
-			'En todas partes y en ninguna, el Maestro del Tiempo controla el pasado, presente y futuro.\n\n<strong>Dimensiones:<strong>\nAltura: 50cm</strong>',
+			'En todas partes y en ninguna, el Maestro del Tiempo controla el pasado, presente y futuro.\n\n<strong>Altura:</strong> 50cm',
 		img: [
 			'/images/gnomos/gnomo_maestrodeltiempo_1.jpeg',
 			'/images/gnomos/gnomo_maestrodeltiempo_2.jpeg',
@@ -1054,6 +1103,21 @@ export const PRODUCT_DATA = [
 			'/images/gnomolamp/gnomolampara_lector_4.jpeg',
 			'/images/gnomolamp/gnomolampara_lector_5.jpeg',
 			'/images/gnomolamp/gnomolampara_lector_6.jpeg'
+		],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'gnomos',
+		subsection: 'lámparas',
+		name: 'Pétalo',
+		price: 35,
+		description:
+			'Lámpara elaborada artesanalmente con materiales naturales y pelo sintético.\n Luz LED con carga usb incluida.',
+		img: [
+			'/images/gnomolamp/gnomolampara_petalo_1.webp',
+			'/images/gnomolamp/gnomolampara_petalo_2.webp',
+			'/images/gnomolamp/gnomolampara_petalo_3.webp'
 		],
 		inputs: ['Detalles']
 	},
@@ -1139,6 +1203,32 @@ export const PRODUCT_DATA = [
 	},
 
 	// IMANES
+	{
+		section: 'imanes',
+		subsection: '',
+		name: 'Cebollino',
+		price: 8,
+		description:
+			'Imán elaborado artesanalmente con materiales naturales y pelo sintético.',
+		img: ['/images/imanes/iman_cebollino_1.webp',
+			  '/images/imanes/iman_cebollino_2.webp'
+		],
+		inputs: ['Detalles']
+	},
+
+	{
+		section: 'imanes',
+		subsection: '',
+		name: 'Pesto',
+		price: 8,
+		description:
+			'Imán elaborado artesanalmente con materiales naturales y pelo sintético.',
+		img: ['/images/imanes/iman_pesto_1.webp',
+			  '/images/imanes/iman_pesto_2.webp'
+		],
+		inputs: ['Detalles']
+	},
+
 	{
 		section: 'imanes',
 		subsection: '',
