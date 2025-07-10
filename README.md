@@ -1,6 +1,6 @@
 # NARIZOTAS - Tienda artesanal
 
-![Narizotas landing](https://github.com/SandraCarretero/Narizotas/blob/main/narizotas-landing.png)
+![Narizotas landing](https://github.com/SandraCarretero/Narizotas/blob/main/public/narizotas-landing.png)
 
 ## Descripción 📑
 
