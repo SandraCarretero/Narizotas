@@ -86,6 +86,7 @@ const Product = () => {
 		{ value: 'no', label: 'No' }
 	];
 	const colorOptions = [
+		'Color Predeterminado',
 		'Amarillo',
 		'Blanco',
 		'Rojo',
@@ -94,6 +95,7 @@ const Product = () => {
 		'Yute'
 	];
 	const peloOptions = [
+		'Color Predeterminado',
 		'Marrón oscuro',
 		'Marrón claro',
 		'Naranja',
